@@ -13,19 +13,19 @@ git clone https://github.com/guillemleon/portfolio.git
 cd portfolio
 ```
 
-### 4. Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 5. Start development server
+### 3. Start development server
 
 ```bash
 npm run start
 ```
 
-### 6. Build for production
+### 4. Build for production
 
 ```bash
 npm run build

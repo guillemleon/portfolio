@@ -12,6 +12,7 @@ console.log('>>> Open: chrome');
 const devConfig = {
   mode: 'development',
   devServer: {
+    historyApiFallback: true,
     port: 8080,
     hot: true,
     static: {

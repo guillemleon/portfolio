@@ -1,0 +1,20 @@
+$green: #88ff00;
+$black: #151515;
+
+// DARK MODE
+$dark-background: linear-gradient(232deg, #1e1e1e 18.22%, #151515 71.75%);
+$dark-text: #fff;
+
+// LIGHT MODE
+$light-background: linear-gradient(232deg, #f7f7f7 18.22%, #e0e0e0 71.75%);
+$light-text: #151515;
+
+.dark-mode {
+  background: $dark-background;
+  color: $dark-text;
+}
+
+.light-mode {
+  background: $light-background;
+  color: $light-text;
+}

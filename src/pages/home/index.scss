@@ -1,0 +1,47 @@
+@use '/src/variables.scss' as *;
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 240px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 10px 0 10px;
+    align-items: center;
+  }
+}
+
+.home-title {
+  color: var(--text-color);
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 34px;
+    text-align: center;
+  }
+}
+
+.home-subtitle {
+  color: var(--text-color);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+
+  span {
+    color: var(--text-hover-color);
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+    text-align: center;
+  }
+}

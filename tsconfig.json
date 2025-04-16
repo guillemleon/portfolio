@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
+    "module": "esnext",
     "lib": ["dom", "esnext"],
     "allowJs": true,
     "jsx": "react-jsx",
@@ -9,6 +10,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "./dist"
   },
   "include": ["src/**/*"],

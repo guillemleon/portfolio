@@ -1,0 +1,41 @@
+@use '/src/variables.scss' as *;
+
+.header-container {
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-list {
+  list-style: none;
+}
+
+.header-list-item {
+  margin: 15px 0;
+}
+
+.header-list-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'JetBrainsMono';
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--text-hover-color);
+  }
+}
+
+.header-settings-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}

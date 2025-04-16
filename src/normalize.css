@@ -1,0 +1,140 @@
+/* === THEME STYLES === */
+
+:root {
+  --background-color: #fff;
+  --text-color: #151515;
+  --green: #88ff00;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.dark-mode {
+  --background-color: linear-gradient(232deg, #1e1e1e 18.22%, #151515 71.75%);
+  --text-color: #fff;
+  --text-inverted-color: #151515;
+  --text-hover-color: #88ff00;
+}
+
+.light-mode {
+  --background-color: linear-gradient(232deg, #f7f7f7 18.22%, #e0e0e0 71.75%);
+  --text-color: #151515;
+  --text-inverted-color: #fff;
+  --text-hover-color: #d100ed;
+}
+
+/* 1. Reset margin and padding for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Ensure text inherits correctly */
+html {
+  font-family: sans-serif;
+}
+
+/* 3. Ensure all block elements take up 100% width */
+body {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 4. Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 5. Remove border from buttons and inputs */
+button,
+input,
+select,
+textarea {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* 6. Remove default styles from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Ensure tables use full container width */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 8. Ensure proper image sizing */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 9. Basic form element styling */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* 10. Add some basic typography rules */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* 11. Disable default focus outline on links (can be adjusted for accessibility) */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* 12. Basic adjustment for form elements and controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+}
+
+/* 13. For table elements, don't display borders by default */
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+/* 14. For ordered and unordered lists */
+ol,
+ul {
+  padding-left: 1.5em;
+}

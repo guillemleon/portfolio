@@ -1,0 +1,50 @@
+@use '/src/variables.scss' as *;
+
+.header-settings-menu {
+  position: absolute;
+  width: 220px;
+  height: fit-content;
+  border: 1px solid var(--text-hover-color);
+  right: -220px;
+  border-radius: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.header-settings-title {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.header-settings-chips-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.header-settings-chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  width: 55px;
+  height: 31px;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--text-hover-color);
+    color: var(--text-inverted-color);
+  }
+}
+
+.header-settings-chip-large {
+  @extend .header-settings-chip;
+  width: 90px;
+}

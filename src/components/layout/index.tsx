@@ -10,7 +10,6 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const isMobile = useDeviceDetection();
 
-  console.log(isMobile);
   return (
     <div className="layout-container">
       {isMobile ? <div></div> : <Header />}

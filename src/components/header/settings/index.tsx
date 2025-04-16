@@ -2,18 +2,30 @@ import React, { useCallback } from 'react';
 import './index.scss';
 import { useTheme } from '../../../context/ThemeContext';
 import useSettingsConfig from './useSettingsConfig';
+import { useLocation, useMatch, useNavigate } from 'react-router-dom';
 
 interface HeaderSettingsProps {
   setIsSettingsOpen: Function;
 }
 
 function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
+  const match = useMatch('/:lang/*');
+  const { lang } = match?.params || {};
+  const location = useLocation();
+  const navigate = useNavigate();
   const { setTheme, theme } = useTheme();
-  const { languages, themes } = useSettingsConfig();
 
-  const handleLangClick = useCallback(() => {
-    setIsSettingsOpen(false);
-  }, []);
+  const { languages, themes, changeLang } = useSettingsConfig();
+
+  const handleLangClick = useCallback(
+    (selectedLang: string) => {
+      setIsSettingsOpen(false);
+      if (lang && lang !== selectedLang) {
+        changeLang(lang, selectedLang);
+      }
+    },
+    [lang, changeLang, setIsSettingsOpen]
+  );
 
   const handleThemeClick = useCallback((selectedTheme: any) => {
     setIsSettingsOpen(false);
@@ -25,7 +37,11 @@ function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
       <p className="header-settings-title">Language</p>
       <div className="header-settings-chips-container">
         {languages.map((item) => (
-          <button key={item.id} className={`header-settings-chip`} onClick={handleLangClick}>
+          <button
+            key={item.id}
+            className={`header-settings-chip ${lang === item.value ? 'header-settings-chip-selected' : ''}`}
+            onClick={() => handleLangClick(item.value)}
+          >
             {item.name}
           </button>
         ))}

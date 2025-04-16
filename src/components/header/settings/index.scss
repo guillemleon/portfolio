@@ -12,6 +12,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 15px;
+  background: var(--background-color);
 }
 
 .header-settings-title {
@@ -47,4 +48,8 @@
 .header-settings-chip-large {
   @extend .header-settings-chip;
   width: 90px;
+}
+
+.header-settings-chip-selected {
+  border: 1px solid var(--text-hover-color);
 }

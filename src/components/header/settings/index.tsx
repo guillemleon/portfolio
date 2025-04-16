@@ -1,13 +1,15 @@
 import React, { useCallback } from 'react';
 import './index.scss';
 import { useTheme } from '../../../context/ThemeContext';
+import useSettingsConfig from './useSettingsConfig';
 
 interface HeaderSettingsProps {
   setIsSettingsOpen: Function;
 }
 
 function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
-  const { setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
+  const { languages, themes } = useSettingsConfig();
 
   const handleLangClick = useCallback(() => {
     setIsSettingsOpen(false);
@@ -22,24 +24,23 @@ function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
     <div className="header-settings-menu">
       <p className="header-settings-title">Language</p>
       <div className="header-settings-chips-container">
-        <button className="header-settings-chip" onClick={handleLangClick}>
-          EN
-        </button>
-        <button className="header-settings-chip" onClick={handleLangClick}>
-          ES
-        </button>
-        <button className="header-settings-chip" onClick={handleLangClick}>
-          CAT
-        </button>
+        {languages.map((item) => (
+          <button key={item.id} className={`header-settings-chip`} onClick={handleLangClick}>
+            {item.name}
+          </button>
+        ))}
       </div>
       <p className="header-settings-title">Theme</p>
       <div className="header-settings-chips-container">
-        <button className="header-settings-chip-large" onClick={() => handleThemeClick('dark')}>
-          DARK
-        </button>
-        <button className="header-settings-chip-large" onClick={() => handleThemeClick('light')}>
-          LIGHT
-        </button>
+        {themes.map((item) => (
+          <button
+            key={item.id}
+            className={`header-settings-chip-large ${theme === item.value ? 'header-settings-chip-selected' : ''}`}
+            onClick={() => handleThemeClick(item.value)}
+          >
+            {item.name}
+          </button>
+        ))}
       </div>
     </div>
   );

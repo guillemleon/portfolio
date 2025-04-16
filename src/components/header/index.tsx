@@ -15,17 +15,13 @@ const Header = ({}: HeaderProps) => {
     <div className="header-container">
       <ul className="header-list">
         {links?.map((link: any) => (
-          <li className="header-list-item">
+          <li key={link.id} className="header-list-item">
             {link.type === 'settings' ? (
               <div
                 className="header-settings-container"
                 onMouseLeave={() => setIsSettingsOpen(false)}
               >
-                <button
-                  onMouseEnter={() => setIsSettingsOpen(true)}
-                  className="header-list-link"
-                  key={link.id}
-                >
+                <button onMouseEnter={() => setIsSettingsOpen(true)} className="header-list-link">
                   {link.name}
                 </button>
                 {isSettingsOpen && <HeaderSettings setIsSettingsOpen={setIsSettingsOpen} />}

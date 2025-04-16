@@ -7,6 +7,8 @@ import './normalize.css';
 import './fonts.css';
 import { ThemeProvider } from './context/ThemeContext';
 import useDeviceDetection from './hooks/useDeviceDetection';
+import Projects from './pages/projects';
+import Contact from './pages/contact';
 
 const App = () => {
   const isMobile = useDeviceDetection();
@@ -19,7 +21,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

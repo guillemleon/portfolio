@@ -1,7 +1,9 @@
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const useSettingsConfig = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const languages = useMemo(() => {
@@ -14,10 +16,10 @@ const useSettingsConfig = () => {
 
   const themes = useMemo(() => {
     return [
-      { id: '1-theme', name: 'DARK', value: 'dark' },
-      { id: '2-theme', name: 'LIGHT', value: 'light' },
+      { id: '1-theme', name: t('SETTINGS_DARK'), value: 'dark' },
+      { id: '2-theme', name: t('SETTINGS_LIGHT'), value: 'light' },
     ];
-  }, []);
+  }, [t]);
 
   const changeLang = (currentLang: string, newLang: string) => {
     const newPath = window.location.pathname.replace(`/${currentLang}`, `/${newLang}`);

@@ -4,4 +4,9 @@
   width: 100vw;
   min-height: 100vh;
   background: var(--background-color);
+  padding-left: 240px;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 0;
+  }
 }

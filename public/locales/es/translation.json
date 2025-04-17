@@ -1,4 +1,12 @@
 {
   "HOME_TITLE": "Guillem León Font",
-  "HOME_SUBTITLE": "Donde UX conoce el rendimiento"
+  "HOME_SUBTITLE": "Donde <span>UX</span> conoce el rendimiento",
+  "HEADER_ABOUT": "_Sobre mi",
+  "HEADER_PROJECTS": "_Proyectos",
+  "HEADER_CONTACT": "_Contacto",
+  "HEADER_SETTINGS": "_Ajustes",
+  "SETTINGS_LANGUAGE": "Idioma",
+  "SETTINGS_THEME": "Tema",
+  "SETTINGS_DARK": "Oscuro",
+  "SETTINGS_LIGHT": "Claro"
 }

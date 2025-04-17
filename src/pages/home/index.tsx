@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
+import DOMPurify from 'dompurify';
 import './index.scss';
 import Layout from '../../components/layout';
-import { useTranslation } from 'react-i18next';
 
 function Home() {
   const { t } = useTranslation();
+  const safeHTMLSubtitle = useMemo(() => {
+    return DOMPurify.sanitize(t('HOME_SUBTITLE'));
+  }, [t]);
 
   return (
     <Layout>
       <div className="home-container">
         <h1 className="home-title">{t('HOME_TITLE')}</h1>
-        <h2 className="home-subtitle">{t('HOME_SUBTITLE')}</h2>
+        <h2 className="home-subtitle" dangerouslySetInnerHTML={{ __html: safeHTMLSubtitle }}></h2>
       </div>
     </Layout>
   );

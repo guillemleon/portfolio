@@ -1,0 +1,87 @@
+@use '/src/variables.scss' as *;
+
+.header-mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.header-mobile-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 20px;
+  width: 100vw;
+  padding-left: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (max-width: 600px) {
+    width: max-content;
+    justify-content: flex-start;
+  }
+}
+
+.header-mobile-container::-webkit-scrollbar {
+  display: none;
+}
+
+.header-mobile-list::-webkit-scrollbar {
+  display: none;
+}
+
+.header-mobile-list-item {
+  margin-right: 10px;
+}
+
+.header-mobile-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  width: fit-content;
+  padding: 10px 20px;
+  height: 31px;
+  border-radius: 20px;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 1px solid var(--text-color);
+
+  &:hover {
+    background: var(--text-hover-color);
+    border: 1px solid var(--text-hover-color);
+    color: var(--text-inverted-color);
+  }
+
+  &:active {
+    border: 1px solid var(--text-hover-color);
+  }
+}
+
+.header-mobile-settings-container {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  height: 250px;
+  position: relative;
+
+  .header-settings-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+
+    @media screen and (max-width: 600px) {
+      position: fixed;
+      top: 60px;
+      right: 10px;
+    }
+  }
+}

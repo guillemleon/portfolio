@@ -1,4 +1,12 @@
 {
   "HOME_TITLE": "Guillem León Font",
-  "HOME_SUBTITLE": "Where UX meets performance"
+  "HOME_SUBTITLE": "Where <span>UX</span> meets performance",
+  "HEADER_ABOUT": "_About",
+  "HEADER_PROJECTS": "_Work",
+  "HEADER_CONTACT": "_Contact",
+  "HEADER_SETTINGS": "_Settings",
+  "SETTINGS_LANGUAGE": "Language",
+  "SETTINGS_THEME": "Theme",
+  "SETTINGS_DARK": "Dark",
+  "SETTINGS_LIGHT": "Light"
 }

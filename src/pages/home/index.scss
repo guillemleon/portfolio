@@ -19,6 +19,7 @@
   color: var(--text-color);
   font-size: 64px;
   font-weight: 800;
+  text-align: right;
   margin: 0;
 
   @media screen and (max-width: 1200px) {
@@ -34,6 +35,8 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  text-align: right;
+  white-space: nowrap;
   margin: 0;
 
   span {
@@ -43,5 +46,6 @@
   @media screen and (max-width: 1200px) {
     font-size: 26px;
     text-align: center;
+    white-space: wrap;
   }
 }

@@ -1,4 +1,12 @@
 {
   "HOME_TITLE": "Guillem León Font",
-  "HOME_SUBTITLE": "On la UX s'uneix amb el rendiment"
+  "HOME_SUBTITLE": "De la <span>UX</span> al rendiment, tot flueix",
+  "HEADER_ABOUT": "_Sobre mí",
+  "HEADER_PROJECTS": "_Projectes",
+  "HEADER_CONTACT": "_Contacte",
+  "HEADER_SETTINGS": "_Configuració",
+  "SETTINGS_LANGUAGE": "Idioma",
+  "SETTINGS_THEME": "Tema",
+  "SETTINGS_DARK": "Fosc",
+  "SETTINGS_LIGHT": "Clar"
 }

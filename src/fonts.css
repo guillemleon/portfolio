@@ -105,12 +105,10 @@
   src: url('/src/assets/fonts/JetBrainsMono-Thin.woff2') format('woff2');
 }
 
-/* Set default font family for the project */
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Add more specific font-family usage as needed in your project */
 h1,
 h2,
 h3,

@@ -2,17 +2,17 @@ import React, { useCallback } from 'react';
 import './index.scss';
 import { useTheme } from '../../../context/ThemeContext';
 import useSettingsConfig from './useSettingsConfig';
-import { useLocation, useMatch, useNavigate } from 'react-router-dom';
+import { useMatch } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 interface HeaderSettingsProps {
   setIsSettingsOpen: Function;
 }
 
 function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
+  const { t } = useTranslation();
   const match = useMatch('/:lang/*');
   const { lang } = match?.params || {};
-  const location = useLocation();
-  const navigate = useNavigate();
   const { setTheme, theme } = useTheme();
 
   const { languages, themes, changeLang } = useSettingsConfig();
@@ -34,7 +34,7 @@ function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
 
   return (
     <div className="header-settings-menu">
-      <p className="header-settings-title">Language</p>
+      <p className="header-settings-title">{t('SETTINGS_LANGUAGE')}</p>
       <div className="header-settings-chips-container">
         {languages.map((item) => (
           <button
@@ -46,7 +46,7 @@ function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
           </button>
         ))}
       </div>
-      <p className="header-settings-title">Theme</p>
+      <p className="header-settings-title">{t('SETTINGS_THEME')}</p>
       <div className="header-settings-chips-container">
         {themes.map((item) => (
           <button

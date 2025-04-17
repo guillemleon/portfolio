@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const useDeviceDetection = (): boolean => {
-  const [isMobile, setIsMobile] = useState<any>(null);
+const useDeviceDetection = (): boolean | null => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
     const checkDevice = () => {

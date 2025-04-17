@@ -2,11 +2,18 @@ import { useMemo } from 'react';
 import useCurrentLang from '../../hooks/useCurrentLang';
 import { useTranslation } from 'react-i18next';
 
+export interface LinkInterface {
+  id: string;
+  type: string;
+  name: string;
+  to: string | null;
+}
+
 const useHeaderConfig = () => {
   const { t } = useTranslation();
   const currentLang = useCurrentLang();
 
-  const links = useMemo(() => {
+  const links = useMemo((): LinkInterface[] => {
     return [
       { id: '1', type: 'link', name: t('HEADER_ABOUT'), to: `/${currentLang}/about` },
       { id: '2', type: 'link', name: t('HEADER_PROJECTS'), to: `/${currentLang}/projects` },

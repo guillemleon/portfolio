@@ -11,7 +11,7 @@ const pluginTypeScript = require('@typescript-eslint/eslint-plugin');
 /** @type {import("eslint").Linter.Config[]} */
 module.exports = [
   {
-    ignores: ['eslint.config.js', 'src/index.js', 'scripts/eslint.js'],
+    ignores: ['eslint.config.js', 'src/index.js', 'scripts/eslint.js', 'src/routes.js'],
   },
   {
     files: ['**/*.ts', '**/*.tsx'],

@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
-type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
 
 interface ThemeContextType {
   theme: Theme;
@@ -10,11 +10,11 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;
-    const initialTheme = savedTheme || 'light';
+    const initialTheme = savedTheme || 'dark';
     setTheme(initialTheme);
     document.body.classList.add(`${initialTheme}-mode`);
   }, []);

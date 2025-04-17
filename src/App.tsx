@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useParams,
   useNavigate,
   useLocation,
   useMatch,
@@ -10,6 +9,7 @@ import {
 import { useEffect } from 'react';
 import './normalize.css';
 import './fonts.css';
+import './app.scss';
 import { ThemeProvider } from './context/ThemeContext';
 import useDeviceDetection from './hooks/useDeviceDetection';
 import { useTranslation } from 'react-i18next';
@@ -43,13 +43,15 @@ const App = () => {
   if (isMobile === null) return null;
 
   return (
-    <ThemeProvider>
-      <Router>
-        <Routes>
-          <Route path="/*" element={<AppLangWrapper />} />
-        </Routes>
-      </Router>
-    </ThemeProvider>
+    <div className="app-container">
+      <ThemeProvider>
+        <Router>
+          <Routes>
+            <Route path="/*" element={<AppLangWrapper />} />
+          </Routes>
+        </Router>
+      </ThemeProvider>
+    </div>
   );
 };
 

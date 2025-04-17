@@ -8,6 +8,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  z-index: 999;
 }
 
 .header-mobile-list {
@@ -20,6 +21,7 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  margin-right: 10px;
 
   @media screen and (max-width: 600px) {
     width: max-content;

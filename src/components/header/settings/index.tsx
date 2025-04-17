@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import './index.scss';
 import { useTheme } from '../../../context/ThemeContext';
+import type { Theme } from '../../../context/ThemeContext';
 import useSettingsConfig from './useSettingsConfig';
 import { useMatch } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +28,7 @@ function HeaderSettings({ setIsSettingsOpen }: HeaderSettingsProps) {
     [lang, changeLang, setIsSettingsOpen]
   );
 
-  const handleThemeClick = useCallback((selectedTheme: any) => {
+  const handleThemeClick = useCallback((selectedTheme: Theme) => {
     setIsSettingsOpen(false);
     setTheme(selectedTheme);
   }, []);

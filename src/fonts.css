@@ -105,12 +105,32 @@
   src: url('/src/assets/fonts/JetBrainsMono-Thin.woff2') format('woff2');
 }
 
-/* Arcade */
 @font-face {
-  font-family: 'Arcade';
-  font-weight: 800;
+  font-family: 'PixelifySans';
+  font-weight: 400;
   font-style: normal;
-  src: url('/src/assets/fonts/Arcade.ttf') format('truetype');
+  src: url('/src/assets/fonts/PixelifySans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/src/assets/fonts/PixelifySans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/src/assets/fonts/PixelifySans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/src/assets/fonts/PixelifySans-Bold.ttf') format('truetype');
 }
 
 body {

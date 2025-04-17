@@ -2,11 +2,13 @@
 
 .layout-container {
   width: 100vw;
-  min-height: 100vh;
-  background: var(--background-color);
-  padding-left: 240px;
+  max-width: 1920px;
 
-  @media screen and (max-width: 1200px) {
-    padding-left: 0;
+  @media screen and (max-width: 1919px) {
+    padding-left: 0 !important;
+  }
+
+  @media screen and (max-width: 1920px) {
+    padding-left: 240px;
   }
 }

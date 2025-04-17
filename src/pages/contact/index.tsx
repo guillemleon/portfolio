@@ -13,7 +13,7 @@ function Contact() {
         <p className="contact-subtitle">{t('CONTACT_SUBTITLE')}</p>
         <span className="contact-separator">--</span>
         <p className="contact-email">
-          <span>{t('CONTACT_COMMAND_LINE')}</span> {t('CONTACT_EMAIL')}
+          <span>{t('COMMAND_LINE')}</span> {t('CONTACT_EMAIL')}
         </p>
       </div>
     </Layout>

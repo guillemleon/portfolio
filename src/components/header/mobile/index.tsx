@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import useHeaderConfig from '../useHeaderConfig';
+import type { LinkInterface } from '../useHeaderConfig';
 import HeaderSettings from '../settings';
 
 interface HeaderMobileProps {}
@@ -32,7 +33,7 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
   return (
     <div className="header-mobile-container">
       <ul className="header-mobile-list">
-        {links?.map((link: any) => (
+        {links?.map((link: LinkInterface) => (
           <li key={link.id} className="header-mobile-list-item">
             {link.type === 'settings' ? (
               <div ref={settingsRef} className="header-mobile-settings-container">
@@ -45,7 +46,7 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
                 {isSettingsOpen && <HeaderSettings setIsSettingsOpen={setIsSettingsOpen} />}
               </div>
             ) : (
-              <Link className="header-mobile-list-link" key={link.id} to={link.to}>
+              <Link className="header-mobile-list-link" key={link.id} to={!!link.to ? link.to : ''}>
                 {link.name}
               </Link>
             )}

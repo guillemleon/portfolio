@@ -8,5 +8,9 @@
   "SETTINGS_LANGUAGE": "Language",
   "SETTINGS_THEME": "Theme",
   "SETTINGS_DARK": "Dark",
-  "SETTINGS_LIGHT": "Light"
+  "SETTINGS_LIGHT": "Light",
+  "CONTACT_TITLE": "Contact",
+  "CONTACT_SUBTITLE": "Let's work together!",
+  "CONTACT_COMMAND_LINE": "visitor@get-in-touch-to:$",
+  "CONTACT_EMAIL": "guillem.leonf@gmail.com"
 }

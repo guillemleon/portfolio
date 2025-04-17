@@ -40,6 +40,7 @@ body {
 /* 2. Ensure text inherits correctly */
 html {
   font-family: sans-serif;
+  background-color: #1e1e1e;
 }
 
 /* 3. Ensure all block elements take up 100% width */
@@ -47,7 +48,6 @@ body {
   width: 100%;
   line-height: 1.5;
   font-size: 16px;
-  background-color: #fff;
   color: #333;
 }
 

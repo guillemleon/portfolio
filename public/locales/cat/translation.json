@@ -8,5 +8,9 @@
   "SETTINGS_LANGUAGE": "Idioma",
   "SETTINGS_THEME": "Tema",
   "SETTINGS_DARK": "Fosc",
-  "SETTINGS_LIGHT": "Clar"
+  "SETTINGS_LIGHT": "Clar",
+  "CONTACT_TITLE": "Contacte",
+  "CONTACT_SUBTITLE": "Treballem junts!",
+  "CONTACT_COMMAND_LINE": "visitor@get-in-touch-to:$",
+  "CONTACT_EMAIL": "guillem.leonf@gmail.com"
 }

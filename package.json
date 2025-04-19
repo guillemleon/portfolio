@@ -43,7 +43,8 @@
     "webpack": "5.99.5",
     "webpack-cli": "6.0.1",
     "webpack-dev-server": "5.2.1",
-    "webpack-merge": "6.0.1"
+    "webpack-merge": "6.0.1",
+    "wrangler": "4.12.0"
   },
   "dependencies": {
     "clean-webpack-plugin": "4.0.0",

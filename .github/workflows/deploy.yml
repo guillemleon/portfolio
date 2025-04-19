@@ -27,12 +27,18 @@ jobs:
 
       - name: Login to Cloudflare using Wrangler
         run: wrangler login
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
       - name: Build project
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
         run: npm run deploy:worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
       - name: Deploy to Cloudflare Worker
         run: wrangler publish
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

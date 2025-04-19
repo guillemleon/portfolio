@@ -3,7 +3,7 @@ name: Deploy to Cloudflare Pages and Worker
 on:
   push:
     branches:
-      - main
+      - main # Esto se ejecuta cuando haces push a la rama "main". Cambia si es necesario.
 
 jobs:
   build-and-deploy:
@@ -17,13 +17,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22.14.0
+          node-version: '22.14.0'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build project
         run: npm run build
+
+      - name: Login to Cloudflare using Wrangler
+        run: wrangler login
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
       - name: Deploy to Cloudflare Pages
         run: npm run deploy:worker

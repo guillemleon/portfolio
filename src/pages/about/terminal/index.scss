@@ -1,15 +1,144 @@
 @use '/src/variables.scss' as *;
 
 .terminal-container {
+  position: relative;
   width: 100%;
   max-height: 700px;
   height: 70%;
-  background-color: #000000;
-  border: 1px solid var(--text-hover-color);
+  user-select: none;
+
+  @media screen and (max-width: 1200px) {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.terminal-content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border-left: 1px solid var(--text-hover-color);
+  border-right: 1px solid var(--text-hover-color);
+  border-bottom: 1px solid var(--text-hover-color);
   padding: 0 30px 0 30px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   overflow-y: scroll;
+  overflow-x: hidden;
   box-shadow: 0 0 40px -20px var(--text-hover-color);
+  scrollbar-width: normal;
+  scrollbar-color: gray;
+  position: relative;
+  transition: height 0.5s ease-in-out;
+  cursor: text;
+
+  @media screen and (max-width: 1200px) {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.terminal-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background-color: var(--text-hover-color);
+  border-radius: 10px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background-color: #000;
+  border-radius: 10px;
+  display: none;
+}
+
+.terminal-header {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  z-index: 999;
+  top: -50px;
+  border-left: 1px solid var(--text-hover-color);
+  border-right: 1px solid var(--text-hover-color);
+  border-top: 1px solid var(--text-hover-color);
+  border-bottom: 1px solid var(--text-hover-color);
+  padding-right: 5px;
+  box-shadow: 0 0 40px -20px var(--text-hover-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.terminal-header-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+
+  p {
+    margin: 0 0 0 10px;
+  }
+}
+
+.terminal-header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.terminal-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  z-index: 999;
+  margin: 0 5px;
+}
+
+.terminal-button-close {
+  @extend .terminal-button;
+  background-color: #ff605c;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terminal-button-maximize {
+  @extend .terminal-button;
+  background-color: #00ca4e;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terminal-button-minimize {
+  @extend .terminal-button;
+  background-color: #ffbd44;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terminal-icon {
+  width: 80px;
+  user-select: none;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .terminal-title {
@@ -74,6 +203,14 @@
   background-color: white;
   margin-left: 2px;
   animation: blink 1s steps(1) infinite;
+}
+
+.terminal-minimized {
+  height: 0;
+}
+
+.terminal-maximized {
+  height: 100%;
 }
 
 @keyframes blink {

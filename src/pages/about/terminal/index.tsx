@@ -1,10 +1,11 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TERMINAL_COMMANDS } from './config';
 import DOMPurify from 'dompurify';
 import './index.scss';
 import useCurrentLang from '../../../hooks/useCurrentLang';
 import { useTheme } from '../../../context/ThemeContext';
+import termIcon from '../../../assets/img/term-icon.png';
 
 interface TerminalProps {
   title: string;
@@ -15,6 +16,8 @@ function Terminal({ title }: TerminalProps) {
   const lang = useCurrentLang();
   const { theme } = useTheme();
   const [inputValue, setInputValue] = useState('');
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isTerminalMinimized, setIsTerminalMinimized] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const terminalContent = useRef<HTMLDivElement>(null);
@@ -22,7 +25,7 @@ function Terminal({ title }: TerminalProps) {
 
   useEffect(() => {
     if (terminalContent.current && inputRef.current) {
-      terminalContent.current.innerHTML = '';
+      cleanTerminal();
       inputRef.current?.focus();
     }
   }, [lang, theme, terminalContent.current, inputRef.current]);
@@ -30,6 +33,10 @@ function Terminal({ title }: TerminalProps) {
   useEffect(() => {
     inputRef.current?.focus();
   }, [inputRef.current]);
+
+  const cleanTerminal = useCallback(() => {
+    if (terminalContent.current) terminalContent.current.innerHTML = '';
+  }, [terminalContent.current]);
 
   const handleEnterPress = useCallback(() => {
     if (!terminalContent.current) return;
@@ -52,6 +59,9 @@ function Terminal({ title }: TerminalProps) {
         break;
       case 'clear':
         terminalContent.current.innerHTML = '';
+        break;
+      case 'exit':
+        handleCloseTerminal();
         break;
       case '':
         return;
@@ -84,24 +94,64 @@ function Terminal({ title }: TerminalProps) {
     [inputValue, setInputValue, handleEnterPress]
   );
 
+  const handleCloseTerminal = () => {
+    setIsTerminalOpen(false);
+    setIsTerminalMinimized(false);
+    cleanTerminal();
+  };
+
+  const getTerminalStatusClass = useMemo(() => {
+    if (isTerminalMinimized) return 'terminal-minimized';
+
+    return 'terminal-maximized';
+  }, [isTerminalMinimized]);
+
   return (
-    <div
-      ref={terminalContainer}
-      className="terminal-container"
-      onClick={() => inputRef.current?.focus()}
-    >
-      <h1 className="terminal-title">{title}</h1>
-      <p className="terminal-text">{t('TERMINAL_HELP')}</p>
-      <p className="terminal-text">{'> --'}</p>
-      <div ref={terminalContent} />
-      <div className="terminal-text">
-        <span>{t('COMMAND_LINE')}</span>
-        <div className="terminal-fake-input">
-          <span className="typed">{inputValue}</span>
-          <span className="terminal-cursor" />
-          <input ref={inputRef} className="real-hidden-input" onKeyDown={handleKeyDown} />
-        </div>
-      </div>
+    <div className="terminal-container">
+      {isTerminalOpen ? (
+        <>
+          <div className="terminal-header">
+            <div className="terminal-header-image-container">
+              <img src={termIcon}></img>
+              <p>Terminal</p>
+            </div>
+            <div className="terminal-header-buttons">
+              <button
+                onClick={() => setIsTerminalMinimized(false)}
+                className="terminal-button-maximize"
+              ></button>
+              <button
+                onClick={() => setIsTerminalMinimized(true)}
+                className="terminal-button-minimize"
+              ></button>
+              <button onClick={handleCloseTerminal} className="terminal-button-close"></button>
+            </div>
+          </div>
+          <div
+            ref={terminalContainer}
+            className={`terminal-content ${getTerminalStatusClass}`}
+            onClick={() => inputRef.current?.focus()}
+          >
+            <h1 className="terminal-title">{title}</h1>
+            <p className="terminal-text">{t('TERMINAL_HELP')}</p>
+            <p className="terminal-text">{'> --'}</p>
+            <div ref={terminalContent} />
+            <div className="terminal-text">
+              <span>{t('COMMAND_LINE')}</span>
+              <div className="terminal-fake-input">
+                <span className="typed">{inputValue}</span>
+                <span className="terminal-cursor" />
+                <input ref={inputRef} className="real-hidden-input" onKeyDown={handleKeyDown} />
+              </div>
+            </div>
+          </div>
+        </>
+      ) : (
+        <button onClick={() => setIsTerminalOpen(true)} className="terminal-icon">
+          <img src={termIcon}></img>
+          <p>Terminal</p>
+        </button>
+      )}
     </div>
   );
 }

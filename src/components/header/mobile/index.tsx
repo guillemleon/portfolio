@@ -36,15 +36,15 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
         {links?.map((link: LinkInterface) => (
           <li key={link.id} className="header-mobile-list-item">
             {link.type === 'settings' ? (
-              <div ref={settingsRef} className="header-mobile-settings-container">
+              // <div ref={settingsRef} className="header-mobile-settings-container">
+              <>
                 <button
                   onClick={() => setIsSettingsOpen((prevState) => !prevState)}
                   className="header-mobile-list-link"
                 >
                   {link.name}
                 </button>
-                {isSettingsOpen && <HeaderSettings setIsSettingsOpen={setIsSettingsOpen} />}
-              </div>
+              </>
             ) : (
               <Link className="header-mobile-list-link" key={link.id} to={!!link.to ? link.to : ''}>
                 {link.name}
@@ -52,6 +52,7 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
             )}
           </li>
         ))}
+        {isSettingsOpen && <HeaderSettings setIsSettingsOpen={setIsSettingsOpen} />}
       </ul>
     </div>
   );

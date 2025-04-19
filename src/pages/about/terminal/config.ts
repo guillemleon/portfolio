@@ -10,6 +10,7 @@ const TERMINAL_COMMANDS = (t: Function) => {
                 <li>- cat about</li>
                 <li>- ls skills</li>
                 <li>- clear</li>
+                <li>- exit</li>
             </ul>
         </div>
     </div>

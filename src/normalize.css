@@ -15,7 +15,7 @@ body {
 }
 
 .dark-mode {
-  --background-color: linear-gradient(232deg, #1e1e1e 18.22%, #151515 71.75%);
+  --background-color: linear-gradient(232deg, #151515 18.22%, #0d0d0d 71.75%);
   --text-color: #fff;
   --text-inverted-color: #151515;
   --text-hover-color: #88ff00;

@@ -1,11 +1,9 @@
 @use '/src/variables.scss' as *;
 
 .header-settings-menu {
-  position: absolute;
   width: 220px;
   height: fit-content;
   border: 1px solid var(--text-hover-color);
-  right: -220px;
   border-radius: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
@@ -14,9 +12,18 @@
   padding: 15px;
   background: var(--background-color);
   box-shadow: 0 0 40px -20px var(--text-hover-color);
+  position: absolute;
+  top: 0px;
+  transform: translateX(-90px);
+  z-index: 999;
+
+  @media screen and (min-width: 1201px) {
+    left: 195px;
+  }
 
   @media screen and (max-width: 1200px) {
     border-radius: 10px 0 10px 10px;
+    position: fixed;
   }
 }
 

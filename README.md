@@ -1,6 +1,6 @@
 # ⚛️ Portfolio 2025
 
-Guillem Leon's personal portfolio.
+Guillem Leon's personal portfolio
 
 ---
 

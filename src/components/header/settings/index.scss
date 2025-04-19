@@ -14,11 +14,11 @@
   box-shadow: 0 0 40px -20px var(--text-hover-color);
   position: absolute;
   top: 0px;
-  transform: translateX(-90px);
   z-index: 999;
+  user-select: none;
 
   @media screen and (min-width: 1201px) {
-    left: 195px;
+    left: 100%;
   }
 
   @media screen and (max-width: 1200px) {

@@ -136,6 +136,10 @@
     height: 100%;
   }
 
+  p {
+    color: #fff !important;
+  }
+
   @media screen and (max-width: 1200px) {
     margin-left: 10px;
   }
@@ -148,6 +152,7 @@
   margin-bottom: 0px;
   margin-top: 0;
   color: var(--text-hover-color);
+  user-select: none;
 
   @media screen and (max-width: 1200px) {
     font-size: 64px;

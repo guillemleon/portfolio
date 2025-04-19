@@ -2,7 +2,7 @@
 
 .header-container {
   width: 240px;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   position: absolute;
@@ -18,7 +18,7 @@
 }
 
 .header-list-item {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .header-list-link {
@@ -30,10 +30,16 @@
   font-style: normal;
   color: var(--text-color);
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     color: var(--text-hover-color);
   }
+}
+
+.header-list-link-selected {
+  @extend .header-list-link;
+  color: var(--text-hover-color) !important;
 }
 
 .header-settings-container {

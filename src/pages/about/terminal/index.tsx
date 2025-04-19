@@ -34,6 +34,13 @@ function Terminal({ title }: TerminalProps) {
     inputRef.current?.focus();
   }, [inputRef.current]);
 
+  const handleScrollToBottom = useCallback(() => {
+    const el = terminalContainer.current;
+    if (el) {
+      el.scrollTop = el.scrollHeight;
+    }
+  }, [terminalContainer.current]);
+
   const cleanTerminal = useCallback(() => {
     if (terminalContent.current) terminalContent.current.innerHTML = '';
   }, [terminalContent.current]);
@@ -72,13 +79,11 @@ function Terminal({ title }: TerminalProps) {
 
     terminalContent.current.appendChild(message);
     setInputValue('');
+    handleScrollToBottom();
   }, [inputValue, t]);
 
   useEffect(() => {
-    const el = terminalContainer.current;
-    if (el) {
-      el.scrollTop = el.scrollHeight;
-    }
+    if (inputValue.length > 0) handleScrollToBottom();
   }, [inputValue]);
 
   const handleKeyDown = useCallback(

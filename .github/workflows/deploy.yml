@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages and Workers
+name: Deploy to Cloudflare Pages
 
 on:
   push:
@@ -45,27 +45,5 @@ jobs:
 
       - name: Deploy to Pages
         run: npx wrangler pages deploy ./dist --project-name=portfolio
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-
-  deploy_worker:
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Worker
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 22.14.0
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Publish Worker
-        run: npx wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

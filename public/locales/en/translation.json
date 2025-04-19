@@ -2,7 +2,7 @@
   "HOME_TITLE": "Guillem León Font",
   "HOME_SUBTITLE": "Where <span>UX</span> meets performance",
   "HEADER_ABOUT": "_About",
-  "HEADER_PROJECTS": "_Work",
+  "HEADER_WORK": "_Work",
   "HEADER_CONTACT": "_Contact",
   "HEADER_SETTINGS": "_Settings",
   "SETTINGS_LANGUAGE": "Language",
@@ -20,5 +20,6 @@
   "TERMINAL_HELP": "> Type 'help' to see available commands.",
   "COMMAND_LINE": "visitor@guillemleon.com:$",
   "ABOUT_SKILLS_OTHERS": "Others",
-  "TERMINAL_AVAILABLE_COMMANDS": "This is the list of the available commands:"
+  "TERMINAL_AVAILABLE_COMMANDS": "This is the list of the available commands:",
+  "WIP_TITLE": "Coming soon..."
 }

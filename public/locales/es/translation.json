@@ -2,7 +2,7 @@
   "HOME_TITLE": "Guillem León Font",
   "HOME_SUBTITLE": "Donde <span>UX</span> conoce el rendimiento",
   "HEADER_ABOUT": "_Sobre mi",
-  "HEADER_PROJECTS": "_Proyectos",
+  "HEADER_WORK": "_Proyectos",
   "HEADER_CONTACT": "_Contacto",
   "HEADER_SETTINGS": "_Ajustes",
   "SETTINGS_LANGUAGE": "Idioma",
@@ -20,5 +20,6 @@
   "ABOUT_PARAGRAPH_3": "En el backend, suelo trabajar con Django y Python. Me encargo de crear APIs REST, gestionar autenticación y conectar con bases de datos SQL cuando hace falta. También me gusta meterme en temas de HTTP, resolver bugs raros del navegador y asegurar que todo fluya bien de principio a fin.",
   "ABOUT_PARAGRAPH_4": "En resumen: me gusta hacer que las cosas funcionen bien, se vean bien y duren en el tiempo.",
   "ABOUT_SKILLS_OTHERS": "Otros",
-  "TERMINAL_AVAILABLE_COMMANDS": "Estos son los comandos disponibles:"
+  "TERMINAL_AVAILABLE_COMMANDS": "Estos son los comandos disponibles:",
+  "WIP_TITLE": "Próximamente..."
 }

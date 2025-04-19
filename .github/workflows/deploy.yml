@@ -1,4 +1,4 @@
-name: CI/CD for Cloudflare Pages and Worker
+name: CI/CD Pipeline
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: 🏗️ Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,9 +24,13 @@ jobs:
         run: npm run build
 
   deploy_pages:
-    name: Deploy to Cloudflare Pages
+    name: 🚀 Deploy to Cloudflare Pages
     runs-on: ubuntu-latest
     needs: build
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      CF_EMAIL: ${{ secrets.CF_EMAIL }}
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v3
 
@@ -35,24 +39,24 @@ jobs:
 
       - name: Deploy to Pages
         run: |
-          wrangler pages deploy dist \
+          wrangler pages deploy ./dist \
             --project-name=portfolio \
-            --branch=main \
-            --account-id=${{ secrets.CF_ACCOUNT_ID }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+            --branch=main
 
   deploy_worker:
-    name: Deploy to Cloudflare Worker
+    name: 🛠️ Deploy to Cloudflare Worker
     runs-on: ubuntu-latest
     needs: build
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      CF_EMAIL: ${{ secrets.CF_EMAIL }}
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v3
 
       - name: Install Wrangler CLI
         run: npm install -g wrangler
 
-      - name: Publish Worker
-        run: wrangler publish --account-id=${{ secrets.CF_ACCOUNT_ID }}
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      - name: Deploy Worker
+        run: |
+          wrangler deploy

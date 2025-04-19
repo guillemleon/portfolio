@@ -1,8 +1,7 @@
 name = "portfolio"
-pages_build_output_dir = "dist"
-
-account_id = "58c52f084214635cff602ef10df2c18c"
 compatibility_date = "2025-04-19"
+
+pages_build_output_dir = "dist"
 
 [env.production]
 zone_id = "646fe445b74e4592d7e457d403c7cd5b"

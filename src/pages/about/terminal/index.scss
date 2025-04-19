@@ -137,11 +137,16 @@
   }
 
   p {
-    color: #fff !important;
+    color: var(--text-color);
   }
 
   @media screen and (max-width: 1200px) {
     margin-left: 10px;
+    color: #fff;
+
+    p {
+      color: #fff;
+    }
   }
 }
 
@@ -162,17 +167,26 @@
 
 .terminal-text {
   margin: 10px 0;
-  color: #fff;
+  color: var(--text-color);
   display: flex;
   align-items: center;
 
   p,
   li {
-    color: #fff;
+    color: var(--text-color);
   }
 
   span {
     color: var(--text-hover-color);
+  }
+
+  @media screen and (max-width: 1200px) {
+    color: #fff;
+
+    p,
+    li {
+      color: #fff;
+    }
   }
 }
 
@@ -189,7 +203,11 @@
 
 .typed {
   white-space: pre;
-  color: #fff !important;
+  color: var(--text-color) !important;
+
+  @media screen and (max-width: 1200px) {
+    color: #fff !important;
+  }
 }
 
 .real-hidden-input {
@@ -205,9 +223,13 @@
 .terminal-cursor {
   width: 10px;
   height: 24px;
-  background-color: white;
+  background-color: var(--text-color);
   margin-left: 2px;
   animation: blink 1s steps(1) infinite;
+
+  @media screen and (max-width: 1200px) {
+    background-color: #fff;
+  }
 }
 
 .terminal-minimized {

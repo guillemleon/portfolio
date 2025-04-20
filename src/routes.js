@@ -1,22 +1,34 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Contact from './pages/contact';
 import Work from './pages/work';
 import About from './pages/about';
 import Home from './pages/home';
 import NotFound from './pages/not-found';
 
-const AppRoutes = () => (
-  <Routes>
-    <Route path="/" element={<Navigate to="/en" />} />
+const validLangs = ['en', 'es', 'cat'];
 
-    <Route path="/:lang" element={<Home />} />
-    <Route path="/:lang/about" element={<About />} />
-    <Route path="/:lang/work" element={<Work />} />
-    <Route path="/:lang/contact" element={<Contact />} />
-    <Route path="/:lang/project/:id" element={<div />} />
-    <Route path="/*" element={<NotFound />} />
-  </Routes>
-);
+const AppRoutes = () => {
+  const location = useLocation();
+
+  const lang = location.pathname.split('/')[1];
+
+  if (lang && !validLangs.includes(lang)) {
+    return <NotFound />;
+  }
+
+  return (
+    <Routes>
+      <Route path="/:lang" element={<Home />} />
+      <Route path="/:lang/about" element={<About />} />
+      <Route path="/:lang/work" element={<Work />} />
+      <Route path="/:lang/contact" element={<Contact />} />
+      <Route path="/:lang/project/:id" element={<div />} />
+      <Route path="/:lang/*" element={<NotFound />} />
+      <Route path="/" element={<Navigate to="/en" />} />
+      <Route path="/*" element={<NotFound />} />
+    </Routes>
+  );
+};
 
 export default AppRoutes;

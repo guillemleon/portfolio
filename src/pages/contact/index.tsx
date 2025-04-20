@@ -7,7 +7,7 @@ function Contact() {
   const { t } = useTranslation();
 
   return (
-    <Layout>
+    <Layout isBannerVisible={true}>
       <div className="contact-container">
         <h1 className="contact-title">{t('CONTACT_TITLE')}</h1>
         <p className="contact-subtitle">{t('CONTACT_SUBTITLE')}</p>

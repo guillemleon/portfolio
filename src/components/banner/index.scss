@@ -8,9 +8,9 @@
   align-items: center;
   overflow: hidden;
   position: absolute;
-  // background-color: #1c1c1c;
   background: linear-gradient(to right, #151515, #1e1e1e);
   top: 0;
+  box-shadow: 0 0 30px -10px var(--text-hover-color);
 
   @media screen and (max-width: 1200px) {
     top: unset;
@@ -21,7 +21,7 @@
 
 .banner-items-wrapper {
   display: flex;
-  animation: displacement 10s linear infinite;
+  animation: displacement 15s linear infinite;
 }
 
 .banner-item {

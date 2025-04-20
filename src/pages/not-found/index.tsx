@@ -7,7 +7,7 @@ function NotFound() {
   const { t } = useTranslation();
 
   return (
-    <Layout>
+    <Layout isBannerVisible={true}>
       <div className="page-not-found-container">
         <h1>404</h1>
         <p>{t('PAGE_NOT_FOUND')}</p>

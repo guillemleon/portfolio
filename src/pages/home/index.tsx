@@ -15,7 +15,7 @@ function Home() {
   }, [t]);
 
   return (
-    <Layout>
+    <Layout isBannerVisible={true}>
       <div className="home-container">
         <h1 className="home-title">{t('HOME_TITLE')}</h1>
         <h2 className="home-subtitle" dangerouslySetInnerHTML={{ __html: safeHTMLSubtitle }}></h2>

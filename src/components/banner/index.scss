@@ -23,11 +23,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.banner-item img {
-  height: 30px;
-  width: 100%;
+  img {
+    height: 30px;
+    width: 100%;
+  }
 }
 
 @keyframes displacement {

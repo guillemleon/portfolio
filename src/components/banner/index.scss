@@ -1,0 +1,40 @@
+@use '../../variables.scss' as *;
+
+.banner-container {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  background-color: #1e1e1e;
+  top: 0;
+}
+
+.banner-items-wrapper {
+  display: flex;
+  animation: displacement 10s linear infinite;
+}
+
+.banner-item {
+  margin: 0 20px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-item img {
+  height: 30px;
+  width: 100%;
+}
+
+@keyframes displacement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}

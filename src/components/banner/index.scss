@@ -8,8 +8,15 @@
   align-items: center;
   overflow: hidden;
   position: absolute;
-  background-color: #1e1e1e;
+  // background-color: #1c1c1c;
+  background: linear-gradient(to right, #151515, #1e1e1e);
   top: 0;
+
+  @media screen and (max-width: 1200px) {
+    top: unset;
+    bottom: 0;
+    background: #151515;
+  }
 }
 
 .banner-items-wrapper {

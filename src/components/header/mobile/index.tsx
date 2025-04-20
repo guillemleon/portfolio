@@ -18,6 +18,10 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
   const currentLang = useCurrentLang();
   const { links } = useHeaderConfig();
 
+  useEffect(() => {
+    return () => setIsOpen(false);
+  }, []);
+
   const getLinkClassBasedOnCurrentRoute = useCallback(
     (link: LinkInterface) => {
       if (

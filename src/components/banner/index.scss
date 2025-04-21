@@ -29,8 +29,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 140px;
+  box-sizing: border-box;
 
   img {
+    position: relative;
     height: 30px;
   }
 }

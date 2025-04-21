@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './index.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useHeaderConfig from '../useHeaderConfig';
 import type { LinkInterface } from '../useHeaderConfig';
 import HeaderSettings from '../settings';
@@ -10,8 +10,6 @@ import useCurrentLang from '../../../hooks/useCurrentLang';
 interface HeaderMobileProps {}
 
 const HeaderMobile = ({}: HeaderMobileProps) => {
-  const navigate = useNavigate();
-
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -61,13 +59,6 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
     };
   }, [isSettingsOpen]);
 
-  const handleClick = (e: any, to: string) => {
-    e.preventDefault();
-    setIsOpen(false);
-    setTimeout(() => navigate(to), 0);
-    return true;
-  };
-
   return (
     <>
       <button className={burgerMenuClassBasedOnCurrentRoute} onClick={() => setIsOpen(!isOpen)}>
@@ -92,7 +83,6 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
                   <Link
                     className={getLinkClassBasedOnCurrentRoute(link)}
                     key={link.id}
-                    onClick={(e: any) => handleClick(e, !!link.to ? link.to : '')}
                     to={!!link.to ? link.to : ''}
                   >
                     {link.name}

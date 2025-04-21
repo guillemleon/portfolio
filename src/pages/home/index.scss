@@ -28,9 +28,12 @@
 
   img {
     height: 64px;
+    width: 64px;
     margin-right: 15px;
 
     @media screen and (max-width: 1200px) {
+      height: 64px;
+      width: 64px;
       flex-direction: column;
       margin-right: 0;
       margin-bottom: 15px;

@@ -6,29 +6,15 @@ import keolisLogo from '../../assets/logos/keolis.png';
 import extiaLogo from '../../assets/logos/extia.png';
 import flykubeLogo from '../../assets/logos/flykube.png';
 
-const bannerImages = [
-  filminLogo,
-  caixabankLogo,
-  keolisLogo,
-  extiaLogo,
-  flykubeLogo,
-  filminLogo,
-  caixabankLogo,
-  keolisLogo,
-  extiaLogo,
-  flykubeLogo,
-  filminLogo,
-  caixabankLogo,
-  keolisLogo,
-  extiaLogo,
-  flykubeLogo,
-];
+const bannerImages = [filminLogo, caixabankLogo, keolisLogo, extiaLogo, flykubeLogo];
+
+const repeatedBannerImages = Array(5).fill(bannerImages).flat();
 
 function Banner() {
   return (
     <div className="banner-container">
       <div className="banner-items-wrapper">
-        {bannerImages.map((imageSrc, index) => (
+        {repeatedBannerImages.map((imageSrc, index) => (
           <div key={index} className="banner-item">
             <img src={imageSrc} alt={`banner-item-${index}`} />
           </div>

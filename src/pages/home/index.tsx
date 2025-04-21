@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import DOMPurify from 'dompurify';
 import './index.scss';
 import Layout from '../../components/layout';
+import icon from '../../assets/icons/icon_white.png';
 
 const GRID_SIZE = 20;
 
@@ -17,7 +18,10 @@ function Home() {
   return (
     <Layout isBannerVisible={true}>
       <div className="home-container">
-        <h1 className="home-title">{t('HOME_TITLE')}</h1>
+        <div className="home-title-container">
+          <img src={icon} />
+          <h1 className="home-title">{t('HOME_TITLE')}</h1>
+        </div>
         <h2 className="home-subtitle" dangerouslySetInnerHTML={{ __html: safeHTMLSubtitle }}></h2>
       </div>
     </Layout>

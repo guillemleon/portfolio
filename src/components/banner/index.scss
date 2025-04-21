@@ -10,6 +10,7 @@
   position: absolute;
   background: linear-gradient(to right, #151515, #1e1e1e);
   top: 0;
+  left: 0;
   box-shadow: 0 0 30px -10px var(--text-hover-color);
 
   @media screen and (max-width: 1200px) {
@@ -44,6 +45,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.33%);
+    transform: translateX(-40%);
   }
 }

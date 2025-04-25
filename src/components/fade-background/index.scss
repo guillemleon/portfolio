@@ -1,0 +1,19 @@
+.fade-background {
+  width: 90%;
+  height: 100%;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    background-position: center !important;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

@@ -13,6 +13,7 @@ function Work() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [translateX, setTranslateX] = useState(0);
   const [isPreloadedImages, setIsPreloadedImages] = useState(false);
+  const [startX, setStartX] = useState(null);
 
   const { t } = useTranslation();
 
@@ -37,6 +38,26 @@ function Work() {
     },
     [data]
   );
+
+  const handleTouchStart = (e: any) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: any) => {
+    if (startX === null) return;
+
+    const currentX = e.touches[0].clientX;
+    const deltaX = currentX - startX;
+
+    if (Math.abs(deltaX) > 30) {
+      if (deltaX > 0) {
+        onDirectionalClick('ArrowLeft');
+      } else {
+        onDirectionalClick('ArrowRight');
+      }
+      setStartX(null);
+    }
+  };
 
   useEffect(() => {
     fetchData();
@@ -69,18 +90,18 @@ function Work() {
             <h1 className="work-title">{data[currentIndex]?.title}</h1>
             <div className="work-list-container">
               <div className="work-list-buttons-container">
-                <button className="work-list-navigation-button">See More</button>
+                <button className="work-list-navigation-button">{t('WIP_TITLE')}</button>
                 <button
                   className="work-list-directional-button"
+                  disabled={currentIndex === 0}
                   onClick={() => onDirectionalClick('ArrowLeft')}
-                  onTouchMove={() => onDirectionalClick('ArrowLeft')}
                 >
                   {'<'}
                 </button>
                 <button
                   className="work-list-directional-button"
+                  disabled={currentIndex === data?.length - 1}
                   onClick={() => onDirectionalClick('ArrowRight')}
-                  onTouchMove={() => onDirectionalClick('ArrowRight')}
                 >
                   {'>'}
                 </button>
@@ -90,6 +111,8 @@ function Work() {
                 style={{
                   transform: `translateX(${translateX}px)`,
                 }}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
               >
                 {data?.map((item: any, index: number) => (
                   <li
@@ -108,6 +131,14 @@ function Work() {
                   </li>
                 ))}
               </ul>
+              <div className="dot-container">
+                {data?.map((_: any, index: number) => (
+                  <div
+                    key={index}
+                    className={`dot ${currentIndex === index ? 'dot-selected' : ''}`}
+                  ></div>
+                ))}
+              </div>
             </div>
           </>
         )}

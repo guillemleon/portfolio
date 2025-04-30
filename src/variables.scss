@@ -4,10 +4,12 @@ $black: #151515;
 // DARK MODE
 $dark-background: linear-gradient(232deg, rgba(11, 11, 11, 1) 18.22%, rgba(11, 11, 11, 1) 71.75%);
 $dark-text: #fff;
+$dark-url: #00fffb;
 
 // LIGHT MODE
 $light-background: linear-gradient(232deg, #e0e0e0 18.22%, #e0e0e0 71.75%);
 $light-text: #151515;
+$light-url: #00aca9;
 
 .dark-mode {
   background: $dark-background;

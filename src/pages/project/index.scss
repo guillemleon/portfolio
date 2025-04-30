@@ -1,0 +1,69 @@
+@use '/src/variables.scss' as *;
+
+.project-container {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px 30vw 60px 240px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 70px 20px 50px 20px;
+  }
+}
+
+.project-container-no-height {
+  @extend .project-container;
+  height: 100svh;
+}
+
+.project-title {
+  font-size: 64px;
+  font-weight: 700;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.project-url-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.project-url-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-url-arrow-container {
+  margin: 0 10px;
+
+  path {
+    fill: var(--text-color);
+  }
+}
+
+.project-url {
+  color: var(--url-color);
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.project-image-container {
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

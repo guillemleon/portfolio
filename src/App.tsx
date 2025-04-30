@@ -14,6 +14,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import useDeviceDetection from './hooks/useDeviceDetection';
 import { useTranslation } from 'react-i18next';
 import AppRoutes from './routes';
+import { AppProvider } from './context/AppContext';
 
 const AppLangWrapper = () => {
   const match = useMatch('/:lang/*');
@@ -44,13 +45,15 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <ThemeProvider>
-        <Router>
-          <Routes>
-            <Route path="/*" element={<AppLangWrapper />} />
-          </Routes>
-        </Router>
-      </ThemeProvider>
+      <AppProvider>
+        <ThemeProvider>
+          <Router>
+            <Routes>
+              <Route path="/*" element={<AppLangWrapper />} />
+            </Routes>
+          </Router>
+        </ThemeProvider>
+      </AppProvider>
     </div>
   );
 };

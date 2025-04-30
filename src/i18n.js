@@ -11,7 +11,7 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
     },
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },

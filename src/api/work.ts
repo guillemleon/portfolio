@@ -8,11 +8,28 @@ const fetchWorkFromAPI = async () => {
       },
     });
     if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-    const projects = await res.json();
-    return projects;
+    const work = await res.json();
+    return work;
   } catch (err) {
     console.error('Error trying GET:', err);
   }
 };
 
-export { fetchWorkFromAPI };
+const fetchProjectFromAPI = async (id: number) => {
+  try {
+    const res = await fetch(`https://back.guillemleon.com/api/projects/${id}`, {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    const project = await res.json();
+    return project;
+  } catch (err) {
+    console.error('Error trying GET:', err);
+  }
+};
+
+export { fetchWorkFromAPI, fetchProjectFromAPI };

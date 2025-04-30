@@ -19,6 +19,7 @@ body {
   --text-color: #fff;
   --text-inverted-color: #151515;
   --text-hover-color: #88ff00;
+  --url-color: #00fffb;
 }
 
 .light-mode {
@@ -26,6 +27,7 @@ body {
   --text-color: #151515;
   --text-inverted-color: #fff;
   --text-hover-color: #d100ed;
+  --url-color: #009694;
 }
 
 /* 1. Reset margin and padding for all elements */

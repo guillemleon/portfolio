@@ -5,6 +5,11 @@ import './index.scss';
 import { fetchWorkFromAPI } from '../../api/work';
 import FadeBackground from '../../components/fade-background';
 import { preloadImages } from '../../utils/preloadImages';
+import PulseLoader from '../../components/pulse-loader';
+import ArrowRightIcon from '../../icons/arrow-right';
+import ArrowLeftIcon from '../../icons/arrow-left';
+import { Link, useNavigate } from 'react-router-dom';
+import useCurrentLang from '../../hooks/useCurrentLang';
 
 const CARD_WIDTH = 270 + 20;
 
@@ -16,6 +21,8 @@ function Work() {
   const [startX, setStartX] = useState(null);
 
   const { t } = useTranslation();
+  const currentLang = useCurrentLang();
+  const navigate = useNavigate();
 
   const fetchData = useCallback(async () => {
     const response = await fetchWorkFromAPI();
@@ -35,8 +42,11 @@ function Work() {
         }
         return prevState;
       });
+      if (direction === 'Enter' && data?.length > 0 && currentIndex >= 0) {
+        navigateToProject(data[currentIndex]?.id, data[currentIndex]?.title);
+      }
     },
-    [data]
+    [data, currentIndex]
   );
 
   const handleTouchStart = (e: any) => {
@@ -79,6 +89,23 @@ function Work() {
     };
   }, [onDirectionalClick]);
 
+  const navigateToProject = useCallback(
+    (id: number, title: string) => {
+      navigate(`/${currentLang}/work/${id}_${title}`, {
+        state: { id },
+      });
+    },
+    [currentLang, navigate, currentIndex, data]
+  );
+
+  if (!data) {
+    return (
+      <Layout>
+        <PulseLoader />;
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       <div className="work-background-image-container">
@@ -90,20 +117,27 @@ function Work() {
             <h1 className="work-title">{data[currentIndex]?.title}</h1>
             <div className="work-list-container">
               <div className="work-list-buttons-container">
-                <button className="work-list-navigation-button">{t('WIP_TITLE')}</button>
+                <Link
+                  className="work-list-navigation-button"
+                  to={`/${currentLang}/work/${data[currentIndex]?.id}_${data[currentIndex]?.title}`}
+                  state={{ id: data[currentIndex]?.id }}
+                >
+                  <div className="work-list-navigation-button-text">{`${t('SEE_MORE')}`}</div>{' '}
+                  <ArrowRightIcon width={20} />
+                </Link>
                 <button
                   className="work-list-directional-button"
                   disabled={currentIndex === 0}
                   onClick={() => onDirectionalClick('ArrowLeft')}
                 >
-                  {'<'}
+                  <ArrowLeftIcon width={20} />
                 </button>
                 <button
                   className="work-list-directional-button"
                   disabled={currentIndex === data?.length - 1}
                   onClick={() => onDirectionalClick('ArrowRight')}
                 >
-                  {'>'}
+                  <ArrowRightIcon width={20} />
                 </button>
               </div>
               <ul
@@ -117,6 +151,7 @@ function Work() {
                 {data?.map((item: any, index: number) => (
                   <li
                     key={item.id}
+                    onClick={() => navigateToProject(item.id, item.title)}
                     className={`
                       work-list-item
                       ${index === currentIndex ? 'work-list-item-focused' : ''}

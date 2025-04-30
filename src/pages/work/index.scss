@@ -8,6 +8,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding-right: 240px;
+  padding-top: 60px;
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
@@ -48,7 +49,7 @@
 
   @media screen and (max-width: 1200px) {
     padding-left: 20px;
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
@@ -136,9 +137,14 @@
     padding-right: 20px;
   }
 
+  path {
+    fill: var(--text-color);
+  }
+
   .work-list-directional-button {
     height: 50px;
     width: 70px;
+    min-width: 70px;
     border: 1px solid var(--text-hover-color);
     border-radius: 10px;
     margin-right: 10px;
@@ -149,15 +155,26 @@
 
     &:hover {
       background-color: var(--text-hover-color);
-      color: var(--text-inverted-color);
+
+      .work-list-navigation-button-text {
+        color: var(--text-inverted-color);
+      }
+
+      path {
+        fill: var(--text-inverted-color) !important;
+      }
     }
 
     &:disabled {
-      display: none;
+      opacity: 0.5;
+      pointer-events: none;
     }
   }
 
   .work-list-navigation-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
     width: 270px;
     border: 1px solid var(--text-hover-color);
@@ -168,11 +185,27 @@
     transition: all 0.1s ease-in-out;
     text-align: left;
     padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
 
     &:hover {
       background-color: var(--text-hover-color);
-      color: var(--text-inverted-color);
+
+      .work-list-navigation-button-text {
+        color: var(--text-inverted-color);
+      }
+
+      path {
+        fill: var(--text-inverted-color) !important;
+      }
+    }
+
+    .work-list-navigation-button-text {
+      max-width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 20px;
     }
   }
 }
@@ -189,13 +222,14 @@
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 10px;
   background-color: var(--text-color);
   margin-right: 5px;
 }
 
 .dot-selected {
+  width: 20px;
   background-color: var(--text-hover-color);
 }

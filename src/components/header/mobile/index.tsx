@@ -6,20 +6,21 @@ import type { LinkInterface } from '../useHeaderConfig';
 import HeaderSettings from '../settings';
 import useCurrentRoute from '../../../hooks/useCurrentRoute';
 import useCurrentLang from '../../../hooks/useCurrentLang';
+import { useAppContext } from '../../../context/AppContext';
 
 interface HeaderMobileProps {}
 
 const HeaderMobile = ({}: HeaderMobileProps) => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
 
   const currentRoute = useCurrentRoute() || '';
   const currentLang = useCurrentLang();
   const { links } = useHeaderConfig();
+  const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useAppContext();
 
   useEffect(() => {
-    return () => setIsOpen(false);
+    return () => setIsBurgerMenuOpen(false);
   }, []);
 
   const getLinkClassBasedOnCurrentRoute = useCallback(
@@ -61,10 +62,13 @@ const HeaderMobile = ({}: HeaderMobileProps) => {
 
   return (
     <>
-      <button className={burgerMenuClassBasedOnCurrentRoute} onClick={() => setIsOpen(!isOpen)}>
-        <span className={`header-mobile-menu-icon ${isOpen ? 'open' : ''}`} />
+      <button
+        className={burgerMenuClassBasedOnCurrentRoute}
+        onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}
+      >
+        <span className={`header-mobile-menu-icon ${isBurgerMenuOpen ? 'open' : ''}`} />
       </button>
-      {isOpen && (
+      {isBurgerMenuOpen && (
         <div className="header-mobile-container">
           <ul className="header-mobile-list">
             {links?.map((link: LinkInterface) => (

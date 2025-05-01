@@ -1,3 +1,5 @@
+import { projectParser, workParser } from './work-parser';
+
 const fetchWorkFromAPI = async () => {
   try {
     const res = await fetch('https://back.guillemleon.com/api/projects/', {
@@ -9,7 +11,7 @@ const fetchWorkFromAPI = async () => {
     });
     if (!res.ok) throw new Error(`HTTP error ${res.status}`);
     const work = await res.json();
-    return work;
+    return workParser(work);
   } catch (err) {
     console.error('Error trying GET:', err);
   }
@@ -26,7 +28,7 @@ const fetchProjectFromAPI = async (id: number) => {
     });
     if (!res.ok) throw new Error(`HTTP error ${res.status}`);
     const project = await res.json();
-    return project;
+    return projectParser(project);
   } catch (err) {
     console.error('Error trying GET:', err);
   }

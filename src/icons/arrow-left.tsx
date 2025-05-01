@@ -5,7 +5,7 @@ interface ArrowLeftIconInterface {
   height?: number;
 }
 
-const ArrowLeftIcon = ({ width, height }: ArrowLeftIconInterface) => (
+const ArrowLeftIcon = ({ width = 32, height = 16 }: ArrowLeftIconInterface) => (
   <svg
     width={width}
     height={height}

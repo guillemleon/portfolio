@@ -94,6 +94,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0 0 8px -4px var(--text-color);
 
   &:hover {
     img,
@@ -169,6 +170,12 @@
       opacity: 0.5;
       pointer-events: none;
     }
+  }
+
+  .dummy-work-list-navigation-button {
+    @extend .work-list-navigation-button;
+    opacity: 0.5;
+    pointer-events: none;
   }
 
   .work-list-navigation-button {

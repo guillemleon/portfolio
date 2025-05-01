@@ -16,7 +16,7 @@ interface LangInterface {
 }
 
 const useSettingsConfig = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   const languages = useMemo((): LangInterface[] => {
@@ -36,7 +36,7 @@ const useSettingsConfig = () => {
 
   const changeLang = (currentLang: string, newLang: string) => {
     const newPath = window.location.pathname.replace(`/${currentLang}`, `/${newLang}`);
-    navigate(newPath);
+    navigate(newPath + window.location.search, { replace: true });
   };
 
   return { languages, themes, changeLang };

@@ -31,8 +31,16 @@ function Terminal({ title }: TerminalProps) {
   }, [lang, theme, terminalContent.current, inputRef.current]);
 
   useEffect(() => {
-    inputRef.current?.focus();
+    if (inputRef.current) {
+      inputRef.current?.focus();
+    }
   }, [inputRef.current]);
+
+  useEffect(() => {
+    if ((isTerminalOpen && inputRef.current) || (!isTerminalMinimized && inputRef.current)) {
+      inputRef.current.focus();
+    }
+  }, [inputRef.current, isTerminalOpen, isTerminalMinimized]);
 
   const handleScrollToBottom = useCallback(() => {
     const el = terminalContainer.current;
@@ -42,8 +50,12 @@ function Terminal({ title }: TerminalProps) {
   }, [terminalContainer.current]);
 
   const cleanTerminal = useCallback(() => {
-    if (terminalContent.current) terminalContent.current.innerHTML = '';
-  }, [terminalContent.current]);
+    if (terminalContent.current && inputRef.current) {
+      terminalContent.current.innerHTML = '';
+      inputRef.current.value = '';
+      setInputValue('');
+    }
+  }, [terminalContent.current, inputRef.current]);
 
   const handleEnterPress = useCallback(() => {
     if (!terminalContent.current) return;
@@ -99,11 +111,11 @@ function Terminal({ title }: TerminalProps) {
     [inputValue, setInputValue, handleEnterPress]
   );
 
-  const handleCloseTerminal = () => {
+  const handleCloseTerminal = useCallback(() => {
+    cleanTerminal();
     setIsTerminalOpen(false);
     setIsTerminalMinimized(false);
-    cleanTerminal();
-  };
+  }, []);
 
   const getTerminalStatusClass = useMemo(() => {
     if (isTerminalMinimized) return 'terminal-minimized';

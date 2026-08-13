@@ -1,0 +1,47 @@
+/* [project]/src/styles/colors.css [app-client] (css) */
+:root {
+  --color-bg: #0a0c0b;
+  --color-surface: #141816;
+  --color-text: #e9efeb;
+  --color-accent: #3fe0a0;
+  --color-accent-2: #6febbb;
+  --color-divider: #e9efeb21;
+  --color-neutral-100: #f2f5f3;
+  --color-neutral-200: #e1e6e3;
+  --color-neutral-300: #c4cbc7;
+  --color-neutral-400: #9fa7a3;
+  --color-neutral-500: #7c8480;
+  --color-neutral-600: #5f6663;
+  --color-neutral-700: #444a47;
+  --color-neutral-800: #2b302e;
+  --color-neutral-900: #171b19;
+  --color-accent-100: #ecfff7;
+  --color-accent-200: #c8f9e4;
+  --color-accent-300: #96efca;
+  --color-accent-400: #62e6b1;
+  --color-accent-500: #3fe0a0;
+  --color-accent-600: #2ab47f;
+  --color-accent-700: #1f865f;
+  --color-accent-800: #175e43;
+  --color-accent-900: #103a2a;
+  --color-accent-2-100: #ecfff7;
+  --color-accent-2-200: #c8f9e4;
+  --color-accent-2-300: #96efca;
+  --color-accent-2-400: #62e6b1;
+  --color-accent-2-500: #3fe0a0;
+  --color-accent-2-600: #2ab47f;
+  --color-accent-2-700: #1f865f;
+  --color-accent-2-800: #175e43;
+  --color-accent-2-900: #103a2a;
+  --color-section: #072b1f;
+  --color-section-glow: #0c4632;
+  --color-section-ghost: #146b4c;
+  --shadow-sm: 0 0 0 1px #2b302e;
+  --shadow-md: 0 0 0 1px #444a47, 0 6px 18px #0009;
+  --shadow-lg: 0 0 0 1px #7c8480, 0 16px 40px #000000b3;
+  --glow: #3fe0a033;
+  --glow-soft: #3fe0a01a;
+  --accent-alt: #4fa6ff;
+}
+
+/*# sourceMappingURL=src_styles_colors_css_1igg3k2._.single.css.map*/

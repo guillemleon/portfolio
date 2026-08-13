@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "work": "Work",
+        "contact": "Contact",
+        "getInTouch": "Get in touch",
+        "menu": "Menu"
+    },
+    "about": {
+        "title": "About"
+    },
+    "work": {
+        "title": "Work"
+    },
+    "contact": {
+        "title": "Contact"
+    }
+}

@@ -1,0 +1,30 @@
+.simpleButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    width: 30px;
+    border-radius: 2px;
+
+    &:hover {
+        .simpleButtonLabel {
+            color: var(--color-text);
+        }
+    }
+}
+
+.simpleButtonLabel {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--color-neutral-400);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.active {
+    background-color: rgba(75, 216, 106, 0.2);
+
+    .simpleButtonLabel {
+        color: var(--color-accent-200);
+    }
+}

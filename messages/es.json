@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "work": "Proyectos",
+        "contact": "Contacto",
+        "getInTouch": "Hablemos",
+        "menu": "Menú"
+    },
+    "about": {
+        "title": "Sobre mí"
+    },
+    "work": {
+        "title": "Proyectos"
+    },
+    "contact": {
+        "title": "Contacto"
+    }
+}

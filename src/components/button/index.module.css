@@ -1,0 +1,95 @@
+.button {
+    width: fit-content;
+    padding: 0 20px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: var(--color-accent-200);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    background:
+        linear-gradient(105deg,
+            transparent 40%,
+            color-mix(in srgb, var(--color-accent-100) 25%, transparent) 50%,
+            transparent 60%) no-repeat 100% 0 / 300% 100%,
+        color-mix(in srgb, var(--color-accent) 5%, transparent);
+    outline: none;
+    position: relative;
+
+    &::before {
+        content: "";
+        z-index: 999;
+        pointer-events: none;
+        border-color: var(--color-accent);
+        border-top-width: 1px;
+        border-top-color: var(--color-accent);
+        box-sizing: border-box;
+        border-style: solid;
+        border-left-width: 1px;
+        border-bottom-width: 0;
+        border-right-width: 0;
+        width: 13px;
+        height: 13px;
+        transition: width .35s cubic-bezier(.16, .84, .3, 1), height .35s cubic-bezier(.16, .84, .3, 1), border-color .35s;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &::after {
+        content: "";
+        z-index: 999;
+        pointer-events: none;
+        border-color: var(--color-accent);
+        border-bottom-width: 1px;
+        border-bottom-color: var(--color-accent);
+        box-sizing: border-box;
+        border-style: solid;
+        border-right-width: 1px;
+        border-top-width: 0;
+        border-left-width: 0;
+        width: 13px;
+        height: 13px;
+        transition: width .35s cubic-bezier(.16, .84, .3, 1), height .35s cubic-bezier(.16, .84, .3, 1), border-color .35s;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 0 26px -10px var(--color-accent);
+        animation: buttonShine 0.4s ease-in-out;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+        border-color: var(--color-accent);
+    }
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-accent);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        fill: var(--color-text);
+    }
+}
+
+@keyframes buttonShine {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: 0% 0;
+    }
+}

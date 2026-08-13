@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///Users/anunnaki/Documents/projects/portfolio/messages/en.json.[json].cjs/turbopack:/messages/en.json"],"sourcesContent":["{\"nav\":{\"home\":\"Home\",\"about\":\"About\",\"work\":\"Work\",\"contact\":\"Contact\",\"getInTouch\":\"Get in touch\",\"menu\":\"Menu\"},\"about\":{\"title\":\"About\"},\"work\":{\"title\":\"Work\"},\"contact\":{\"title\":\"Contact\"}}"],"names":[],"mappings":""}}]
-}

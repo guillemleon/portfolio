@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/styles/fonts.css"],"sourcesContent":["@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url('/fonts/Inter-Variable.woff2') format('woff2-variations'),\n    url('/fonts/Inter-Variable.woff2') format('woff2');\n}\n\n@font-face {\n  font-family: 'Inter';\n  font-style: italic;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url('/fonts/Inter-Variable-Italic.woff2') format('woff2-variations'),\n    url('/fonts/Inter-Variable-Italic.woff2') format('woff2');\n}\n\n:root {\n  --font-heading: 'Inter', system-ui, sans-serif;\n  --font-heading-weight: 500;\n  --font-body: 'Inter', system-ui, sans-serif;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AASA;;;;;;;;AASA"}}]
-}

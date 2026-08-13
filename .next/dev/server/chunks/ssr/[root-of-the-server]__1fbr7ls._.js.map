@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/[locale]/page.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n});\n"],"names":[],"mappings":"AAAA;AACA"}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/anunnaki/Documents/projects/portfolio/src/app/[locale]/page.tsx"],"sourcesContent":["import styles from \"./page.module.css\";\n\nexport default function Home() {\n  return (\n    <main className={styles.page}>\n\n    </main>\n  );\n}\n"],"names":["Home","className","page"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAW,uJAAM,CAACC,IAAI;;;;;;AAIhC"}},
-    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file:///Users/anunnaki/Documents/projects/portfolio/src/app/icon.png.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 200, height: 200 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,uIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}}]
-}

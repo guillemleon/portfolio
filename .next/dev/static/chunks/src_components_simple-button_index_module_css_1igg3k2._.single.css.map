@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/simple-button/index.module.css"],"sourcesContent":[".simpleButton {\n    background-color: transparent;\n    border: none;\n    cursor: pointer;\n    height: 36px;\n    width: 30px;\n    border-radius: 2px;\n\n    &:hover {\n        .simpleButtonLabel {\n            color: var(--color-text);\n        }\n    }\n}\n\n.simpleButtonLabel {\n    font-size: 0.85rem;\n    text-transform: uppercase;\n    color: var(--color-neutral-400);\n    cursor: pointer;\n    transition: all .2s ease-in-out;\n}\n\n.active {\n    background-color: rgba(75, 216, 106, 0.2);\n\n    .simpleButtonLabel {\n        color: var(--color-accent-200);\n    }\n}"],"names":[],"mappings":"AAAA;;;;;;;;;AASQ;;;;AAMR;;;;;;;;AAQA;;;;AAGI"}}]
-}

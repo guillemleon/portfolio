@@ -1,4 +1,52 @@
+# dependencies
 node_modules
-.vscode/
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
 dist/
 
+# testing
+/coverage
+
+# caches
+.eslintcache
+.turbo
+
+# OS
+.DS_Store
+.AppleDouble
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# misc
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# claude code local settings
+.claude/settings.local.json

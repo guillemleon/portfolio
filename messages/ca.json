@@ -7,6 +7,20 @@
         "getInTouch": "Parlem",
         "menu": "Menú"
     },
+    "home": {
+        "subtitle": "Enginyer de Software · Enginyer de Smart TV a Filmin",
+        "description": "Sis anys a tot l'stack. M'encarrego de l'aplicació de televisió de Filmin, portant cada funcionalitat des de la primera conversa amb producte i disseny fins al llançament a tots els dispositius on funciona — i he construït backends i apps iOS a banda i banda.",
+        "selectedWork": "Treball destacat",
+        "downloadCV": "Descarregar CV",
+        "profile": {
+            "title": "Perfil",
+            "now": { "label": "Ara", "text": "Enginyer de Smart TV, Filmin" },
+            "focus": { "label": "Focus", "text": "Lliurament multiplataforma" },
+            "sideWork": { "label": "Projectes propis", "text": "Dues apps iOS publicades" },
+            "reachMe": { "label": "Contacte", "text": "Per email" },
+            "stack": { "label": "Stack", "text": "React · TS · Node · Python · Swift" }
+        }
+    },
     "about": {
         "title": "Sobre mi"
     },

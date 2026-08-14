@@ -1,32 +1,48 @@
+import { useTranslations } from "next-intl";
 import Button from "@/components/button";
 import styles from "./page.module.css";
 import ProfileRow from "@/components/profile-row";
 
+const TITLE = "Guillem León";
+const PROFILE_ROWS = ['now', 'focus', 'sideWork', 'reachMe', 'stack'] as const;
+
 export default function Home() {
+  const t = useTranslations('home');
+
   return (
     <div className={styles.container}>
       <section className={styles.personalInfo}>
-        <h1 className={styles.title}>Guillem León</h1>
+        <h1 className={styles.title}>
+          {TITLE.split('').map((letter, index) => {
+            if (letter === " ") {
+              return <span key={index}>&nbsp;</span>
+            }
+
+            return <span key={index} className={styles.titleLetter}>{letter}</span>
+          })}
+        </h1>
         <span className={styles.subtitle}>
-          Software Engineer · Smart TV Engineer at Filmin
+          {t('subtitle')}
         </span>
 
         <p className={styles.description}>
-          Six years across the stack. I look after the television app at Filmin, taking features from the first conversation with product and design through to release on every device it runs on — and I've built backends and iOS apps either side of it.
+          {t('description')}
         </p>
         <div className={styles.buttons}>
-          <Button label="Selected Work"></Button>
-          <Button label="Download CV" type='secondary'></Button>
+          <Button label={t('selectedWork')}></Button>
+          <Button label={t('downloadCV')} type='secondary'></Button>
         </div>
-      </section >
+      </section>
       <section className={styles.profileContainer}>
         <aside className={styles.profile}>
-          <h4>Profile</h4>
-          <ProfileRow label="Now" text="Smart TV Engineer, Filmin" />
-          <ProfileRow label="Focus" text="Multi-platform delivery" />
-          <ProfileRow label="Side Work" text="Two iOS apps shipped" />
-          <ProfileRow label="Reach Me" text="By email" />
-          <ProfileRow label="Stack" text="React · TS · Node · Python · Swift" />
+          <h4>{t('profile.title')}</h4>
+          {PROFILE_ROWS.map((row) => (
+            <ProfileRow
+              key={row}
+              label={t(`profile.${row}.label`)}
+              text={t(`profile.${row}.text`)}
+            />
+          ))}
         </aside>
       </section>
     </div>

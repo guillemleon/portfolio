@@ -1,7 +1,7 @@
 .button {
     width: fit-content;
     padding: 0 20px;
-    height: 36px;
+    height: 47px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,4 +152,12 @@
     &:hover::after {
         border-color: var(--color-text);
     }
+}
+
+.small {
+    height: 36px;
+}
+
+.large {
+    height: 47px;
 }

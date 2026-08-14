@@ -7,6 +7,20 @@
         "getInTouch": "Get in touch",
         "menu": "Menu"
     },
+    "home": {
+        "subtitle": "Software Engineer · Smart TV Engineer at Filmin",
+        "description": "Six years across the stack. I look after the television app at Filmin, taking features from the first conversation with product and design through to release on every device it runs on — and I've built backends and iOS apps either side of it.",
+        "selectedWork": "Selected Work",
+        "downloadCV": "Download CV",
+        "profile": {
+            "title": "Profile",
+            "now": { "label": "Now", "text": "Smart TV Engineer, Filmin" },
+            "focus": { "label": "Focus", "text": "Multi-platform delivery" },
+            "sideWork": { "label": "Side Work", "text": "Two iOS apps shipped" },
+            "reachMe": { "label": "Reach Me", "text": "By email" },
+            "stack": { "label": "Stack", "text": "React · TS · Node · Python · Swift" }
+        }
+    },
     "about": {
         "title": "About"
     },

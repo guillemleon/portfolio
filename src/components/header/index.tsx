@@ -46,7 +46,7 @@ const Header = () => {
                         </li>
                     ))}
                     <div className={styles.headerButtons}>
-                        <Button label={t('getInTouch')} onClick={() => { }} />
+                        <Button label={t('getInTouch')} size='small' onClick={() => { }} />
                         {languages.map((language) => (
                             <SimpleButton
                                 key={language.code}

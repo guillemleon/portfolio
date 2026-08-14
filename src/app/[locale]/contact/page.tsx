@@ -7,9 +7,9 @@ export default function ContactPage() {
 
     return (
         <PageTransition>
-            <main>
+            <section>
                 <h1>{t('title')}</h1>
-            </main>
+            </section>
         </PageTransition>
     )
 }

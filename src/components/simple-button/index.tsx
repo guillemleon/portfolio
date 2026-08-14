@@ -1,8 +1,9 @@
+'use client'
 import styles from "./index.module.css";
 
 type SimpleButtonProps = {
     label: string;
-    onClick: () => void;
+    onClick?: () => void;
     active?: boolean;
 }
 

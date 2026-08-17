@@ -1,0 +1,812 @@
+{
+    "page": {
+        "title": "Selected work.",
+        "intro": "A streaming app on every television that runs it, components banking teams build on, backends and transport sites, and two iOS apps of my own."
+    },
+    "data": [
+        {
+            "slug": "filmin-smart-tv",
+            "kind": "case-study",
+            "featured": true,
+            "title": "Filmin on every television",
+            "headline": "One codebase, every device.",
+            "company": "Filmin",
+            "role": "Smart TV Engineer",
+            "from": "2024",
+            "to": "Present",
+            "url": "https://www.filmin.es",
+            "summary": "Televisions that all disagree with each other, held together by one codebase. I own the app end to end, from framing to release.",
+            "intro": "Filmin is Spain's streaming service for independent film. I look after the app on its televisions — one codebase across every device it ships on, some of that hardware a decade old.",
+            "tags": [
+                "React",
+                "TypeScript",
+                "Tizen",
+                "webOS"
+            ],
+            "stat": {
+                "title": "All",
+                "subtitle": "Devices owned"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "The platform, end to end"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Product, design and the backend team"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Four to six weeks per idea"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React and TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Samsung Tizen",
+                    "description": "Widest install base, oldest engines"
+                },
+                {
+                    "name": "LG webOS",
+                    "description": "Second largest surface"
+                },
+                {
+                    "name": "Hisense",
+                    "description": "Vendor-specific quirks"
+                },
+                {
+                    "name": "Android TV",
+                    "description": "Chromium, wide hardware range"
+                },
+                {
+                    "name": "Fire TV",
+                    "description": "Amazon store pipeline"
+                },
+                {
+                    "name": "Amazon Vega OS",
+                    "description": "Launched from SDK to store"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Televisions are kept for a decade",
+                    "description": "A television isn't a phone that got bigger. People buy one and keep it for years, so the app has to feel the same on a set from 2015 as on one bought last week — on older browser engines and a fraction of the memory a laptop has. \n The codebase carried its own history too: Angular, coupled to an older project, with a special case for every television that disagreed with the others.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Fewer special cases, then speed",
+                    "description": "Moving to React was the visible part. The more valuable one was removing the special cases: every branch kept alive for a single manufacturer is a bug that only ever reproduces in somebody else's living room.",
+                    "quotes": [
+                        "A deliberate polyfill strategy rather than shipping everything everywhere",
+                        "CSS and LESS workarounds where old engines disagree, isolated and documented",
+                        "Rendering optimisation aimed at the slowest device, not the average one",
+                        "Build tools and dependencies kept current so the old targets don't freeze the new work"
+                    ]
+                },
+                {
+                    "title": "The launch",
+                    "name": "A platform with no precedent",
+                    "description": "Amazon's Vega OS arrived with no precedent to lean on. I read the SDK, established what the platform would and wouldn't support, adapted the app and took it through to store submission — the whole path.",
+                    "quotes": []
+                },
+                {
+                    "title": "The team",
+                    "name": "Knowing what the devices will take",
+                    "description": "Owning the platform means I'm in the room early, which is where I'm most useful: saying clearly that a good idea won't run, before it becomes a design somebody has to undo. \n After release I watch it closely, fix what's ours, and give the support team a straight answer for everything that isn't.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "All",
+                    "subtitle": "Devices in production"
+                },
+                {
+                    "title": "100%",
+                    "subtitle": "React, Angular retired"
+                },
+                {
+                    "title": "4—6",
+                    "subtitle": "Week delivery cycles"
+                },
+                {
+                    "title": "End to end",
+                    "subtitle": "Ownership of the platform"
+                }
+            ]
+        },
+        {
+            "slug": "angular-to-react",
+            "kind": "case-study",
+            "featured": true,
+            "title": "Angular to React, in production",
+            "headline": "Replaced in flight.",
+            "company": "Filmin",
+            "role": "Migration",
+            "from": "2024",
+            "to": "2025",
+            "url": "https://www.filmin.es",
+            "summary": "Moving a long-lived app onto React while it kept shipping every few weeks. A story about sequencing more than speed.",
+            "intro": "Filmin's TV app was Angular, coupled to an older project, carrying years of special cases. It became fully React without a release freeze — the app kept shipping while the framework changed underneath it.",
+            "tags": [
+                "Migration",
+                "Refactor",
+                "Build tooling"
+            ],
+            "stat": {
+                "title": "100%",
+                "subtitle": "React today"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "The migration, sequencing included"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Feature work that never paused"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Release by release, no freeze"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, with Angular beside it until the end"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Decoupling",
+                    "description": "Cutting the ties to the older project"
+                },
+                {
+                    "name": "Coexistence",
+                    "description": "Both frameworks in one build, temporarily"
+                },
+                {
+                    "name": "Build tooling",
+                    "description": "Webpack and dependencies kept current"
+                },
+                {
+                    "name": "Legacy debt",
+                    "description": "Duplicated platform logic consolidated"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "A rewrite nobody can pause for",
+                    "description": "The safe way to change frameworks is to stop everything else and do only that. A streaming service can't: features, device certifications and fixes keep their own calendar. The migration had to happen inside the normal release rhythm, or not at all. \n The codebase made it harder — Angular coupled to an older project, and a special case for every television that disagreed with the rest.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Sequence over speed",
+                    "description": "Decouple first, so the app stood on its own. Then move it piece by piece, with both frameworks running in the same build until the last Angular view was gone. Consolidating the platform special cases as each piece crossed over meant the React side started cleaner than the Angular side had ever been.",
+                    "quotes": [
+                        "Decoupled from the legacy project before touching the UI",
+                        "Migrated incrementally, both frameworks coexisting in the build",
+                        "Platform-specific branches consolidated as they crossed over",
+                        "Old targets still supported — Chrome 23 didn't move"
+                    ]
+                },
+                {
+                    "title": "The result",
+                    "name": "One hundred percent, quietly",
+                    "description": "Angular is retired. One React codebase ships to every device at once, and the effort that used to go into keeping two worlds alive goes into the product instead.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "100%",
+                    "subtitle": "React today"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Release freezes"
+                },
+                {
+                    "title": "40+",
+                    "subtitle": "Device models, unaffected"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Codebase at the end"
+                }
+            ]
+        },
+        {
+            "slug": "vega-os-launch",
+            "kind": "case-study",
+            "featured": false,
+            "title": "Amazon Vega OS launch",
+            "headline": "From the SDK to the store.",
+            "company": "Filmin",
+            "role": "New platform",
+            "from": "2025",
+            "to": "2025",
+            "url": "https://www.filmin.es",
+            "summary": "A platform with no institutional knowledge behind it. I read the SDK, established what it would support and took us through to the store.",
+            "intro": "Vega OS is Amazon's move away from Android — new enough that there was nothing to search when something didn't work. I evaluated the SDK, established what the platform would and wouldn't support, adapted Filmin's app and took it through to store submission.",
+            "tags": [
+                "Vega OS",
+                "SDK",
+                "Store release"
+            ],
+            "stat": {
+                "title": "New",
+                "subtitle": "Platform, end to end"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Evaluation through to submission"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Amazon, as the engineering contact"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "SDK reading before any code"
+                },
+                {
+                    "name": "Built with",
+                    "description": "The existing React codebase, adapted"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "SDK evaluation",
+                    "description": "What the platform can actually do"
+                },
+                {
+                    "name": "Capability map",
+                    "description": "What could stay, what had to change"
+                },
+                {
+                    "name": "Adaptation",
+                    "description": "The React app, fitted to Vega"
+                },
+                {
+                    "name": "Store submission",
+                    "description": "Amazon's pipeline, the whole path"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Nothing to search for",
+                    "description": "Every mature platform comes with years of other people's mistakes to learn from. Vega came with an SDK and not much else — no answered questions, no institutional knowledge, nobody at the company who had shipped on it. The usual way of unblocking yourself didn't exist.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Read first, build second",
+                    "description": "Before adapting anything, I read the SDK and built a picture of what the platform would support and what our app assumed that Vega didn't provide. That map decided the work: what could stay, what needed adapting, what had to be raised with Amazon directly.",
+                    "quotes": [
+                        "SDK evaluation before a line of app code",
+                        "Capability map of what Vega would and wouldn't support",
+                        "Adaptation of the existing React app, not a rewrite",
+                        "A direct line to Amazon for what the docs didn't cover"
+                    ]
+                },
+                {
+                    "title": "The launch",
+                    "name": "Through to the store",
+                    "description": "Adapted, submitted and released through Amazon's store pipeline — the whole path, end to end.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "New",
+                    "subtitle": "Platform in production"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Precedents to lean on"
+                },
+                {
+                    "title": "SDK → Store",
+                    "subtitle": "The whole path"
+                }
+            ]
+        },
+        {
+            "slug": "crescia",
+            "kind": "case-study",
+            "featured": true,
+            "title": "Crescia",
+            "headline": "Every record stays with you.",
+            "company": "Personal",
+            "role": "iOS",
+            "from": "2024",
+            "to": "Present",
+            "url": null,
+            "summary": "A personal finance app that keeps every record on the device. Design, build and release start to finish — product decisions included.",
+            "intro": "A personal finance app with one rule: records live on the device and in the owner's own iCloud — no server of mine ever holds them. Designed, built, shipped and marketed by one person.",
+            "tags": [
+                "SwiftUI",
+                "SwiftData",
+                "Privacy-first"
+            ],
+            "stat": {
+                "title": "Live",
+                "subtitle": "On the App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "All of it — design, build, release, marketing"
+                },
+                {
+                    "name": "The rule",
+                    "description": "iCloud only, no server"
+                },
+                {
+                    "name": "Status",
+                    "description": "Live on the App Store"
+                },
+                {
+                    "name": "Built with",
+                    "description": "SwiftUI and SwiftData"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Statement import",
+                    "description": "Bank statements parsed with the Claude API"
+                },
+                {
+                    "name": "Subscriptions",
+                    "description": "StoreKit, sandbox-tested, store-approved"
+                },
+                {
+                    "name": "iOS widget",
+                    "description": "A place on the home screen"
+                },
+                {
+                    "name": "ASO",
+                    "description": "Listing tuned in Spanish and English"
+                },
+                {
+                    "name": "Campaigns",
+                    "description": "Instagram ads with funnel analysis"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Finance apps ask for too much",
+                    "description": "The default trade in personal finance is convenience for custody: connect your bank, create an account, and a copy of your financial life lives on somebody's server. Crescia refuses the trade — records stay on the device and in the owner's own iCloud, and nowhere else.",
+                    "quotes": []
+                },
+                {
+                    "title": "The build",
+                    "name": "One person, every hat",
+                    "description": "SwiftUI and SwiftData underneath, iCloud as the only sync. The features that usually justify a server had to be solved without one.",
+                    "quotes": [
+                        "Bank statement import, parsed with the Claude API",
+                        "Subscriptions through StoreKit, tested in sandbox before anyone paid",
+                        "An iOS widget for the home screen",
+                        "SwiftData persistence, syncing through the owner's iCloud alone"
+                    ]
+                },
+                {
+                    "title": "The store",
+                    "name": "The part nobody warns you about",
+                    "description": "App Store Connect has its own curriculum: a monthly subscription rejected in review, a product ID reserved permanently by a mistake you can't undo, and the release cycles in between. The distance between writing an app and shipping one lives here.",
+                    "quotes": []
+                },
+                {
+                    "title": "The reach",
+                    "name": "Marketing is part of the product",
+                    "description": "A shipped app nobody finds is a side project. ASO across the Spanish and English listings, Instagram campaigns measured with funnel analysis, and a featuring nomination submitted to Apple.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Live",
+                    "subtitle": "On the App Store"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Servers holding user data"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Store languages, tuned"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Person on everything"
+                }
+            ]
+        },
+        {
+            "slug": "yantar",
+            "kind": "case-study",
+            "featured": false,
+            "title": "Yantar",
+            "headline": "The first one out the door.",
+            "company": "Personal",
+            "role": "iOS",
+            "from": "2023",
+            "to": "2023",
+            "url": null,
+            "summary": "A fasting tracker with the same rule: nothing leaves the phone. Built and published end to end.",
+            "intro": "A fasting tracker for iOS with the rule Crescia later kept: everything stays on the phone. The first app I took the whole way — idea, design, build, review, release.",
+            "tags": [
+                "SwiftUI",
+                "Design",
+                "App Store"
+            ],
+            "stat": {
+                "title": "Live",
+                "subtitle": "On the App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Everything, first time through"
+                },
+                {
+                    "name": "The rule",
+                    "description": "Data stays on the device"
+                },
+                {
+                    "name": "Status",
+                    "description": "Live on the App Store"
+                },
+                {
+                    "name": "Built with",
+                    "description": "SwiftUI"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Privacy",
+                    "description": "No account, nothing synced away"
+                },
+                {
+                    "name": "Design",
+                    "description": "The interface was half the project"
+                },
+                {
+                    "name": "App Store",
+                    "description": "First pass through review and release"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The itch",
+                    "name": "A timer that minds its own business",
+                    "description": "Fasting trackers tend to arrive with accounts, streaks and a server watching. Yantar is the simple version: track the fast, keep the data on the phone, ask for nothing.",
+                    "quotes": []
+                },
+                {
+                    "title": "The build",
+                    "name": "Design as half the work",
+                    "description": "A tracker this small lives or dies on its interface — there's no feature list to hide behind. SwiftUI, and more hours in the design than the data model.",
+                    "quotes": []
+                },
+                {
+                    "title": "The lesson",
+                    "name": "What shipping teaches",
+                    "description": "The first full pass through App Store review, release and everything around it. What it taught carried straight into Crescia — which is the point of shipping a first app at all.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Live",
+                    "subtitle": "On the App Store"
+                },
+                {
+                    "title": "1st",
+                    "subtitle": "App shipped end to end"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Accounts required"
+                }
+            ]
+        },
+        {
+            "slug": "banking-widgets",
+            "kind": "case-study",
+            "featured": false,
+            "title": "Banking widgets other teams build on",
+            "headline": "Built to be built on.",
+            "company": "CaixaBank Tech",
+            "role": "Frontend Engineer",
+            "from": "2023",
+            "to": "2024",
+            "url": null,
+            "summary": "Reusable components other teams shipped on top of, in an environment where a bad release is felt immediately.",
+            "intro": "At CaixaBank Tech I built frontend applications and a set of reusable Stencil widgets that other internal teams consumed in their own products — in a regulated banking environment where a bad release is felt immediately.",
+            "tags": [
+                "React",
+                "Stencil",
+                "Jest",
+                "Azure DevOps"
+            ],
+            "stat": {
+                "title": "90%+",
+                "subtitle": "Coverage held"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Widgets, apps and their releases"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "The internal teams consuming them"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Regulated — every release deliberate"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, TypeScript and Stencil"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Stencil widgets",
+                    "description": "Framework-agnostic, consumed by other teams"
+                },
+                {
+                    "name": "Legacy migration",
+                    "description": "A public site moved to modern React"
+                },
+                {
+                    "name": "Test coverage",
+                    "description": "Jest, held above 90% on owned components"
+                },
+                {
+                    "name": "Releases",
+                    "description": "Deployment and post-release fixes, owned"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The context",
+                    "name": "Code with an audience of engineers",
+                    "description": "Building components other teams depend on changes the job. Your API is a promise, a breaking change is somebody else's incident, and 'it works on my product' isn't a standard. Stencil kept the widgets framework-agnostic so consuming teams weren't tied to our choices.",
+                    "quotes": []
+                },
+                {
+                    "title": "The migration",
+                    "name": "A public site, moved carefully",
+                    "description": "I led the migration of a legacy public-facing site to modern React, holding Jest coverage above 90% on the components I owned. In banking, coverage isn't a vanity metric — it's what lets a release go out without a week of manual checks.",
+                    "quotes": []
+                },
+                {
+                    "title": "The releases",
+                    "name": "Owning what happens after",
+                    "description": "Deployment and post-release bug resolution were mine, through Azure DevOps, in an environment where mistakes are visible to a lot of people very quickly. Shipping carefully became a habit rather than a policy.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "90%+",
+                    "subtitle": "Jest coverage held"
+                },
+                {
+                    "title": "Consumed",
+                    "subtitle": "By other internal teams"
+                },
+                {
+                    "title": "Owned",
+                    "subtitle": "Releases, and what follows"
+                }
+            ]
+        },
+        {
+            "slug": "keolis-sites",
+            "kind": "case-study",
+            "featured": false,
+            "title": "Keolis public transport sites",
+            "headline": "The client in the room.",
+            "company": "Extia",
+            "role": "Frontend Engineer",
+            "from": "2021",
+            "to": "2023",
+            "url": null,
+            "summary": "Client-facing work for an international transport operator: agreeing what was actually needed, then building it.",
+            "intro": "Two years delivering sites for Keolis, an international public transport operator — working directly with the client's stakeholders on what was actually needed, then building it from scratch.",
+            "tags": [
+                "Gatsby",
+                "GraphQL",
+                "DatoCMS",
+                "Code review"
+            ],
+            "stat": {
+                "title": "Direct",
+                "subtitle": "Client ownership"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "From requirements to delivery"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Keolis stakeholders, directly"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Project by project, site by site"
+                },
+                {
+                    "name": "Built with",
+                    "description": "Gatsby, React and TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Gatsby",
+                    "description": "Sites built from scratch, served static"
+                },
+                {
+                    "name": "DatoCMS",
+                    "description": "Content over GraphQL, editors in control"
+                },
+                {
+                    "name": "Flutter migration",
+                    "description": "A legacy web property moved to React"
+                },
+                {
+                    "name": "Code review",
+                    "description": "Peer reviews and Jest suites as routine"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The context",
+                    "name": "Agreeing before building",
+                    "description": "Consultancy work puts you in front of the client, not behind a ticket queue. The first job on every site was agreeing what was actually needed — which is a different skill from building it, and the one that decides whether the build was worth doing.",
+                    "quotes": []
+                },
+                {
+                    "title": "The build",
+                    "name": "From scratch, more than once",
+                    "description": "Multiple sites built from zero, with the content living where the client's editors could own it.",
+                    "quotes": [
+                        "Gatsby with React and TypeScript, started from empty repositories",
+                        "Content modelled in DatoCMS, queried over GraphQL",
+                        "A legacy Flutter web property migrated to React and TypeScript",
+                        "Peer code reviews and Jest suites as part of the routine"
+                    ]
+                },
+                {
+                    "title": "The takeaway",
+                    "name": "Client work is a skill",
+                    "description": "Stakeholders don't speak in tickets. Learning to hear what a non-engineer needs, push back on what won't work, and deliver the rest is most of what consultancy taught me — and it travels well.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Direct",
+                    "subtitle": "Client relationship"
+                },
+                {
+                    "title": "0 → 1",
+                    "subtitle": "Sites built from scratch"
+                },
+                {
+                    "title": "Retired",
+                    "subtitle": "The legacy Flutter web"
+                }
+            ]
+        },
+        {
+            "slug": "flykube-eatkube",
+            "kind": "case-study",
+            "featured": false,
+            "title": "Flykube & Eatkube",
+            "headline": "The whole stack, for the first time.",
+            "company": "Flykube",
+            "role": "Full-Stack Engineer",
+            "from": "2020",
+            "to": "2021",
+            "url": null,
+            "summary": "Two products across web and mobile, front end and back end — where I found out I work well across the whole stack.",
+            "intro": "Two products, each with a web app and a mobile app — four apps shipped by a small team. My first job, and the one where the boundary between front end and back end turned out to be softer than I expected.",
+            "tags": [
+                "React Native",
+                "Django",
+                "PostgreSQL"
+            ],
+            "stat": {
+                "title": "4",
+                "subtitle": "Apps shipped"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "The web and mobile front ends"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "The backend team, and UI/UX in Figma"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "A startup's — everything at once"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, React Native and some Django"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "React + TypeScript",
+                    "description": "Both web apps"
+                },
+                {
+                    "name": "React Native",
+                    "description": "iOS and Android from one codebase"
+                },
+                {
+                    "name": "Django & PostgreSQL",
+                    "description": "Endpoint work alongside the backend team"
+                },
+                {
+                    "name": "Figma",
+                    "description": "Interfaces defined with UI/UX"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The context",
+                    "name": "Four apps, small team",
+                    "description": "Two products, each needing a web app and a mobile app. In a team that size nobody stays neatly inside a job title — the work is whatever the product needs next.",
+                    "quotes": []
+                },
+                {
+                    "title": "The stack",
+                    "name": "Crossing the line, carefully",
+                    "description": "The front ends were mine: both web apps in React and TypeScript, both mobile apps in React Native, interfaces worked out with UI/UX in Figma. On the other side I contributed to the new Python and Django backend alongside the backend team — endpoint work, PostgreSQL queries, data through Django Admin. Their responsibility, my education.",
+                    "quotes": []
+                },
+                {
+                    "title": "The takeaway",
+                    "name": "Where full-stack started",
+                    "description": "Understanding both sides of the API changed how I write the client side — what to ask the server for, what to keep, what to never duplicate. That habit started here and never left.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "4",
+                    "subtitle": "Apps shipped"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Products, web and mobile"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Codebase for iOS and Android"
+                }
+            ]
+        }
+    ]
+}

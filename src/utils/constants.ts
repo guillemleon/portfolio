@@ -1,3 +1,9 @@
+import filminLogo from '@/assets/companies/filmin.png';
+import caixabankLogo from '@/assets/companies/caixabank.png';
+import keolisLogo from '@/assets/companies/keolis.png';
+import extiaLogo from '@/assets/companies/extia.png';
+import flykubeLogo from '@/assets/companies/flykube.png';
+
 const colors = [
     { name: 'green', value: '#4BD86A' },
     { name: 'violet', value: '#A78BFF' },
@@ -27,4 +33,12 @@ const languages = [
     { code: 'ca', label: 'Catalan' },
 ]
 
-export { colors, links, languages }
+const logos = [
+    { id: 'filmin', logo: filminLogo, },
+    { id: 'caixabank', logo: caixabankLogo },
+    { id: 'keolis', logo: keolisLogo },
+    { id: 'extia', logo: extiaLogo },
+    { id: 'flykube', logo: flykubeLogo },
+]
+
+export { colors, links, languages, logos }

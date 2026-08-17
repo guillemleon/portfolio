@@ -1,10 +1,11 @@
 import { useTranslations } from "next-intl";
 import Button from "@/components/button";
 import styles from "./page.module.css";
-import ProfileRow from "@/components/profile-row";
+import GlassCard from "@/components/glass-card";
+import { logos } from "@/utils/constants";
+import Image from "next/image";
 
 const TITLE = "Guillem León";
-const PROFILE_ROWS = ['now', 'focus', 'sideWork', 'reachMe', 'stack'] as const;
 
 export default function Home() {
   const t = useTranslations('home');
@@ -18,9 +19,14 @@ export default function Home() {
               return <span key={index}>&nbsp;</span>
             }
 
-            return <span key={index} className={styles.titleLetter}>{letter}</span>
+            return (
+              <span key={index} className={styles.titleLetter}>
+                <span className={styles.titleLetterInner}>{letter}</span>
+              </span>
+            )
           })}
         </h1>
+
         <span className={styles.subtitle}>
           {t('subtitle')}
         </span>
@@ -28,23 +34,25 @@ export default function Home() {
         <p className={styles.description}>
           {t('description')}
         </p>
+
         <div className={styles.buttons}>
           <Button label={t('selectedWork')}></Button>
           <Button label={t('downloadCV')} type='secondary'></Button>
         </div>
-      </section>
-      <section className={styles.profileContainer}>
-        <aside className={styles.profile}>
-          <h4>{t('profile.title')}</h4>
-          {PROFILE_ROWS.map((row) => (
-            <ProfileRow
-              key={row}
-              label={t(`profile.${row}.label`)}
-              text={t(`profile.${row}.text`)}
-            />
+
+        <div className={styles.logosRow}>
+          <h4 className={styles.logoRowTitle}>Built for</h4>
+          {logos.map(logo => (
+            <Image
+              src={logo.logo}
+              alt={logo.id}
+              key={logo.id}
+              className={styles.logo}
+            ></Image>
           ))}
-        </aside>
+        </div>
       </section>
+      <GlassCard title={t('profile.title')} translations={'home'} />
     </div>
   );
 }

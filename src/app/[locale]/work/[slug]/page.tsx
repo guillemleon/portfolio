@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 import { languageAlternates, localisedUrl } from '@/utils/metadata';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { PageTransition } from '@/components/page-transition/index';
 import Reveal from '@/components/reveal';
@@ -11,7 +12,9 @@ import { childrenOf, workBySlug, workSlugs } from '@/utils/work';
 import styles from './work-detail.module.css';
 
 export function generateStaticParams() {
-    return workSlugs().map((slug) => ({ slug }));
+    return routing.locales.flatMap((locale) =>
+        workSlugs().map((slug) => ({ locale, slug })),
+    );
 }
 
 export async function generateMetadata({
@@ -41,8 +44,14 @@ export async function generateMetadata({
     };
 }
 
-export default async function WorkDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export default async function WorkDetailPage({
+    params,
+}: {
+    params: Promise<{ locale: string; slug: string }>;
+}) {
+    const { locale, slug } = await params;
+    setRequestLocale(locale);
+
     const entry = workBySlug(slug);
 
     if (!entry) notFound();

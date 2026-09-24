@@ -2,7 +2,7 @@
 import styles from './index.module.css';
 import { ReactComponent as Logo } from '@/assets/brand/logo.svg'
 import Button from "../button";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { languages, links } from "@/utils/constants";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
@@ -15,10 +15,16 @@ const Header = () => {
     const locale = useLocale();
 
     const [open, setOpen] = useState(false);
+    const [lastPathname, setLastPathname] = useState(pathname);
 
     const isActive = useCallback((path: string) => pathname === path, [pathname]);
 
-    useEffect(() => setOpen(false), [pathname]);
+    // Close the menu when the route changes, adjusted during render rather than
+    // in an effect: https://react.dev/learn/you-might-not-need-an-effect
+    if (lastPathname !== pathname) {
+        setLastPathname(pathname);
+        setOpen(false);
+    }
 
     return (
         <header className={styles.header}>
@@ -46,7 +52,7 @@ const Header = () => {
                         </li>
                     ))}
                     <div className={styles.headerButtons}>
-                        <Button label={t('getInTouch')} size='small' onClick={() => { }} />
+                        <Button label={t('getInTouch')} size='small' href="/contact" />
                         {languages.map((language) => (
                             <SimpleButton
                                 key={language.code}

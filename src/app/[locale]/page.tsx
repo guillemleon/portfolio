@@ -3,6 +3,7 @@ import Button from "@/components/button";
 import styles from "./page.module.css";
 import GlassCard from "@/components/glass-card";
 import { logos } from "@/utils/constants";
+import { site } from "@/utils/site";
 import Image from "next/image";
 
 const TITLE = "Guillem León";
@@ -36,8 +37,10 @@ export default function Home() {
         </p>
 
         <div className={styles.buttons}>
-          <Button label={t('selectedWork')}></Button>
-          <Button label={t('downloadCV')} type='secondary'></Button>
+          <Button label={t('selectedWork')} href="/work" />
+          {site.cv ? (
+            <Button label={t('downloadCV')} type='secondary' href={site.cv} download />
+          ) : null}
         </div>
 
         <div className={styles.logosRow}>

@@ -1,0 +1,107 @@
+.page {
+    padding: clamp(48px, 7vw, 96px) 0 120px;
+    max-width: 760px;
+}
+
+.intro {
+    margin-bottom: clamp(44px, 6vw, 72px);
+}
+
+.title {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin: 0 0 18px;
+}
+
+.lede {
+    font-size: 18.5px;
+    line-height: 1.62;
+    color: var(--color-neutral-300);
+    max-width: 560px;
+}
+
+.channels {
+    list-style: none;
+    border-top: 1px solid var(--color-divider);
+}
+
+.channel {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--color-divider);
+    position: relative;
+    transition: padding-left 0.35s cubic-bezier(.16, .84, .3, 1);
+
+    &::after {
+        content: "↗";
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transform: translateX(-6px);
+        color: var(--color-accent);
+        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.16, .84, .3, 1);
+    }
+
+    &:hover,
+    &:focus-visible {
+        padding-left: 14px;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+        opacity: 1;
+        transform: none;
+    }
+
+    &:hover .channelValue,
+    &:focus-visible .channelValue {
+        color: var(--color-accent);
+    }
+}
+
+.channelLabel {
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-neutral-600);
+    flex: none;
+}
+
+.channelValue {
+    font-size: clamp(1rem, 2vw, 1.375rem);
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-100);
+    transition: color 0.25s ease;
+    text-align: right;
+    word-break: break-word;
+    padding-right: 28px;
+}
+
+.footNote {
+    margin-top: clamp(40px, 5vw, 64px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.location,
+.availability {
+    font-size: 13px;
+    color: var(--color-neutral-500);
+}
+
+.availability {
+    color: var(--color-accent-300);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .channel,
+    .channel::after,
+    .channelValue {
+        transition: none;
+    }
+}

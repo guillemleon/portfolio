@@ -1,4 +1,5 @@
 import { SVGProps } from 'react';
+import { ReactComponent as Apple } from '@/assets/icons/apple.svg';
 import { ReactComponent as ArrowDown } from '@/assets/icons/arrow-down.svg';
 import { ReactComponent as ArrowUpRight } from '@/assets/icons/arrow-up-right.svg';
 import { ReactComponent as ArrowLeft } from '@/assets/icons/arrow-left.svg';
@@ -12,6 +13,7 @@ import { ReactComponent as Mail } from '@/assets/icons/mail.svg';
 import { ReactComponent as Phone } from '@/assets/icons/phone.svg';
 
 type IconNames =
+    | 'apple'
     | 'arrowDown'
     | 'arrowLeft'
     | 'arrowRight'
@@ -25,6 +27,7 @@ type IconNames =
     | 'phone';
 
 const ICONS: Record<IconNames, React.FC<SVGProps<SVGSVGElement>>> = {
+    apple: Apple,
     arrowDown: ArrowDown,
     arrowLeft: ArrowLeft,
     arrowRight: ArrowRight,

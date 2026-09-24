@@ -14,20 +14,82 @@
         "downloadCV": "Descarregar CV",
         "profile": {
             "title": "Perfil",
-            "now": { "label": "Ara", "text": "Enginyer de Smart TV, Filmin" },
-            "focus": { "label": "Focus", "text": "Lliurament multiplataforma" },
-            "sideWork": { "label": "Projectes propis", "text": "Dues apps iOS publicades" },
-            "reachMe": { "label": "Contacte", "text": "Per email" },
-            "stack": { "label": "Stack", "text": "React · TS · Node · Python · Swift" }
+            "now": {
+                "label": "Ara",
+                "text": "Enginyer de Smart TV, Filmin"
+            },
+            "focus": {
+                "label": "Focus",
+                "text": "Lliurament multiplataforma"
+            },
+            "sideWork": {
+                "label": "Projectes propis",
+                "text": "Dues apps iOS publicades"
+            },
+            "reachMe": {
+                "label": "Contacte",
+                "text": "Per email"
+            },
+            "stack": {
+                "label": "Stack",
+                "text": "React · TS · Node · Python · Swift"
+            }
         }
     },
     "about": {
-        "title": "Sobre mi"
+        "title": "Sobre mi.",
+        "lede": "Enginyer de programari a Barcelona, sis anys en tot l'stack.",
+        "body": "M'encarrego de l'app de televisió a Filmin, portant les funcionalitats des de la primera conversa amb producte i disseny fins al llançament a tots els dispositius. Abans vaig construir components sobre els quals publiquen equips de banca, llocs per a un operador internacional de transport i l'stack complet de dos productes de consum. En el meu temps lliure dissenyo i publico apps per a iOS.",
+        "timeline": "Experiència",
+        "stack": "Stack",
+        "stackGroups": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "tooling": "Eines"
+        }
     },
     "work": {
-        "title": "Projectes"
+        "title": "Feina.",
+        "intro": "On he treballat i què he construït.",
+        "jobs": "Experiència",
+        "backToWork": "Tota la feina",
+        "visit": "Visitar",
+        "role": "Rol",
+        "period": "Període",
+        "company": "Empresa",
+        "stack": "Stack",
+        "sideProjects": "Projectes propis",
+        "highlights": "Destacats",
+        "back": "Tornar",
+        "appStoreCaption": "Aconsegueix-lo a l'",
+        "appStoreLabel": "App Store"
     },
     "contact": {
-        "title": "Contacte"
+        "title": "Contacte.",
+        "intro": "Disponible per a posicions, feina freelance i desenvolupament de producte. La via més ràpida és el correu.",
+        "availability": "Disponible",
+        "channels": {
+            "email": "Correu",
+            "linkedin": "LinkedIn",
+            "phone": "Telèfon"
+        }
+    },
+    "seo": {
+        "home": {
+            "title": "Guillem Leon Font - Enginyer de Programari a Barcelona",
+            "description": "Enginyer de programari a Barcelona. Sis anys creant aplicacions web en producció amb React i TypeScript, backends en Node i Python, i apps iOS. Enginyer de smart TV a Filmin."
+        },
+        "work": {
+            "title": "Feina",
+            "description": "On he treballat i què he construït: smart TV a Filmin, components bancaris a CaixaBank Tech, llocs de transport a Extia i tres apps iOS pròpies."
+        },
+        "about": {
+            "title": "Sobre mi",
+            "description": "Enginyer de programari a Barcelona, sis anys en tot l'stack. React, TypeScript, Node, Python i SwiftUI."
+        },
+        "contact": {
+            "title": "Contacte",
+            "description": "Disponible per a posicions, feina freelance i desenvolupament de producte. Contacta amb Guillem Leon Font, enginyer de programari a Barcelona."
+        }
     }
 }

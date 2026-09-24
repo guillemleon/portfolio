@@ -3,15 +3,38 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { pageMetadata } from "@/utils/metadata";
+import { personSchema } from "@/utils/schema";
+import { site } from "@/utils/site";
 import { ReactComponent as Logo } from '@/assets/brand/logo.svg'
 import Header from "@/components/header";
 import styles from '../layout.module.css';
 import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "Guillem Leon Font",
-  description: "Guillem Leon Font Software Engineer",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const base = await pageMetadata({ locale, key: 'home' });
+
+  return {
+    ...base,
+    metadataBase: new URL(site.url),
+    title: {
+      default: base.title as string,
+      template: `%s - ${site.name}`,
+    },
+    authors: [{ name: site.name, url: site.url }],
+    creator: site.name,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -34,6 +57,10 @@ export default async function RootLayout({
             <div className={styles.glow} />
           </div>
           <Header />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema(locale)) }}
+          />
           <main className={styles.main}>
             {children}
           </main>

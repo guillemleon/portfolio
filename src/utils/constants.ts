@@ -41,4 +41,19 @@ const logos = [
     { id: 'flykube', logo: flykubeLogo },
 ]
 
-export { colors, links, languages, logos }
+const stack = [
+    {
+        id: 'frontend',
+        items: ['TypeScript', 'React', 'Next.js', 'React Native', 'SwiftUI', 'CSS / SCSS'],
+    },
+    {
+        id: 'backend',
+        items: ['Node.js', 'Python', 'Django', 'PostgreSQL', 'REST', 'GraphQL'],
+    },
+    {
+        id: 'tooling',
+        items: ['Git', 'Jest', 'Azure DevOps', 'Figma', 'Sentry', 'Mixpanel'],
+    },
+];
+
+export { colors, links, languages, logos, stack }

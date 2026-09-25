@@ -9,6 +9,7 @@ export const personSchema = (locale: string) => ({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: site.name,
+    alternateName: ['Guillem Leon Font', 'Guillem León', 'Guillem Leon'],
     url: localisedUrl(locale),
     jobTitle: 'Software Engineer',
     address: {

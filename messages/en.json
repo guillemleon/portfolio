@@ -76,7 +76,7 @@
     },
     "seo": {
         "home": {
-            "title": "Guillem Leon Font - Software Engineer in Barcelona",
+            "title": "Guillem León Font - Software Engineer in Barcelona",
             "description": "Software engineer in Barcelona. Six years building production web apps in React and TypeScript, backends in Node and Python, and iOS apps. Smart TV engineer at Filmin."
         },
         "work": {
@@ -89,7 +89,7 @@
         },
         "contact": {
             "title": "Contact",
-            "description": "Open to roles, freelance work and product builds. Get in touch with Guillem Leon Font, software engineer in Barcelona."
+            "description": "Open to roles, freelance work and product builds. Get in touch with Guillem León Font, software engineer in Barcelona."
         }
     }
 }

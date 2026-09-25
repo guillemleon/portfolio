@@ -5,10 +5,12 @@ interface Contact {
     location: string;
 }
 
+import { site } from './site';
+
 export const contact: Contact = {
     email: 'guillem.leonf@gmail.com',
     // Left empty on purpose: a channel only renders once it has a real value.
-    linkedin: '',
+    linkedin: site.linkedin,
     phone: '',
     location: 'Barcelona, Spain',
 };

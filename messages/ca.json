@@ -76,7 +76,7 @@
     },
     "seo": {
         "home": {
-            "title": "Guillem Leon Font - Enginyer de Programari a Barcelona",
+            "title": "Guillem León Font - Enginyer de Programari a Barcelona",
             "description": "Enginyer de programari a Barcelona. Sis anys creant aplicacions web en producció amb React i TypeScript, backends en Node i Python, i apps iOS. Enginyer de smart TV a Filmin."
         },
         "work": {
@@ -89,7 +89,7 @@
         },
         "contact": {
             "title": "Contacte",
-            "description": "Disponible per a posicions, feina freelance i desenvolupament de producte. Contacta amb Guillem Leon Font, enginyer de programari a Barcelona."
+            "description": "Disponible per a posicions, feina freelance i desenvolupament de producte. Contacta amb Guillem León Font, enginyer de programari a Barcelona."
         }
     }
 }

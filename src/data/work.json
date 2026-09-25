@@ -1106,13 +1106,13 @@
                 {
                     "title": "The problem",
                     "name": "Most illustrator portfolios go stale",
-                    "description": "The work changes constantly, the site does not. Either the artist pays someone every time a project lands, or the site slowly stops representing them. \\n Andrea needed the opposite: a site she could update the afternoon she finished something.",
+                    "description": "The work changes constantly, the site does not. Either the artist pays someone every time a project lands, or the site slowly stops representing them. \n Andrea needed the opposite: a site she could update the afternoon she finished something.",
                     "quotes": []
                 },
                 {
                     "title": "The approach",
                     "name": "A back office built for one person",
-                    "description": "A Django REST backend with authentication and a PostgreSQL store, and a React frontend that reads from it. Projects, images and copy are all editable from a private admin, with a markdown editor for longer text. \\n Every project carries both language versions, so translating is part of writing rather than a separate job.",
+                    "description": "A Django REST backend with authentication and a PostgreSQL store, and a React frontend that reads from it. Projects, images and copy are all editable from a private admin, with a markdown editor for longer text. \n Every project carries both language versions, so translating is part of writing rather than a separate job.",
                     "quotes": []
                 },
                 {

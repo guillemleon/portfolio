@@ -76,7 +76,7 @@
     },
     "seo": {
         "home": {
-            "title": "Guillem Leon Font - Ingeniero de Software en Barcelona",
+            "title": "Guillem León Font - Ingeniero de Software en Barcelona",
             "description": "Ingeniero de software en Barcelona. Seis años creando aplicaciones web en producción con React y TypeScript, backends en Node y Python, y apps iOS. Ingeniero de smart TV en Filmin."
         },
         "work": {
@@ -89,7 +89,7 @@
         },
         "contact": {
             "title": "Contacto",
-            "description": "Disponible para posiciones, trabajo freelance y desarrollo de producto. Contacta con Guillem Leon Font, ingeniero de software en Barcelona."
+            "description": "Disponible para posiciones, trabajo freelance y desarrollo de producto. Contacta con Guillem León Font, ingeniero de software en Barcelona."
         }
     }
 }

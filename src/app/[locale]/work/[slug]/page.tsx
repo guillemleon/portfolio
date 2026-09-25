@@ -160,7 +160,7 @@ export default async function WorkDetailPage({
                         <Reveal as="section" key={point.title} delay={index * 60} className={styles.point}>
                             <p className={styles.pointLabel}>{point.title}</p>
                             <h2 className={styles.pointName}>{point.name}</h2>
-                            {point.description.split('\n').map((paragraph) => {
+                            {point.description.split(/\\n|\n/).map((paragraph) => {
                                 const text = paragraph.trim();
                                 if (!text) return null;
                                 return (

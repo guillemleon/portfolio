@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { pageMetadata } from '@/utils/metadata';
 import { PageTransition } from '@/components/page-transition/index';
 import Reveal from '@/components/reveal';
-import { contact, contactChannels } from '@/utils/contact';
+import { contactChannels } from '@/utils/contact';
 import styles from './contact.module.css';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 </ul>
 
                 <Reveal className={styles.footNote} delay={120}>
-                    <p className={styles.location}>{contact.location}</p>
+                    <p className={styles.location}>{t('location')}</p>
                     <p className={styles.availability}>{t('availability')}</p>
                 </Reveal>
             </div>

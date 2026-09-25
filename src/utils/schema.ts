@@ -12,11 +12,6 @@ export const personSchema = (locale: string) => ({
     alternateName: ['Guillem Leon Font', 'Guillem León', 'Guillem Leon'],
     url: localisedUrl(locale),
     jobTitle: 'Software Engineer',
-    address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Barcelona',
-        addressCountry: 'ES',
-    },
     worksFor: {
         '@type': 'Organization',
         name: 'Filmin',

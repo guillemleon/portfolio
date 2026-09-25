@@ -1,25 +1,57 @@
-import workData from '@/data/work.json';
-import type { WorkCategory, WorkData, WorkEntry } from '@/types/work';
+import structure from '@/data/work.json';
+import en from '@/data/work.en.json';
+import es from '@/data/work.es.json';
+import ca from '@/data/work.ca.json';
+import type { WorkEntry, WorkCategory, WorkPage, WorkProse } from '@/types/work';
 
-const { page, data } = workData as WorkData;
+interface Structure {
+    data: Omit<WorkEntry, keyof WorkProse>[];
+}
 
-export const workPage = page;
+interface Locale {
+    page: WorkPage;
+    entries: Record<string, WorkProse>;
+}
 
-export const allWork: WorkEntry[] = data;
+const locales: Record<string, Locale> = {
+    en: en as Locale,
+    es: es as Locale,
+    ca: ca as Locale,
+};
 
-export const workByCategory = (category: WorkCategory): WorkEntry[] =>
-    data.filter((entry) => entry.category === category);
+const fallback = 'en';
 
-export const jobs = (): WorkEntry[] => data.filter((entry) => entry.category === 'job');
+/** Ongoing entries store "Present" in the shared structure; shown in the page's language. */
+const present: Record<string, string> = { en: 'Present', es: 'Actualidad', ca: 'Actualitat' };
 
-export const sideProjects = (): WorkEntry[] => data.filter((entry) => entry.category === 'side');
+const localeFor = (locale: string): Locale => locales[locale] ?? locales[fallback]!;
 
-export const childrenOf = (slug: string): WorkEntry[] =>
-    data.filter((entry) => entry.parent === slug);
+/** Structure and prose are stored apart so a translation cannot drift from the data. */
+const merge = (locale: string): WorkEntry[] => {
+    const pack = localeFor(locale);
 
-export const featuredWork = (): WorkEntry[] => data.filter((entry) => entry.featured);
+    return (structure as Structure).data.map((entry) => {
+        const prose = pack.entries[entry.slug] ?? locales[fallback]!.entries[entry.slug];
+        const to = entry.to === 'Present' ? (present[locale] ?? present[fallback]!) : entry.to;
+        return { ...entry, ...prose, to } as WorkEntry;
+    });
+};
 
-export const workBySlug = (slug: string): WorkEntry | undefined =>
-    data.find((entry) => entry.slug === slug);
+export const workPage = (locale: string): WorkPage => localeFor(locale).page;
 
-export const workSlugs = (): string[] => data.map((entry) => entry.slug);
+export const allWork = (locale: string): WorkEntry[] => merge(locale);
+
+export const workByCategory = (locale: string, category: WorkCategory): WorkEntry[] =>
+    merge(locale).filter((entry) => entry.category === category);
+
+export const jobs = (locale: string): WorkEntry[] => workByCategory(locale, 'job');
+
+export const sideProjects = (locale: string): WorkEntry[] => workByCategory(locale, 'side');
+
+export const childrenOf = (locale: string, slug: string): WorkEntry[] =>
+    merge(locale).filter((entry) => entry.parent === slug);
+
+export const workBySlug = (locale: string, slug: string): WorkEntry | undefined =>
+    merge(locale).find((entry) => entry.slug === slug);
+
+export const workSlugs = (): string[] => (structure as Structure).data.map((e) => e.slug);

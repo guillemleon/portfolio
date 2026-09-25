@@ -5,6 +5,7 @@ import GlassCard from "@/components/glass-card";
 import { logos } from "@/utils/constants";
 import { site } from "@/utils/site";
 import Image from "next/image";
+import Availability from "@/components/availability";
 
 const TITLE = "Guillem León";
 
@@ -14,6 +15,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <section className={styles.personalInfo}>
+        {site.available ? (
+          <Availability label={t('available')} className={styles.availability} />
+        ) : null}
+
         <h1 className={styles.title}>
           {TITLE.split('').map((letter, index) => {
             if (letter === " ") {

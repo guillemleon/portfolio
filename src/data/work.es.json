@@ -1,0 +1,943 @@
+{
+    "page": {
+        "title": "Trabajo.",
+        "intro": "Dónde he trabajado y lo que he construido por el camino."
+    },
+    "entries": {
+        "filmin-smart-tv": {
+            "title": "Filmin en tu tele",
+            "headline": "Una app, todas las teles.",
+            "role": "Software Engineer · Smart TV",
+            "summary": "La app de Filmin en televisores desde 2016 hasta hoy, con un único código en React. Hoy en día soy quien lidera la parte de smart TV.",
+            "intro": "Filmin es la casa del cine y las series independientes en España. Trabajo en su app para televisores: un único código en React que funciona en Samsung, LG, Hisense, Android TV, Fire TV, Vega OS, Vodafone y PS4, en teles desde 2016 hasta las que se venden hoy. Después de ser quien más tiempo lleva en ella, he ido asumiendo el liderazgo del equipo de smart TV.",
+            "stat": {
+                "title": "2016",
+                "subtitle": "Las teles más antiguas"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Liderar la app de smart TV, día a día"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "Backend, producto, diseño, codificación y editorial"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "De cuatro a seis semanas por idea"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React, dentro del webview de cada tele"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Samsung",
+                    "description": "Desde 2016, Chrome 23 incluido"
+                },
+                {
+                    "name": "LG webOS",
+                    "description": "Años de modelos, una sola build"
+                },
+                {
+                    "name": "Hisense",
+                    "description": "Sus propias rarezas, la misma app"
+                },
+                {
+                    "name": "Android TV y Fire TV",
+                    "description": "Mucha variedad de hardware"
+                },
+                {
+                    "name": "Amazon Vega OS",
+                    "description": "Lanzada del SDK a la tienda"
+                },
+                {
+                    "name": "Vodafone y PS4",
+                    "description": "Descodificador y consola"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Una tele dura una década",
+                    "description": "La gente conserva una tele mucho más tiempo que un móvil, así que la app tiene que ir igual de bien en una Samsung de 2016 que en una comprada la semana pasada. Esa Samsung de 2016 lleva un motor tan antiguo como Chrome 23, con una fracción de la memoria de un portátil.\nPor dentro sigue siendo desarrollo web — la app es React dentro de un webview —, solo que con un abanico de navegadores mucho más amplio que respetar.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "Primero compatible, luego escalable",
+                    "description": "Cada cambio tiene que funcionar en la tele más antigua que soportamos y, a la vez, dejar sitio para la próxima plataforma que llegue. Buena parte del oficio está en mantener las dos cosas a la vez.",
+                    "quotes": [
+                        "Una estrategia de polyfills pensada, en lugar de enviarlo todo a todas partes",
+                        "Parches de CSS para motores antiguos, aislados y documentados",
+                        "El rendimiento se mide en el dispositivo más lento, no en el medio",
+                        "Las particularidades de cada plataforma, consolidadas para que una funcionalidad llegue a todas las teles a la vez"
+                    ]
+                },
+                {
+                    "title": "El equipo",
+                    "name": "Primero producto, luego código",
+                    "description": "Me gusta verme como un ingeniero de software con mentalidad de producto. Conocer bien el producto — y lo que cada tele aguanta de verdad — me permite ser útil pronto, en la sala con producto y diseño, antes de que una idea se convierta en algo que haya que deshacer.\nTrabajamos muy cerca de los equipos de backend, producto, diseño, codificación y editorial, e intento que la parte de smart TV sea un equipo fácil con el que trabajar.",
+                    "quotes": []
+                },
+                {
+                    "title": "El rol",
+                    "name": "Crecer hacia el liderazgo",
+                    "description": "Con el tiempo he ido asumiendo el liderazgo de la parte de smart TV: vigilar las prioridades, asegurarme de que nada de la parte de TV se quede por el camino y ser la persona a la que producto y diseño pueden acudir con cualquier duda sobre televisores.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "8",
+                    "subtitle": "Plataformas, un código"
+                },
+                {
+                    "title": "2016",
+                    "subtitle": "Hasta las teles de hoy"
+                },
+                {
+                    "title": "Chrome 23",
+                    "subtitle": "El motor más antiguo"
+                },
+                {
+                    "title": "4–6",
+                    "subtitle": "Semanas por idea"
+                }
+            ]
+        },
+        "angular-to-react": {
+            "title": "De Angular a React",
+            "headline": "Cambiar el motor en pleno vuelo.",
+            "role": "Migración",
+            "summary": "Pasar la app de TV de Angular a React sin dejar de publicar cada pocas semanas. Más cuestión de paciencia y buen orden que de velocidad.",
+            "intro": "Cuando llegué, la app de TV estaba hecha en Angular y atada a un proyecto más antiguo, con años de casos especiales para televisores que no se ponían de acuerdo entre ellos. Hoy es React al cien por cien — y llegamos sin parar nunca las publicaciones.",
+            "stat": {
+                "title": "100%",
+                "subtitle": "React hoy"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Planificar y hacer la migración"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "Un trabajo de funcionalidades que nunca paró"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "Publicación a publicación, sin congelar"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React, con Angular al lado hasta el final"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Desacoplar",
+                    "description": "Separada del proyecto antiguo"
+                },
+                {
+                    "name": "Convivencia",
+                    "description": "Los dos frameworks en una build, un tiempo"
+                },
+                {
+                    "name": "Herramientas",
+                    "description": "Webpack y dependencias al día"
+                },
+                {
+                    "name": "Deuda técnica",
+                    "description": "Lógica duplicada por plataforma, limpiada"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Una reescritura que nadie podía parar",
+                    "description": "La forma cómoda de cambiar de framework es pararlo todo y hacer solo eso. Un servicio de streaming no puede: las funcionalidades nuevas, las certificaciones de dispositivos y los arreglos tienen su propio calendario. La migración tenía que hacerse dentro de nuestro ritmo normal de publicaciones, o no hacerse.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "El orden antes que la prisa",
+                    "description": "Primero separamos la app del proyecto antiguo para que se sostuviera sola. Después la movimos pieza a pieza, con los dos frameworks conviviendo en la misma build hasta que desapareció la última vista en Angular. Cada pieza que cruzaba dejaba atrás parte de sus casos especiales.",
+                    "quotes": [
+                        "Desacoplada del proyecto antiguo antes de tocar la interfaz",
+                        "Migrada poco a poco, con los dos frameworks en una build",
+                        "Las ramas específicas de cada plataforma, limpiadas al cruzar",
+                        "Las teles más antiguas funcionando todo el tiempo — Chrome 23 incluido"
+                    ]
+                },
+                {
+                    "title": "El resultado",
+                    "name": "Hecho sin ruido",
+                    "description": "Angular ya no está. Un único código en React llega a todas las teles a la vez, y la energía que antes gastábamos en mantener dos mundos ahora va al producto.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "100%",
+                    "subtitle": "React hoy"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Publicaciones congeladas"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Código al final"
+                }
+            ]
+        },
+        "vega-os-launch": {
+            "title": "Filmin en Amazon Vega OS",
+            "headline": "Del SDK a la tienda.",
+            "role": "Plataforma nueva",
+            "summary": "La nueva plataforma de TV de Amazon, sin nadie a quien preguntar ni nada que buscar. Leí el SDK, entendí lo que podía hacer y llevé Filmin hasta la tienda.",
+            "intro": "Vega OS es el paso de Amazon para dejar Android en sus teles — tan nuevo que, cuando algo fallaba, no había nada que buscar. Evalué el SDK, mapeé lo que la plataforma soportaba y lo que no, adapté nuestra app y la llevé hasta el envío a la tienda.",
+            "stat": {
+                "title": "Nueva",
+                "subtitle": "Plataforma, de principio a fin"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "De la evaluación al envío"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "Amazon, como contacto técnico"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "Leer el SDK antes de escribir código"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "Nuestro código React, adaptado"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Evaluar el SDK",
+                    "description": "Lo que la plataforma puede hacer de verdad"
+                },
+                {
+                    "name": "Mapa de capacidades",
+                    "description": "Qué se quedaba y qué tenía que cambiar"
+                },
+                {
+                    "name": "Adaptación",
+                    "description": "La app React, ajustada a Vega"
+                },
+                {
+                    "name": "Envío a la tienda",
+                    "description": "El proceso de Amazon, entero"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Nada que buscar",
+                    "description": "Las plataformas maduras vienen con años de preguntas de otros ya respondidas. Vega venía con un SDK y poco más, y nadie en la empresa había publicado nada en ella.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "Primero leer, después construir",
+                    "description": "Antes de cambiar nada, leí el SDK e hice un mapa de lo que la plataforma soportaba y de lo que nuestra app daba por hecho. Ese mapa marcó el trabajo: qué se podía quedar, qué había que adaptar y qué preguntarle directamente a Amazon.",
+                    "quotes": [
+                        "Evaluación del SDK antes de una sola línea de la app",
+                        "Un mapa de lo que Vega soportaba y lo que no",
+                        "La app React existente adaptada, no reescrita",
+                        "Línea directa con Amazon para lo que la documentación no cubría"
+                    ]
+                },
+                {
+                    "title": "El lanzamiento",
+                    "name": "Hasta la tienda",
+                    "description": "Adaptada, enviada y publicada en la tienda de Amazon. Ver Filmin funcionando en una plataforma que unos meses antes ni existía para nosotros fue un día muy bueno.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Nueva",
+                    "subtitle": "Plataforma en producción"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Precedentes en los que apoyarse"
+                },
+                {
+                    "title": "SDK → Tienda",
+                    "subtitle": "El camino entero"
+                }
+            ]
+        },
+        "banking-widgets": {
+            "title": "Chatea con tu gestor",
+            "headline": "Una persona, no una cola.",
+            "role": "Desarrollador Frontend",
+            "summary": "El chat con el que los clientes de CaixaBank hablan con su gestor desde la app, hecho en un equipo donde desarrolladores y perfiles financieros trabajaban codo con codo.",
+            "intro": "En CaixaBank Tech la mayor parte de mi tiempo fue para una funcionalidad: el chat que permite a los clientes hablar con su gestor en la app. Éramos un equipo de siete u ocho personas con roles muy distintos — desarrolladores, algunos en remoto desde Valencia, trabajando cada día con compañeros del área financiera. Por el camino también hice un pequeño widget en Stencil.",
+            "stat": {
+                "title": "7–8",
+                "subtitle": "Personas, muchos roles"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "La parte de app del chat con el gestor"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "Perfiles financieros y desarrolladores en Valencia"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "Regulado — cada publicación, pensada"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React, TypeScript y Stencil"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Chat con el gestor",
+                    "description": "Clientes hablando con su gestor"
+                },
+                {
+                    "name": "Equipo mixto",
+                    "description": "Desarrollo y perfiles financieros, juntos"
+                },
+                {
+                    "name": "Widget en Stencil",
+                    "description": "Una pieza más pequeña, independiente del framework"
+                },
+                {
+                    "name": "Publicaciones",
+                    "description": "Con cuidado, en un entorno regulado"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El producto",
+                    "name": "Hablar con una persona",
+                    "description": "Para muchos clientes, lo más valioso que puede ofrecer un banco sigue siendo una persona que los conoce. El chat llevaba eso a la app: una línea directa con tu gestor, sin llamadas ni visitas a la oficina. Mi parte era la de la app — la conversación en sí y todo lo que la rodea.",
+                    "quotes": []
+                },
+                {
+                    "title": "El equipo",
+                    "name": "Aprender del otro lado",
+                    "description": "Muchas de las personas con las que trabajaba cada día no eran ingenieras. Trabajar junto a compañeros del área financiera me enseñó a preguntar el porqué antes que el cómo, y a explicar las decisiones técnicas con palabras sencillas. El equipo de desarrollo estaba repartido entre varias ciudades, así que comunicarse bien por escrito importaba igual.",
+                    "quotes": []
+                },
+                {
+                    "title": "Lo demás",
+                    "name": "Piezas pequeñas, con cuidado",
+                    "description": "Junto al chat hice un widget en Stencil — un componente pequeño e independiente del framework que otros equipos podían integrar en sus productos. En banca cada publicación llega a mucha gente muy rápido, así que publicar con cuidado se convirtió en un hábito más que en una norma.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "7–8",
+                    "subtitle": "Personas en el equipo"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Ciudades, un equipo"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Chat, muchas conversaciones"
+                }
+            ]
+        },
+        "keolis-sites": {
+            "title": "Webs para Keolis",
+            "headline": "Equipos pequeños, muchas webs.",
+            "role": "Desarrollador Frontend",
+            "summary": "Consultoría para Keolis, el operador internacional de transporte público: keolis.com, sus portales de turismo e innovación y más, en equipos pequeños entre España y Francia.",
+            "intro": "En Extia mi cliente era Keolis, un operador internacional de transporte público. Trabajaba con desarrolladores en España y en Francia, siempre en inglés, en equipos pequeños de dos o tres personas que iban pasando por distintos proyectos — keolis.com, el portal de turismo, el portal de innovación y otros.",
+            "stat": {
+                "title": "2–3",
+                "subtitle": "Personas por equipo"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Construir webs, proyecto a proyecto"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "Desarrolladores en España y Francia"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "Equipos pequeños, varios proyectos"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React, Gatsby y TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Gatsby",
+                    "description": "Webs estáticas y rápidas"
+                },
+                {
+                    "name": "DatoCMS",
+                    "description": "Contenido en manos de los editores del cliente"
+                },
+                {
+                    "name": "Inglés",
+                    "description": "Cada conversación, cada día"
+                },
+                {
+                    "name": "Code review",
+                    "description": "Revisarnos entre todos, como rutina"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El contexto",
+                    "name": "Trabajar en inglés, entre países",
+                    "description": "Fue mi primer equipo internacional. Todo pasaba en inglés — las dailies, las revisiones, las charlas de pasillo —, lo que al principio me pareció un gran paso y enseguida se volvió normal. Sigue siendo de las cosas que más me alegro de haber hecho pronto.",
+                    "quotes": []
+                },
+                {
+                    "title": "El trabajo",
+                    "name": "Muchas webs, equipos pequeños",
+                    "description": "Nos organizábamos en equipos de dos o tres e íbamos pasando por los proyectos de Keolis según llegaban. En equipos tan pequeños todo el mundo toca de todo: estructura, componentes, contenido y esos detalles que hacen que una web parezca terminada.",
+                    "quotes": [
+                        "keolis.com, el portal de turismo, el de innovación y más",
+                        "Gatsby con React y TypeScript, a menudo desde un repositorio vacío",
+                        "Contenido modelado en DatoCMS y consultado por GraphQL",
+                        "Revisiones de código y tests con Jest como parte de la rutina"
+                    ]
+                },
+                {
+                    "title": "La lección",
+                    "name": "Publicar en equipo",
+                    "description": "Cuando dos o tres personas comparten un código, queda poco sitio para el ego. Revisar el trabajo de los demás, ponernos de acuerdo en las convenciones y traspasar proyectos de forma limpia me enseñó más sobre trabajar en equipo que cualquier proyecto por sí solo.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2–3",
+                    "subtitle": "Personas por equipo"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Países, un equipo"
+                },
+                {
+                    "title": "Inglés",
+                    "subtitle": "Todos los días"
+                }
+            ]
+        },
+        "flykube-eatkube": {
+            "title": "Flykube y Eatkube",
+            "headline": "Donde empezó todo.",
+            "role": "Desarrollador Frontend",
+            "summary": "Mi primer trabajo: unas prácticas que acabaron en contrato, construyendo las webs de Flykube y Eatkube y la app de Eatkube — cuando el equipo técnico éramos el CTO y yo.",
+            "intro": "Aquí empezó todo para mí — primero en prácticas y después con contrato. Cuando llegué, todo el equipo técnico éramos el CTO y yo, trabajando mano a mano con diseño y producto. El equipo fue creciendo, y yo con él.",
+            "stat": {
+                "title": "3",
+                "subtitle": "Proyectos web y móvil"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Webs en React, la app en React Native"
+                },
+                {
+                    "name": "Junto a",
+                    "description": "El CTO, diseño y producto"
+                },
+                {
+                    "name": "Ritmo",
+                    "description": "El de una startup — todo a la vez"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React, React Native y un poco de Django"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "React",
+                    "description": "Las webs de Flykube y Eatkube"
+                },
+                {
+                    "name": "React Native",
+                    "description": "La app de Eatkube"
+                },
+                {
+                    "name": "Django",
+                    "description": "Tareas pequeñas, un primer contacto con backend"
+                },
+                {
+                    "name": "Figma",
+                    "description": "Interfaces trabajadas con diseño"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El contexto",
+                    "name": "Un equipo de dos",
+                    "description": "Durante un tiempo, todo el equipo técnico éramos el CTO y yo. Eso significaba trabajar directamente con diseño y producto, aprender rápido y acostumbrarme pronto a hacerme cargo de las cosas. A medida que entraba más gente, pude ver cómo una empresa pequeña encontraba su forma.",
+                    "quotes": []
+                },
+                {
+                    "title": "El trabajo",
+                    "name": "Dos webs y una app",
+                    "description": "Construí la web de Flykube y la de Eatkube en React, y la app de Eatkube en React Native. Eatkube era una app de comida a domicilio basada en la sorpresa. Creo que ya no existe, pero la idea me sigue gustando.",
+                    "quotes": []
+                },
+                {
+                    "title": "La lección",
+                    "name": "Un primer vistazo al backend",
+                    "description": "No era desarrollador backend, pero por el camino hice algunas tareas pequeñas en Django. Nada grande — lo justo para ver cómo funciona un backend real en producción, y desde entonces ha marcado cómo pienso el frontend.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Webs en React"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "App en React Native"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Personas en tech, al principio"
+                }
+            ]
+        },
+        "griselhub": {
+            "title": "GriselHub",
+            "headline": "El estudio bajo el que se publican las apps.",
+            "role": "Diseñador e ingeniero, en solitario",
+            "summary": "El estudio iOS independiente detrás de Crescia, Yantar y Fulcrum. Un sitio que sostiene la identidad común, los enlaces a la tienda y las páginas legales a las que toda app tiene que apuntar.",
+            "intro": "Tres apps en la App Store necesitan un sitio al que apuntar. Apple exige una política de privacidad y una URL de soporte por app, y publicarlas como tres nombres sin relación no deja nada detrás. GriselHub es el estudio bajo el que se publican, y el sitio que se encarga de todo eso.",
+            "stat": {
+                "title": "7",
+                "subtitle": "Idiomas"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Marca, sitio y despliegue"
+                },
+                {
+                    "name": "Da servicio a",
+                    "description": "Tres apps iOS publicadas"
+                },
+                {
+                    "name": "Idiomas",
+                    "description": "EN, ES, CA, DE, FR, IT, PT"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React y Vite sobre Cloudflare"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Frente del estudio",
+                    "description": "Una identidad para tres apps"
+                },
+                {
+                    "name": "Páginas legales",
+                    "description": "Privacidad, términos y soporte por app"
+                },
+                {
+                    "name": "Siete idiomas",
+                    "description": "Los mismos en los que se venden las apps"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Tres apps, ninguna casa común",
+                    "description": "Crescia, Yantar y Fulcrum se publicaron por separado, y cada una necesitaba una política de privacidad y una página de soporte antes de que Apple la aceptara. Tres juegos de páginas legales en tres URLs improvisadas es trabajo duplicado que envejece mal.\nTambién significaba tres nombres sin relación y sin nada que los uniera, así que nada se acumulaba entre lanzamientos.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "Un estudio, un sitio",
+                    "description": "GriselHub es el nombre bajo el que se publican las tres, y el sitio hace el trabajo común: el frente del estudio, los enlaces a la tienda, y las páginas de privacidad, términos y soporte a las que apunta cada app desde su ficha en la App Store.\nFunciona en siete idiomas, los mismos en los que las apps se venden de verdad, en lugar de quedarse en inglés por defecto.",
+                    "quotes": []
+                },
+                {
+                    "title": "El resultado",
+                    "name": "La siguiente app lo hereda",
+                    "description": "Publicar la cuarta app es ahora una ficha y una sección, no un sitio nuevo. Las obligaciones de privacidad y soporte ya están cubiertas, y cada lanzamiento suma a un mismo nombre en vez de empezar otro.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "3",
+                    "subtitle": "Apps a las que da servicio"
+                },
+                {
+                    "title": "7",
+                    "subtitle": "Idiomas"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "SDK de analítica"
+                }
+            ]
+        },
+        "fulcrum": {
+            "title": "Fulcrum",
+            "headline": "Apunta la cámara a la cena.",
+            "role": "Diseñador e ingeniero, en solitario",
+            "summary": "Un registro de entrenamiento y contador de calorías para iOS y Apple Watch. Fotografía una comida y un modelo de visión devuelve los alimentos, los gramos y las calorías.",
+            "intro": "Fulcrum es un registro de entrenamiento para quien se construye sus propias rutinas, con control de calorías incorporado. Sin programas predefinidos y sin entrenador. El único sitio donde un modelo se gana el sueldo es la parte que nadie quiere hacer a mano: teclear lo que acabas de comer.",
+            "stat": {
+                "title": "10",
+                "subtitle": "Idiomas publicados"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Diseño, iOS, watchOS y el servidor"
+                },
+                {
+                    "name": "Plataformas",
+                    "description": "iPhone y Apple Watch"
+                },
+                {
+                    "name": "Modelo",
+                    "description": "Claude, llamado a través de un Worker"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "SwiftUI, SwiftData, TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Escaneo de comidas",
+                    "description": "Entra una foto, salen alimentos y calorías"
+                },
+                {
+                    "name": "Creador de rutinas",
+                    "description": "Tus ejercicios, tus días"
+                },
+                {
+                    "name": "Sesiones en el reloj",
+                    "description": "Registra cada serie desde la muñeca"
+                },
+                {
+                    "name": "Datos en el dispositivo",
+                    "description": "Sin cuenta, sin sincronización, sin anuncios"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Contar calorías es meter datos",
+                    "description": "Toda app de calorías es un buscador. Comes algo y pasas dos minutos describiéndoselo a una base de datos que no lo tiene. La mayoría lo deja en una semana, y el registro de entrenamiento por el que vinieron muere con ello.\nEl lado del entrenamiento tenía el problema contrario: apps de sobra, todas convencidas de que deben elegirte el programa.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "Un modelo solo para la parte aburrida",
+                    "description": "Fulcrum construye el lado de las rutinas a la manera simple: tus ejercicios, tus días de la semana, temporizadores de descanso, récords personales en el momento en que los superas, y la sesión entera manejable desde el reloj.\nEl modelo apunta al único trabajo en el que es genuinamente mejor. Fotografías el plato, la imagen va a Claude, y vuelve como elementos estructurados con gramos y calorías que confirmas o corriges. Sin chat, sin entrenador, sin feed.",
+                    "quotes": []
+                },
+                {
+                    "title": "El servidor",
+                    "name": "La clave nunca viaja en la app",
+                    "description": "Una clave de API dentro de un binario es una clave que ya has regalado, así que la app no guarda ninguna. Los escaneos pasan por un pequeño Worker de Cloudflare que guarda la clave como secreto de servidor, limita el tamaño de la imagen y aplica un límite por IP para que un token filtrado no acabe siendo la factura de otro.\nSon unas cien líneas de TypeScript y cabe en el plan gratuito.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Plataformas, iPhone y Watch"
+                },
+                {
+                    "title": "10",
+                    "subtitle": "Idiomas publicados"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Cuentas necesarias"
+                },
+                {
+                    "title": "En solitario",
+                    "subtitle": "Diseño, app y servidor"
+                }
+            ]
+        },
+        "crescia": {
+            "title": "Crescia",
+            "headline": "Cada registro se queda contigo.",
+            "role": "iOS",
+            "summary": "Una app de finanzas personales que mantiene cada registro en el dispositivo. Diseño, desarrollo y publicación de principio a fin — decisiones de producto incluidas.",
+            "intro": "Una app de finanzas personales con una regla: los registros viven en el dispositivo y en el iCloud de su dueño — ningún servidor mío los guarda. Diseñada, construida, publicada y promocionada por una sola persona.",
+            "stat": {
+                "title": "Publicada",
+                "subtitle": "En la App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Todo — diseño, desarrollo, publicación, marketing"
+                },
+                {
+                    "name": "La regla",
+                    "description": "Solo iCloud, sin servidor"
+                },
+                {
+                    "name": "Estado",
+                    "description": "Publicada en la App Store"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "SwiftUI y SwiftData"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Importar extractos",
+                    "description": "Extractos bancarios interpretados con la API de Claude"
+                },
+                {
+                    "name": "Suscripciones",
+                    "description": "StoreKit, probado en sandbox, aprobado en tienda"
+                },
+                {
+                    "name": "Widget de iOS",
+                    "description": "Un sitio en la pantalla de inicio"
+                },
+                {
+                    "name": "ASO",
+                    "description": "Ficha afinada en español e inglés"
+                },
+                {
+                    "name": "Campañas",
+                    "description": "Anuncios en Instagram con análisis de embudo"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Las apps de finanzas piden demasiado",
+                    "description": "El trato habitual en finanzas personales es comodidad a cambio de custodia: conecta tu banco, crea una cuenta, y una copia de tu vida financiera vive en el servidor de alguien. Crescia rechaza el trato — los registros se quedan en el dispositivo y en el iCloud de su dueño, y en ningún otro sitio.",
+                    "quotes": []
+                },
+                {
+                    "title": "El desarrollo",
+                    "name": "Una persona, todos los sombreros",
+                    "description": "SwiftUI y SwiftData por debajo, iCloud como única sincronización. Las funcionalidades que normalmente justifican un servidor había que resolverlas sin él.",
+                    "quotes": []
+                },
+                {
+                    "title": "La tienda",
+                    "name": "La parte de la que nadie te avisa",
+                    "description": "App Store Connect tiene su propio temario: una suscripción mensual rechazada en revisión, un identificador de producto reservado para siempre por un error que no se puede deshacer, y los ciclos de publicación entre medias. La distancia entre escribir una app y publicarla vive aquí.",
+                    "quotes": []
+                },
+                {
+                    "title": "El alcance",
+                    "name": "El marketing es parte del producto",
+                    "description": "Una app publicada que nadie encuentra es un proyecto personal. ASO en las fichas en español e inglés, campañas en Instagram medidas con análisis de embudo, y una nominación a destacado enviada a Apple.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Publicada",
+                    "subtitle": "En la App Store"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Servidores con datos de usuario"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Idiomas de ficha, afinados"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Persona en todo"
+                }
+            ]
+        },
+        "yantar": {
+            "title": "Yantar",
+            "headline": "La primera en salir por la puerta.",
+            "role": "iOS",
+            "summary": "Un registro de ayuno con la misma regla: nada sale del teléfono. Construida y publicada de principio a fin.",
+            "intro": "Un registro de ayuno para iOS con la regla que Crescia mantuvo después: todo se queda en el teléfono. La primera app que llevé hasta el final — idea, diseño, desarrollo, revisión, publicación.",
+            "stat": {
+                "title": "Publicada",
+                "subtitle": "En la App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Todo, por primera vez"
+                },
+                {
+                    "name": "La regla",
+                    "description": "Los datos se quedan en el dispositivo"
+                },
+                {
+                    "name": "Estado",
+                    "description": "Publicada en la App Store"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "SwiftUI"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Privacidad",
+                    "description": "Sin cuenta, nada sincronizado fuera"
+                },
+                {
+                    "name": "Diseño",
+                    "description": "La interfaz era medio proyecto"
+                },
+                {
+                    "name": "App Store",
+                    "description": "Primera pasada por revisión y publicación"
+                }
+            ],
+            "points": [
+                {
+                    "title": "La inquietud",
+                    "name": "Un temporizador que va a lo suyo",
+                    "description": "Los registros de ayuno suelen llegar con cuentas, rachas y un servidor mirando. Yantar es la versión simple: registra el ayuno, guarda los datos en el teléfono, no pide nada.",
+                    "quotes": []
+                },
+                {
+                    "title": "El desarrollo",
+                    "name": "El diseño como mitad del trabajo",
+                    "description": "Un registro tan pequeño vive o muere por su interfaz — no hay lista de funcionalidades tras la que esconderse. SwiftUI, y más horas en el diseño que en el modelo de datos.",
+                    "quotes": []
+                },
+                {
+                    "title": "La lección",
+                    "name": "Lo que enseña publicar",
+                    "description": "La primera pasada completa por la revisión de la App Store, la publicación y todo lo que la rodea. Lo que enseñó pasó directo a Crescia — que es para lo que sirve publicar una primera app.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Publicada",
+                    "subtitle": "En la App Store"
+                },
+                {
+                    "title": "1ª",
+                    "subtitle": "App publicada de principio a fin"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Cuentas necesarias"
+                }
+            ]
+        },
+        "andreafrancin": {
+            "title": "Andrea Francín",
+            "headline": "Un portfolio que su dueña puede llevar.",
+            "role": "Diseñador e ingeniero, en solitario",
+            "summary": "Un portfolio para una ilustradora, con un panel propio para que publique su trabajo sin tocar código ni esperarme.",
+            "intro": "Andrea es ilustradora. El encargo era un portfolio que se pareciera a su trabajo y que ella pudiera mantener al día por su cuenta, en dos idiomas, sin un desarrollador de por medio.",
+            "stat": {
+                "title": "En línea",
+                "subtitle": "andreafrancin.com"
+            },
+            "smart_details": [
+                {
+                    "name": "Mi parte",
+                    "description": "Frontend, backend y despliegue"
+                },
+                {
+                    "name": "Para",
+                    "description": "Una ilustradora, trabajando directamente"
+                },
+                {
+                    "name": "Idiomas",
+                    "description": "Español y catalán"
+                },
+                {
+                    "name": "Construido con",
+                    "description": "React y Django REST"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Panel propio",
+                    "description": "Publica sin mí"
+                },
+                {
+                    "name": "Editor markdown",
+                    "description": "Escribir una vez, renderizar en todas partes"
+                },
+                {
+                    "name": "Dos idiomas",
+                    "description": "Contenido traducido por proyecto"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Casi todos los portfolios de ilustración se quedan viejos",
+                    "description": "El trabajo cambia constantemente, el sitio no. O la artista paga a alguien cada vez que termina un proyecto, o el sitio deja poco a poco de representarla.\nAndrea necesitaba lo contrario: un sitio que pudiera actualizar la misma tarde en que terminaba algo.",
+                    "quotes": []
+                },
+                {
+                    "title": "El enfoque",
+                    "name": "Un panel hecho para una sola persona",
+                    "description": "Un backend en Django REST con autenticación y almacenamiento en PostgreSQL, y un frontend en React que lo consume. Proyectos, imágenes y textos son editables desde un panel privado, con un editor markdown para los textos largos.\nCada proyecto lleva las dos versiones de idioma, así que traducir forma parte de escribir en vez de ser un trabajo aparte.",
+                    "quotes": []
+                },
+                {
+                    "title": "El resultado",
+                    "name": "No me ha necesitado desde entonces",
+                    "description": "El sitio está en línea y lo mantiene ella. La parte que me deja satisfecho no es el stack, es que el traspaso aguantó de verdad.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "En línea",
+                    "subtitle": "andreafrancin.com"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Idiomas, por proyecto"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Tiempo de desarrollador para publicar"
+                }
+            ]
+        }
+    }
+}

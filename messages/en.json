@@ -8,15 +8,15 @@
         "menu": "Menu"
     },
     "home": {
-        "subtitle": "Software Engineer · Smart TV Engineer at Filmin",
-        "description": "Six years across the stack. I look after the television app at Filmin, taking features from the first conversation with product and design through to release on every device it runs on — and I've built backends and iOS apps either side of it.",
+        "subtitle": "Software Engineer · Smart TV at Filmin",
+        "description": "Six years building for the web. At Filmin I help lead the smart TV team, taking features from the first conversation with product and design to every television we support — and in my own time I design and ship iOS apps.",
         "selectedWork": "Selected Work",
         "downloadCV": "Download CV",
         "profile": {
             "title": "Profile",
             "now": {
                 "label": "Now",
-                "text": "Smart TV Engineer, Filmin"
+                "text": "Smart TV, Filmin"
             },
             "focus": {
                 "label": "Focus",
@@ -24,7 +24,7 @@
             },
             "sideWork": {
                 "label": "Side Work",
-                "text": "Two iOS apps shipped"
+                "text": "Three iOS apps shipped"
             },
             "reachMe": {
                 "label": "Reach Me",
@@ -34,12 +34,13 @@
                 "label": "Stack",
                 "text": "React · TS · Node · Python · Swift"
             }
-        }
+        },
+        "available": "Open to new projects"
     },
     "about": {
         "title": "About.",
-        "lede": "Software engineer in Barcelona, six years across the stack.",
-        "body": "I look after the television app at Filmin, taking features from the first conversation with product and design through to release on every device it runs on. Before that I built components banking teams shipped on top of, sites for an international transport operator, and a full stack for two consumer products. On my own time I design and ship iOS apps.",
+        "lede": "Software engineer building for the web for six years, working remotely with teams anywhere.",
+        "body": "At Filmin I work on the television app and help lead the smart TV team, taking features from the first conversation with product and design to every TV we support. Before that I built the in-app chat CaixaBank customers use to talk with their bank manager, websites for Keolis in small teams between Spain and France, and the Flykube and Eatkube websites and app. In my own time I design and ship iOS apps.",
         "timeline": "Experience",
         "stack": "Stack",
         "stackGroups": {
@@ -50,7 +51,7 @@
     },
     "work": {
         "title": "Work.",
-        "intro": "Where I have worked, and what I have built.",
+        "intro": "Where I've worked, and what I've built along the way.",
         "jobs": "Experience",
         "backToWork": "All work",
         "visit": "Visit",
@@ -66,30 +67,31 @@
     },
     "contact": {
         "title": "Contact.",
-        "intro": "Open to roles, freelance work and product builds. The fastest way to reach me is email.",
-        "availability": "Open to offers",
+        "intro": "Open to remote roles, freelance work and product builds, wherever the team is. The fastest way to reach me is email.",
+        "availability": "Open to new projects",
         "channels": {
             "email": "Email",
             "linkedin": "LinkedIn",
             "phone": "Phone"
-        }
+        },
+        "location": "Remote, working with teams anywhere"
     },
     "seo": {
         "home": {
-            "title": "Guillem León Font - Software Engineer in Barcelona",
-            "description": "Software engineer in Barcelona. Six years building production web apps in React and TypeScript, backends in Node and Python, and iOS apps. Smart TV engineer at Filmin."
+            "title": "Guillem León Font - Software Engineer",
+            "description": "Remote software engineer. Six years building production web apps in React and TypeScript, smart TV apps at Filmin, and iOS apps of my own. Open to new projects."
         },
         "work": {
             "title": "Work",
-            "description": "Where I have worked and what I have built: smart TV at Filmin, banking components at CaixaBank Tech, transport sites at Extia, and three iOS apps of my own."
+            "description": "Where I've worked and what I've built: smart TV at Filmin, the bank manager chat at CaixaBank Tech, websites for Keolis at Extia, and three iOS apps of my own."
         },
         "about": {
             "title": "About",
-            "description": "Software engineer in Barcelona, six years across the stack. React, TypeScript, Node, Python and SwiftUI."
+            "description": "Remote software engineer, six years building for the web. React, TypeScript, Node, Python and SwiftUI."
         },
         "contact": {
             "title": "Contact",
-            "description": "Open to roles, freelance work and product builds. Get in touch with Guillem León Font, software engineer in Barcelona."
+            "description": "Open to remote roles, freelance work and product builds. Get in touch with Guillem León Font, software engineer."
         }
     }
 }

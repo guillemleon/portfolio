@@ -27,6 +27,15 @@ export async function generateMetadata({
       template: `%s - ${site.name}`,
     },
     authors: [{ name: site.name, url: site.url }],
+    // Served from /public with stable paths. Google requires the favicon URL to
+    // stay constant; files under app/ get a build hash that changes every deploy.
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+        { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+      ],
+      apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    },
     creator: site.name,
     robots: {
       index: true,

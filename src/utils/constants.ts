@@ -24,13 +24,12 @@ const links = [
     { path: '/', label: 'home' },
     { path: '/about', label: 'about' },
     { path: '/work', label: 'work' },
-    { path: '/contact', label: 'contact' },
 ];
 
 const languages = [
     { code: 'en', label: 'English' },
-    { code: 'es', label: 'Spanish' },
-    { code: 'ca', label: 'Catalan' },
+    { code: 'es', label: 'Español' },
+    { code: 'ca', label: 'Català' },
 ]
 
 const logos = [

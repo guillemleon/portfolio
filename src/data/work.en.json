@@ -1,0 +1,948 @@
+{
+    "page": {
+        "title": "Work.",
+        "intro": "Where I've worked, and what I've built along the way."
+    },
+    "entries": {
+        "filmin-smart-tv": {
+            "title": "Filmin on your TV",
+            "headline": "One app, every television.",
+            "role": "Software Engineer · Smart TV",
+            "summary": "The Filmin app on televisions from 2016 to today, all from one React codebase. These days I'm the one leading the smart TV side.",
+            "intro": "Filmin is Spain's home for independent film and series. I work on its television app: one React codebase running on Samsung, LG, Hisense, Android TV, Fire TV, Vega OS, Vodafone and PS4, on sets from 2016 to the ones in shops today. Having been on it the longest, I've grown into leading the smart TV team.",
+            "stat": {
+                "title": "2016",
+                "subtitle": "Oldest TVs supported"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Leading the smart TV app, day to day"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Backend, product, design, encoding and editorial"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Four to six weeks per idea"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, inside each TV's webview"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Samsung",
+                    "description": "From 2016, Chrome 23 included"
+                },
+                {
+                    "name": "LG webOS",
+                    "description": "Years of models, one build"
+                },
+                {
+                    "name": "Hisense",
+                    "description": "Its own quirks, same app"
+                },
+                {
+                    "name": "Android TV & Fire TV",
+                    "description": "A wide range of hardware"
+                },
+                {
+                    "name": "Amazon Vega OS",
+                    "description": "Launched from SDK to store"
+                },
+                {
+                    "name": "Vodafone & PS4",
+                    "description": "Operator box and console"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "A TV is kept for a decade",
+                    "description": "People keep a television far longer than a phone, so the app has to feel just as good on a 2016 Samsung as on a set bought last week. That 2016 Samsung runs an engine as old as Chrome 23, with a fraction of a laptop's memory.\nUnder the hood it's still web development — the app is React running in a webview — just with a much wider range of browsers to respect.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Compatible first, then scalable",
+                    "description": "Every change has to work on the oldest set we support and still leave room for the next platform to arrive. Most of the craft is in keeping both of those true at the same time.",
+                    "quotes": [
+                        "A deliberate polyfill strategy instead of shipping everything everywhere",
+                        "CSS workarounds for old engines, kept isolated and documented",
+                        "Performance measured on the slowest device, not the average one",
+                        "Platform quirks consolidated, so one feature ships to every TV at once"
+                    ]
+                },
+                {
+                    "title": "The team",
+                    "name": "Product first, then code",
+                    "description": "I like to think of myself as a software engineer with a product mindset. Knowing the product well — and what each television will actually take — lets me be useful early, in the room with product and design, before an idea becomes something we'd have to undo.\nWe work closely with the backend, product, design, encoding and editorial teams, and I try to make the smart TV side an easy team to work with.",
+                    "quotes": []
+                },
+                {
+                    "title": "The role",
+                    "name": "Growing into the lead",
+                    "description": "Over time I've grown into leading the smart TV side: keeping an eye on priorities, making sure nothing on the TV side falls through the cracks, and being the person product and design can come to with any question about televisions.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "8",
+                    "subtitle": "Platforms, one codebase"
+                },
+                {
+                    "title": "2016",
+                    "subtitle": "To today's TVs"
+                },
+                {
+                    "title": "Chrome 23",
+                    "subtitle": "Oldest engine we support"
+                },
+                {
+                    "title": "4–6",
+                    "subtitle": "Weeks per idea"
+                }
+            ]
+        },
+        "angular-to-react": {
+            "title": "From Angular to React",
+            "headline": "Changing the engine mid-flight.",
+            "role": "Migration",
+            "summary": "Moving the TV app from Angular to React while it kept shipping every few weeks. More about patience and good sequencing than speed.",
+            "intro": "When I joined, the TV app was built in Angular and tied to an older project, with years of special cases for televisions that disagreed with each other. Today it's fully React — and we got there without ever stopping releases.",
+            "stat": {
+                "title": "100%",
+                "subtitle": "React today"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Planning and doing the migration"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Feature work that never stopped"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Release by release, no freeze"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, with Angular beside it until the end"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Decoupling",
+                    "description": "Untangled from the older project"
+                },
+                {
+                    "name": "Coexistence",
+                    "description": "Both frameworks in one build, for a while"
+                },
+                {
+                    "name": "Build tooling",
+                    "description": "Webpack and dependencies kept current"
+                },
+                {
+                    "name": "Legacy debt",
+                    "description": "Duplicated platform logic cleaned up"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "A rewrite nobody could pause for",
+                    "description": "The comfortable way to change frameworks is to stop everything and do only that. A streaming service can't: new features, device certifications and fixes all keep their own calendar. So the migration had to happen inside our normal release rhythm, or not at all.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Sequence over speed",
+                    "description": "First we untangled the app from the older project so it could stand on its own. Then we moved it piece by piece, with both frameworks living in the same build until the last Angular view was gone. Every piece that crossed over left some of its special cases behind.",
+                    "quotes": [
+                        "Decoupled from the legacy project before touching the UI",
+                        "Migrated gradually, both frameworks sharing one build",
+                        "Platform-specific branches cleaned up as they crossed over",
+                        "The oldest TVs kept working throughout — Chrome 23 included"
+                    ]
+                },
+                {
+                    "title": "The result",
+                    "name": "Quietly done",
+                    "description": "Angular is gone. One React codebase ships to every television at once, and the energy we used to spend keeping two worlds alive now goes into the product.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "100%",
+                    "subtitle": "React today"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Release freezes"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Codebase at the end"
+                }
+            ]
+        },
+        "vega-os-launch": {
+            "title": "Filmin on Amazon Vega OS",
+            "headline": "From the SDK to the store.",
+            "role": "New platform",
+            "summary": "Amazon's brand-new TV platform, with nobody to ask and nothing to search. I read the SDK, worked out what it could do and took Filmin all the way to the store.",
+            "intro": "Vega OS is Amazon's move away from Android on its TVs — so new that when something didn't work, there was nothing to search. I evaluated the SDK, mapped what the platform would and wouldn't support, adapted our app and took it through to store submission.",
+            "stat": {
+                "title": "New",
+                "subtitle": "Platform, end to end"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Evaluation through to submission"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Amazon, as our engineering contact"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Reading the SDK before writing code"
+                },
+                {
+                    "name": "Built with",
+                    "description": "Our React codebase, adapted"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "SDK evaluation",
+                    "description": "What the platform can really do"
+                },
+                {
+                    "name": "Capability map",
+                    "description": "What could stay, what had to change"
+                },
+                {
+                    "name": "Adaptation",
+                    "description": "The React app, fitted to Vega"
+                },
+                {
+                    "name": "Store submission",
+                    "description": "Amazon's pipeline, the whole way"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Nothing to search for",
+                    "description": "Mature platforms come with years of other people's questions already answered. Vega came with an SDK and not much else, and nobody at the company had shipped on it yet.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "Read first, build second",
+                    "description": "Before changing anything, I read the SDK and made a map of what the platform supported and what our app took for granted. That map shaped the work: what could stay, what needed adapting, and what to ask Amazon about directly.",
+                    "quotes": [
+                        "SDK evaluation before a line of app code",
+                        "A map of what Vega would and wouldn't support",
+                        "The existing React app adapted, not rewritten",
+                        "A direct line to Amazon for what the docs didn't cover"
+                    ]
+                },
+                {
+                    "title": "The launch",
+                    "name": "All the way to the store",
+                    "description": "Adapted, submitted and released through Amazon's store. Seeing Filmin live on a platform that didn't exist for us a few months earlier was a very good day.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "New",
+                    "subtitle": "Platform in production"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Precedents to lean on"
+                },
+                {
+                    "title": "SDK → Store",
+                    "subtitle": "The whole path"
+                }
+            ]
+        },
+        "banking-widgets": {
+            "title": "Chat with your bank manager",
+            "headline": "A person, not a queue.",
+            "role": "Frontend Developer",
+            "summary": "The in-app chat CaixaBank customers use to talk with their bank manager, built in a team where developers worked side by side with people from the financial side.",
+            "intro": "At CaixaBank Tech most of my time went into one feature: the chat that lets customers talk with their bank manager in the app. We were a team of seven or eight people with very different roles — developers, some of them remote in Valencia, working every day with colleagues from the financial side. Along the way I also built a small Stencil widget.",
+            "stat": {
+                "title": "7–8",
+                "subtitle": "People, many roles"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "The app side of the manager chat"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Financial roles, and developers in Valencia"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Regulated — every release deliberate"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, TypeScript and Stencil"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Manager chat",
+                    "description": "Customers talking with their bank manager"
+                },
+                {
+                    "name": "Mixed team",
+                    "description": "Developers and financial roles, side by side"
+                },
+                {
+                    "name": "Stencil widget",
+                    "description": "A smaller, framework-agnostic piece"
+                },
+                {
+                    "name": "Releases",
+                    "description": "Careful, in a regulated environment"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The product",
+                    "name": "Talking to a person",
+                    "description": "For a lot of customers, the most valuable thing a bank can offer is still a person who knows them. The chat brought that into the app: a direct line to your own manager, without phone calls or trips to the branch. My part was the app side — the conversation itself and everything around it.",
+                    "quotes": []
+                },
+                {
+                    "title": "The team",
+                    "name": "Learning the other side",
+                    "description": "Many of the people I worked with every day weren't engineers. Working next to colleagues in financial roles taught me to ask why before how, and to explain technical trade-offs in plain words. The developers were spread across different cities, so clear written communication mattered just as much.",
+                    "quotes": []
+                },
+                {
+                    "title": "The rest",
+                    "name": "Small pieces, handled with care",
+                    "description": "Next to the chat I built a Stencil widget — a small, framework-agnostic component other teams could drop into their products. In banking every release reaches a lot of people very quickly, so shipping carefully became a habit rather than a rule.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "7–8",
+                    "subtitle": "People on the team"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Cities, one team"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Chat, a lot of conversations"
+                }
+            ]
+        },
+        "keolis-sites": {
+            "title": "Websites for Keolis",
+            "headline": "Small teams, many sites.",
+            "role": "Frontend Developer",
+            "summary": "Consultancy work for Keolis, the international public transport operator: keolis.com, its tourism and innovation portals and more, built in small teams between Spain and France.",
+            "intro": "At Extia my client was Keolis, an international public transport operator. I worked with developers in Spain and in France, always in English, grouped into small teams of two or three that moved between projects — keolis.com, the tourism portal, the innovation portal and others.",
+            "stat": {
+                "title": "2–3",
+                "subtitle": "People per team"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Building sites, project by project"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "Developers in Spain and France"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "Small teams, several projects"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, Gatsby and TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Gatsby",
+                    "description": "Fast, static sites"
+                },
+                {
+                    "name": "DatoCMS",
+                    "description": "Content the client's editors could own"
+                },
+                {
+                    "name": "English",
+                    "description": "Every conversation, every day"
+                },
+                {
+                    "name": "Code review",
+                    "description": "Reviewing each other, as routine"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The context",
+                    "name": "Working in English, across borders",
+                    "description": "It was my first international team. Everything happened in English — standups, reviews, the small talk — which felt like a big step at first and quickly became normal. It's still one of the things I'm most glad I did early on.",
+                    "quotes": []
+                },
+                {
+                    "title": "The work",
+                    "name": "Many sites, small teams",
+                    "description": "We were split into teams of two or three and moved between Keolis projects as they came up. Small teams meant everyone touched everything: structure, components, content and the details that make a site feel finished.",
+                    "quotes": [
+                        "keolis.com, the tourism portal, the innovation portal and more",
+                        "Gatsby with React and TypeScript, often from an empty repository",
+                        "Content modelled in DatoCMS and queried over GraphQL",
+                        "Code reviews and Jest tests as part of the routine"
+                    ]
+                },
+                {
+                    "title": "The takeaway",
+                    "name": "Shipping as a team",
+                    "description": "Two or three people sharing a codebase leaves little room for ego. Reviewing each other's work, agreeing on conventions and handing projects over cleanly taught me more about teamwork than any single project did.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2–3",
+                    "subtitle": "People per team"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Countries, one team"
+                },
+                {
+                    "title": "English",
+                    "subtitle": "Every single day"
+                }
+            ]
+        },
+        "flykube-eatkube": {
+            "title": "Flykube & Eatkube",
+            "headline": "Where it all started.",
+            "role": "Frontend Developer",
+            "summary": "My first job: an internship that turned into a contract, building the Flykube and Eatkube websites and the Eatkube app — back when the tech team was the CTO and me.",
+            "intro": "This is where it started for me — first as an intern, then hired. When I joined, the whole tech team was the CTO and me, working hand in hand with design and product. The team grew over time, and so did I.",
+            "stat": {
+                "title": "3",
+                "subtitle": "Web and mobile builds"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Websites in React, the app in React Native"
+                },
+                {
+                    "name": "Alongside",
+                    "description": "The CTO, design and product"
+                },
+                {
+                    "name": "Rhythm",
+                    "description": "A startup's — everything at once"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React, React Native and a little Django"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "React",
+                    "description": "The Flykube and Eatkube websites"
+                },
+                {
+                    "name": "React Native",
+                    "description": "The Eatkube app"
+                },
+                {
+                    "name": "Django",
+                    "description": "Small tasks, a first taste of backend"
+                },
+                {
+                    "name": "Figma",
+                    "description": "Interfaces worked out with design"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The context",
+                    "name": "A team of two",
+                    "description": "For a while the whole tech team was the CTO and me. That meant working directly with design and product, learning fast and getting used to owning things early. As more people joined, I got to watch a small company find its shape.",
+                    "quotes": []
+                },
+                {
+                    "title": "The work",
+                    "name": "Two websites and an app",
+                    "description": "I built the Flykube website and the Eatkube website in React, and the Eatkube app in React Native. Eatkube was a food delivery app built around surprise. I don't think it exists anymore, but I still like the idea.",
+                    "quotes": []
+                },
+                {
+                    "title": "The takeaway",
+                    "name": "A first look at the backend",
+                    "description": "I wasn't a backend developer, but I picked up some small Django tasks along the way. Nothing big — just enough to see how a real production backend works, and it has shaped how I think about the frontend ever since.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Websites in React"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "App in React Native"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "People in tech, at first"
+                }
+            ]
+        },
+        "griselhub": {
+            "title": "GriselHub",
+            "headline": "The studio the apps ship under.",
+            "role": "Designer and engineer, solo",
+            "summary": "The independent iOS studio behind Crescia, Yantar and Fulcrum. One site carrying the shared identity, the store listings and the legal pages every app has to link to.",
+            "intro": "Three apps on the App Store need somewhere to point. Apple requires a privacy policy and a support URL per app, and shipping them as three unrelated names leaves nothing behind. GriselHub is the studio those apps ship under, and the site that serves all of it.",
+            "stat": {
+                "title": "7",
+                "subtitle": "Languages"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Brand, site and deployment"
+                },
+                {
+                    "name": "Serves",
+                    "description": "Three shipped iOS apps"
+                },
+                {
+                    "name": "Languages",
+                    "description": "EN, ES, CA, DE, FR, IT, PT"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React and Vite on Cloudflare"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Studio front",
+                    "description": "One identity across three apps"
+                },
+                {
+                    "name": "Legal pages",
+                    "description": "Privacy, terms and support per app"
+                },
+                {
+                    "name": "Seven languages",
+                    "description": "Matching the apps store reach"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Three apps, no shared home",
+                    "description": "Crescia, Yantar and Fulcrum were shipped separately, and each one needed a privacy policy and a support page before Apple would take it. Three sets of legal pages on three throwaway URLs is duplicated work that ages badly. \nIt also meant three unrelated names with nothing tying them together, so nothing compounded between releases.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "One studio, one site",
+                    "description": "GriselHub is the name all three ship under, and the site does the shared jobs: the studio front, the store links, and the privacy, terms and support pages each app points at from its App Store listing. \nIt runs in seven languages, matching where the apps are actually sold rather than defaulting to English.",
+                    "quotes": []
+                },
+                {
+                    "title": "The result",
+                    "name": "The next app inherits it",
+                    "description": "Shipping the fourth app is now a listing and a section rather than a new site. The privacy and support obligations are already met, and each release adds to one name instead of starting another.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "3",
+                    "subtitle": "Apps served"
+                },
+                {
+                    "title": "7",
+                    "subtitle": "Languages"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Analytics SDKs"
+                }
+            ]
+        },
+        "fulcrum": {
+            "title": "Fulcrum",
+            "headline": "Point a camera at dinner.",
+            "role": "Designer and engineer, solo",
+            "summary": "A training log and calorie tracker for iOS and Apple Watch. Photograph a meal and a vision model reads back the foods, the grams and the calories.",
+            "intro": "Fulcrum is a training log for people who build their own routines, with calorie tracking attached. No preset programs and no coaching. The one place a model earns its keep is the part nobody wants to do by hand: typing in what you just ate.",
+            "stat": {
+                "title": "10",
+                "subtitle": "Languages shipped"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Design, iOS, watchOS and the server"
+                },
+                {
+                    "name": "Platforms",
+                    "description": "iPhone and Apple Watch"
+                },
+                {
+                    "name": "Model",
+                    "description": "Claude, called through a Worker"
+                },
+                {
+                    "name": "Built with",
+                    "description": "SwiftUI, SwiftData, TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Meal scan",
+                    "description": "Photo in, foods and calories out"
+                },
+                {
+                    "name": "Routine builder",
+                    "description": "Your own exercises, your own days"
+                },
+                {
+                    "name": "Watch sessions",
+                    "description": "Log every set from the wrist"
+                },
+                {
+                    "name": "On-device data",
+                    "description": "No account, no sync, no ads"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Calorie tracking is data entry",
+                    "description": "Every calorie app is a search box. You eat something, then you spend two minutes describing it to a database that does not have it. Most people stop within a week, and the training log they came for dies with it. \n The training side had the opposite problem: plenty of apps, all of them convinced they should pick your programme for you.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "A model for the boring part only",
+                    "description": "Fulcrum builds the routine side the plain way: your own exercises, your own weekdays, rest timers, personal records the moment you beat them, and the whole session runnable from the watch. \n The model is pointed at the one job it is genuinely better at. You photograph the plate, the image goes to Claude, and it comes back as structured items with grams and calories that you confirm or correct. No chat, no coach, no feed.",
+                    "quotes": []
+                },
+                {
+                    "title": "The server",
+                    "name": "The key never ships in the app",
+                    "description": "An API key inside a binary is a key you have given away, so the app never holds one. Scans go through a small Cloudflare Worker that keeps the key as a server secret, caps the image size, and rate limits per IP so a leaked app token cannot become somebody else’s bill. \n It is about a hundred lines of TypeScript and it sits in the free tier.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Platforms, iPhone and Watch"
+                },
+                {
+                    "title": "10",
+                    "subtitle": "Languages shipped"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Accounts required"
+                },
+                {
+                    "title": "Solo",
+                    "subtitle": "Design, app and server"
+                }
+            ]
+        },
+        "crescia": {
+            "title": "Crescia",
+            "headline": "Every record stays with you.",
+            "role": "iOS",
+            "summary": "A personal finance app that keeps every record on the device. Design, build and release start to finish — product decisions included.",
+            "intro": "A personal finance app with one rule: records live on the device and in the owner's own iCloud — no server of mine ever holds them. Designed, built, shipped and marketed by one person.",
+            "stat": {
+                "title": "Live",
+                "subtitle": "On the App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "All of it — design, build, release, marketing"
+                },
+                {
+                    "name": "The rule",
+                    "description": "iCloud only, no server"
+                },
+                {
+                    "name": "Status",
+                    "description": "Live on the App Store"
+                },
+                {
+                    "name": "Built with",
+                    "description": "SwiftUI and SwiftData"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Statement import",
+                    "description": "Bank statements parsed with the Claude API"
+                },
+                {
+                    "name": "Subscriptions",
+                    "description": "StoreKit, sandbox-tested, store-approved"
+                },
+                {
+                    "name": "iOS widget",
+                    "description": "A place on the home screen"
+                },
+                {
+                    "name": "ASO",
+                    "description": "Listing tuned in Spanish and English"
+                },
+                {
+                    "name": "Campaigns",
+                    "description": "Instagram ads with funnel analysis"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Finance apps ask for too much",
+                    "description": "The default trade in personal finance is convenience for custody: connect your bank, create an account, and a copy of your financial life lives on somebody's server. Crescia refuses the trade — records stay on the device and in the owner's own iCloud, and nowhere else.",
+                    "quotes": []
+                },
+                {
+                    "title": "The build",
+                    "name": "One person, every hat",
+                    "description": "SwiftUI and SwiftData underneath, iCloud as the only sync. The features that usually justify a server had to be solved without one.",
+                    "quotes": [
+                        "Bank statement import, parsed with the Claude API",
+                        "Subscriptions through StoreKit, tested in sandbox before anyone paid",
+                        "An iOS widget for the home screen",
+                        "SwiftData persistence, syncing through the owner's iCloud alone"
+                    ]
+                },
+                {
+                    "title": "The store",
+                    "name": "The part nobody warns you about",
+                    "description": "App Store Connect has its own curriculum: a monthly subscription rejected in review, a product ID reserved permanently by a mistake you can't undo, and the release cycles in between. The distance between writing an app and shipping one lives here.",
+                    "quotes": []
+                },
+                {
+                    "title": "The reach",
+                    "name": "Marketing is part of the product",
+                    "description": "A shipped app nobody finds is a side project. ASO across the Spanish and English listings, Instagram campaigns measured with funnel analysis, and a featuring nomination submitted to Apple.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Live",
+                    "subtitle": "On the App Store"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Servers holding user data"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Store languages, tuned"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Person on everything"
+                }
+            ]
+        },
+        "yantar": {
+            "title": "Yantar",
+            "headline": "The first one out the door.",
+            "role": "iOS",
+            "summary": "A fasting tracker with the same rule: nothing leaves the phone. Built and published end to end.",
+            "intro": "A fasting tracker for iOS with the rule Crescia later kept: everything stays on the phone. The first app I took the whole way — idea, design, build, review, release.",
+            "stat": {
+                "title": "Live",
+                "subtitle": "On the App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Everything, first time through"
+                },
+                {
+                    "name": "The rule",
+                    "description": "Data stays on the device"
+                },
+                {
+                    "name": "Status",
+                    "description": "Live on the App Store"
+                },
+                {
+                    "name": "Built with",
+                    "description": "SwiftUI"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Privacy",
+                    "description": "No account, nothing synced away"
+                },
+                {
+                    "name": "Design",
+                    "description": "The interface was half the project"
+                },
+                {
+                    "name": "App Store",
+                    "description": "First pass through review and release"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The itch",
+                    "name": "A timer that minds its own business",
+                    "description": "Fasting trackers tend to arrive with accounts, streaks and a server watching. Yantar is the simple version: track the fast, keep the data on the phone, ask for nothing.",
+                    "quotes": []
+                },
+                {
+                    "title": "The build",
+                    "name": "Design as half the work",
+                    "description": "A tracker this small lives or dies on its interface — there's no feature list to hide behind. SwiftUI, and more hours in the design than the data model.",
+                    "quotes": []
+                },
+                {
+                    "title": "The lesson",
+                    "name": "What shipping teaches",
+                    "description": "The first full pass through App Store review, release and everything around it. What it taught carried straight into Crescia — which is the point of shipping a first app at all.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Live",
+                    "subtitle": "On the App Store"
+                },
+                {
+                    "title": "1st",
+                    "subtitle": "App shipped end to end"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Accounts required"
+                }
+            ]
+        },
+        "andreafrancin": {
+            "title": "Andrea Francin",
+            "headline": "A portfolio that its owner can run.",
+            "role": "Designer and engineer, solo",
+            "summary": "A portfolio site for an illustrator, with a custom back office so she publishes her own work without touching code or waiting on me.",
+            "intro": "Andrea is an illustrator. The brief was a portfolio that looks like her work and that she can keep current on her own, in two languages, without a developer in the loop.",
+            "stat": {
+                "title": "Live",
+                "subtitle": "andreafrancin.com"
+            },
+            "smart_details": [
+                {
+                    "name": "My part",
+                    "description": "Frontend, backend and deployment"
+                },
+                {
+                    "name": "For",
+                    "description": "An illustrator, working directly"
+                },
+                {
+                    "name": "Languages",
+                    "description": "Spanish and Catalan"
+                },
+                {
+                    "name": "Built with",
+                    "description": "React and Django REST"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Own back office",
+                    "description": "She publishes without me"
+                },
+                {
+                    "name": "Markdown editor",
+                    "description": "Write once, render everywhere"
+                },
+                {
+                    "name": "Two languages",
+                    "description": "Content translated per project"
+                }
+            ],
+            "points": [
+                {
+                    "title": "The problem",
+                    "name": "Most illustrator portfolios go stale",
+                    "description": "The work changes constantly, the site does not. Either the artist pays someone every time a project lands, or the site slowly stops representing them. \n Andrea needed the opposite: a site she could update the afternoon she finished something.",
+                    "quotes": []
+                },
+                {
+                    "title": "The approach",
+                    "name": "A back office built for one person",
+                    "description": "A Django REST backend with authentication and a PostgreSQL store, and a React frontend that reads from it. Projects, images and copy are all editable from a private admin, with a markdown editor for longer text. \n Every project carries both language versions, so translating is part of writing rather than a separate job.",
+                    "quotes": []
+                },
+                {
+                    "title": "The result",
+                    "name": "She has not needed me since",
+                    "description": "The site is live and she maintains it herself. The part I am pleased with is not the stack, it is that the handover actually held.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Live",
+                    "subtitle": "andreafrancin.com"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Languages, per project"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Developer time to publish"
+                }
+            ]
+        }
+    }
+}

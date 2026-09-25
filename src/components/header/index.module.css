@@ -61,7 +61,6 @@
     text-decoration: none;
     color: var(--color-neutral-400);
     transition: all 0.2s ease-in-out;
-    text-transform: uppercase;
     border: none;
     background-color: transparent;
     cursor: pointer;

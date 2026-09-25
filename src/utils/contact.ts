@@ -2,7 +2,6 @@ interface Contact {
     email: string;
     linkedin: string;
     phone: string;
-    location: string;
 }
 
 import { site } from './site';
@@ -12,7 +11,6 @@ export const contact: Contact = {
     // Left empty on purpose: a channel only renders once it has a real value.
     linkedin: site.linkedin,
     phone: '',
-    location: 'Barcelona, Spain',
 };
 
 export type ContactChannel = {

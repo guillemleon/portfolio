@@ -1,0 +1,47 @@
+.wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 3px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-neutral-100);
+}
+
+/* Home: initials only. The heading already carries the name. */
+.initials {
+    font-size: 1.25rem;
+    letter-spacing: -0.05em;
+}
+
+.full {
+    font-size: 1.0625rem;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+}
+
+/* Rests on the baseline, rises to the middle of the x-height on hover.
+   In em so it tracks whichever variant is rendered. */
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    transition: transform 0.3s cubic-bezier(.16, .84, .3, 1);
+}
+
+.wordmark:hover .dot,
+a:focus-visible .wordmark .dot {
+    transform: translateY(-0.55em);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dot {
+        transition: none;
+    }
+
+    .wordmark:hover .dot,
+    a:focus-visible .wordmark .dot {
+        transform: none;
+    }
+}

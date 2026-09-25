@@ -1,0 +1,943 @@
+{
+    "page": {
+        "title": "Feina.",
+        "intro": "On he treballat i el que he construït pel camí."
+    },
+    "entries": {
+        "filmin-smart-tv": {
+            "title": "Filmin a la teva tele",
+            "headline": "Una app, totes les teles.",
+            "role": "Software Engineer · Smart TV",
+            "summary": "L'app de Filmin en televisors des del 2016 fins avui, amb un únic codi en React. Avui dia soc qui lidera la part de smart TV.",
+            "intro": "Filmin és la casa del cinema i les sèries independents a Espanya. Treballo en la seva app per a televisors: un únic codi en React que funciona a Samsung, LG, Hisense, Android TV, Fire TV, Vega OS, Vodafone i PS4, en teles des del 2016 fins a les que es venen avui. Després de ser qui hi porta més temps, he anat assumint el lideratge de l'equip de smart TV.",
+            "stat": {
+                "title": "2016",
+                "subtitle": "Les teles més antigues"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Liderar l'app de smart TV, dia a dia"
+                },
+                {
+                    "name": "Amb",
+                    "description": "Backend, producte, disseny, codificació i editorial"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "De quatre a sis setmanes per idea"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React, dins del webview de cada tele"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Samsung",
+                    "description": "Des del 2016, Chrome 23 inclòs"
+                },
+                {
+                    "name": "LG webOS",
+                    "description": "Anys de models, una sola build"
+                },
+                {
+                    "name": "Hisense",
+                    "description": "Les seves pròpies manies, la mateixa app"
+                },
+                {
+                    "name": "Android TV i Fire TV",
+                    "description": "Molta varietat de maquinari"
+                },
+                {
+                    "name": "Amazon Vega OS",
+                    "description": "Llançada de l'SDK a la botiga"
+                },
+                {
+                    "name": "Vodafone i PS4",
+                    "description": "Descodificador i consola"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Una tele dura una dècada",
+                    "description": "La gent conserva una tele molt més temps que un mòbil, així que l'app ha d'anar igual de bé en una Samsung del 2016 que en una comprada la setmana passada. Aquesta Samsung del 2016 porta un motor tan antic com Chrome 23, amb una fracció de la memòria d'un portàtil.\nPer dins continua sent desenvolupament web — l'app és React dins d'un webview —, només que amb un ventall de navegadors molt més ampli a respectar.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "Primer compatible, després escalable",
+                    "description": "Cada canvi ha de funcionar a la tele més antiga que suportem i, alhora, deixar lloc per a la pròxima plataforma que arribi. Bona part de l'ofici és mantenir les dues coses alhora.",
+                    "quotes": [
+                        "Una estratègia de polyfills pensada, en lloc d'enviar-ho tot a tot arreu",
+                        "Pedaços de CSS per a motors antics, aïllats i documentats",
+                        "El rendiment es mesura al dispositiu més lent, no al mitjà",
+                        "Les particularitats de cada plataforma, consolidades perquè una funcionalitat arribi a totes les teles alhora"
+                    ]
+                },
+                {
+                    "title": "L'equip",
+                    "name": "Primer producte, després codi",
+                    "description": "M'agrada veure'm com un enginyer de software amb mentalitat de producte. Conèixer bé el producte — i el que cada tele aguanta de debò — em permet ser útil aviat, a la sala amb producte i disseny, abans que una idea es converteixi en una cosa que s'hagi de desfer.\nTreballem molt a prop dels equips de backend, producte, disseny, codificació i editorial, i intento que la part de smart TV sigui un equip fàcil amb qui treballar.",
+                    "quotes": []
+                },
+                {
+                    "title": "El rol",
+                    "name": "Créixer cap al lideratge",
+                    "description": "Amb el temps he anat assumint el lideratge de la part de smart TV: vigilar les prioritats, assegurar-me que res de la part de TV es quedi pel camí i ser la persona a qui producte i disseny poden acudir amb qualsevol dubte sobre televisors.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "8",
+                    "subtitle": "Plataformes, un codi"
+                },
+                {
+                    "title": "2016",
+                    "subtitle": "Fins a les teles d'avui"
+                },
+                {
+                    "title": "Chrome 23",
+                    "subtitle": "El motor més antic"
+                },
+                {
+                    "title": "4–6",
+                    "subtitle": "Setmanes per idea"
+                }
+            ]
+        },
+        "angular-to-react": {
+            "title": "D'Angular a React",
+            "headline": "Canviar el motor en ple vol.",
+            "role": "Migració",
+            "summary": "Passar l'app de TV d'Angular a React sense deixar de publicar cada poques setmanes. Més qüestió de paciència i bon ordre que de velocitat.",
+            "intro": "Quan vaig arribar, l'app de TV estava feta en Angular i lligada a un projecte més antic, amb anys de casos especials per a televisors que no es posaven d'acord entre ells. Avui és React al cent per cent — i hi vam arribar sense aturar mai les publicacions.",
+            "stat": {
+                "title": "100%",
+                "subtitle": "React avui"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Planificar i fer la migració"
+                },
+                {
+                    "name": "Amb",
+                    "description": "Una feina de funcionalitats que mai es va aturar"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "Publicació a publicació, sense congelar"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React, amb Angular al costat fins al final"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Desacoblar",
+                    "description": "Separada del projecte antic"
+                },
+                {
+                    "name": "Convivència",
+                    "description": "Els dos frameworks en una build, un temps"
+                },
+                {
+                    "name": "Eines",
+                    "description": "Webpack i dependències al dia"
+                },
+                {
+                    "name": "Deute tècnic",
+                    "description": "Lògica duplicada per plataforma, netejada"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Una reescriptura que ningú podia aturar",
+                    "description": "La manera còmoda de canviar de framework és aturar-ho tot i fer només això. Un servei de streaming no pot: les funcionalitats noves, les certificacions de dispositius i els arranjaments tenen el seu propi calendari. La migració s'havia de fer dins del nostre ritme normal de publicacions, o no fer-se.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "L'ordre abans que la pressa",
+                    "description": "Primer vam separar l'app del projecte antic perquè s'aguantés sola. Després la vam moure peça a peça, amb els dos frameworks convivint a la mateixa build fins que va desaparèixer l'última vista en Angular. Cada peça que creuava deixava enrere part dels seus casos especials.",
+                    "quotes": [
+                        "Desacoblada del projecte antic abans de tocar la interfície",
+                        "Migrada de mica en mica, amb els dos frameworks en una build",
+                        "Les branques específiques de cada plataforma, netejades en creuar",
+                        "Les teles més antigues funcionant tot el temps — Chrome 23 inclòs"
+                    ]
+                },
+                {
+                    "title": "El resultat",
+                    "name": "Fet sense soroll",
+                    "description": "Angular ja no hi és. Un únic codi en React arriba a totes les teles alhora, i l'energia que abans gastàvem a mantenir dos mons ara va al producte.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "100%",
+                    "subtitle": "React avui"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Publicacions congelades"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Codi al final"
+                }
+            ]
+        },
+        "vega-os-launch": {
+            "title": "Filmin a Amazon Vega OS",
+            "headline": "De l'SDK a la botiga.",
+            "role": "Plataforma nova",
+            "summary": "La nova plataforma de TV d'Amazon, sense ningú a qui preguntar ni res a buscar. Vaig llegir l'SDK, vaig entendre què podia fer i vaig portar Filmin fins a la botiga.",
+            "intro": "Vega OS és el pas d'Amazon per deixar Android a les seves teles — tan nou que, quan alguna cosa fallava, no hi havia res a buscar. Vaig avaluar l'SDK, vaig mapar què suportava la plataforma i què no, vaig adaptar la nostra app i la vaig portar fins a l'enviament a la botiga.",
+            "stat": {
+                "title": "Nova",
+                "subtitle": "Plataforma, de cap a peus"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "De l'avaluació a l'enviament"
+                },
+                {
+                    "name": "Amb",
+                    "description": "Amazon, com a contacte tècnic"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "Llegir l'SDK abans d'escriure codi"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "El nostre codi React, adaptat"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Avaluar l'SDK",
+                    "description": "El que la plataforma pot fer de debò"
+                },
+                {
+                    "name": "Mapa de capacitats",
+                    "description": "Què es quedava i què havia de canviar"
+                },
+                {
+                    "name": "Adaptació",
+                    "description": "L'app React, ajustada a Vega"
+                },
+                {
+                    "name": "Enviament a la botiga",
+                    "description": "El procés d'Amazon, sencer"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Res a buscar",
+                    "description": "Les plataformes madures arriben amb anys de preguntes d'altres ja respostes. Vega arribava amb un SDK i poca cosa més, i ningú a l'empresa hi havia publicat res.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "Primer llegir, després construir",
+                    "description": "Abans de canviar res, vaig llegir l'SDK i vaig fer un mapa del que suportava la plataforma i del que la nostra app donava per fet. Aquell mapa va marcar la feina: què es podia quedar, què calia adaptar i què preguntar directament a Amazon.",
+                    "quotes": [
+                        "Avaluació de l'SDK abans d'una sola línia de l'app",
+                        "Un mapa del que Vega suportava i del que no",
+                        "L'app React existent adaptada, no reescrita",
+                        "Línia directa amb Amazon per al que la documentació no cobria"
+                    ]
+                },
+                {
+                    "title": "El llançament",
+                    "name": "Fins a la botiga",
+                    "description": "Adaptada, enviada i publicada a la botiga d'Amazon. Veure Filmin funcionant en una plataforma que uns mesos abans ni existia per a nosaltres va ser un dia molt bo.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Nova",
+                    "subtitle": "Plataforma en producció"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Precedents on recolzar-se"
+                },
+                {
+                    "title": "SDK → Botiga",
+                    "subtitle": "El camí sencer"
+                }
+            ]
+        },
+        "banking-widgets": {
+            "title": "Xateja amb el teu gestor",
+            "headline": "Una persona, no una cua.",
+            "role": "Desenvolupador Frontend",
+            "summary": "El xat amb què els clients de CaixaBank parlen amb el seu gestor des de l'app, fet en un equip on desenvolupadors i perfils financers treballaven colze a colze.",
+            "intro": "A CaixaBank Tech la major part del meu temps va ser per a una funcionalitat: el xat que permet als clients parlar amb el seu gestor a l'app. Érem un equip de set o vuit persones amb rols molt diferents — desenvolupadors, alguns en remot des de València, treballant cada dia amb companys de l'àrea financera. Pel camí també vaig fer un petit widget en Stencil.",
+            "stat": {
+                "title": "7–8",
+                "subtitle": "Persones, molts rols"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "La part d'app del xat amb el gestor"
+                },
+                {
+                    "name": "Amb",
+                    "description": "Perfils financers i desenvolupadors a València"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "Regulat — cada publicació, pensada"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React, TypeScript i Stencil"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Xat amb el gestor",
+                    "description": "Clients parlant amb el seu gestor"
+                },
+                {
+                    "name": "Equip mixt",
+                    "description": "Desenvolupament i perfils financers, junts"
+                },
+                {
+                    "name": "Widget en Stencil",
+                    "description": "Una peça més petita, independent del framework"
+                },
+                {
+                    "name": "Publicacions",
+                    "description": "Amb cura, en un entorn regulat"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El producte",
+                    "name": "Parlar amb una persona",
+                    "description": "Per a molts clients, el més valuós que pot oferir un banc continua sent una persona que els coneix. El xat portava això a l'app: una línia directa amb el teu gestor, sense trucades ni visites a l'oficina. La meva part era la de l'app — la conversa en si i tot el que l'envolta.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'equip",
+                    "name": "Aprendre de l'altra banda",
+                    "description": "Moltes de les persones amb qui treballava cada dia no eren enginyeres. Treballar al costat de companys de l'àrea financera em va ensenyar a preguntar el perquè abans que el com, i a explicar les decisions tècniques amb paraules senzilles. L'equip de desenvolupament estava repartit entre diverses ciutats, així que comunicar-se bé per escrit importava igual.",
+                    "quotes": []
+                },
+                {
+                    "title": "La resta",
+                    "name": "Peces petites, amb cura",
+                    "description": "Al costat del xat vaig fer un widget en Stencil — un component petit i independent del framework que altres equips podien integrar als seus productes. A la banca cada publicació arriba a molta gent molt de pressa, així que publicar amb cura es va convertir en un hàbit més que en una norma.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "7–8",
+                    "subtitle": "Persones a l'equip"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Ciutats, un equip"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Xat, moltes converses"
+                }
+            ]
+        },
+        "keolis-sites": {
+            "title": "Webs per a Keolis",
+            "headline": "Equips petits, moltes webs.",
+            "role": "Desenvolupador Frontend",
+            "summary": "Consultoria per a Keolis, l'operador internacional de transport públic: keolis.com, els seus portals de turisme i innovació i més, en equips petits entre Espanya i França.",
+            "intro": "A Extia el meu client era Keolis, un operador internacional de transport públic. Treballava amb desenvolupadors a Espanya i a França, sempre en anglès, en equips petits de dues o tres persones que anaven passant per diferents projectes — keolis.com, el portal de turisme, el portal d'innovació i d'altres.",
+            "stat": {
+                "title": "2–3",
+                "subtitle": "Persones per equip"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Construir webs, projecte a projecte"
+                },
+                {
+                    "name": "Amb",
+                    "description": "Desenvolupadors a Espanya i França"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "Equips petits, diversos projectes"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React, Gatsby i TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Gatsby",
+                    "description": "Webs estàtiques i ràpides"
+                },
+                {
+                    "name": "DatoCMS",
+                    "description": "Contingut en mans dels editors del client"
+                },
+                {
+                    "name": "Anglès",
+                    "description": "Cada conversa, cada dia"
+                },
+                {
+                    "name": "Code review",
+                    "description": "Revisar-nos entre tots, com a rutina"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El context",
+                    "name": "Treballar en anglès, entre països",
+                    "description": "Va ser el meu primer equip internacional. Tot passava en anglès — les dailies, les revisions, les converses de passadís —, cosa que al principi em va semblar un gran pas i de seguida es va tornar normal. Continua sent de les coses que més m'alegro d'haver fet aviat.",
+                    "quotes": []
+                },
+                {
+                    "title": "La feina",
+                    "name": "Moltes webs, equips petits",
+                    "description": "Ens organitzàvem en equips de dos o tres i anàvem passant pels projectes de Keolis a mesura que arribaven. En equips tan petits tothom toca de tot: estructura, components, contingut i aquells detalls que fan que una web sembli acabada.",
+                    "quotes": [
+                        "keolis.com, el portal de turisme, el d'innovació i més",
+                        "Gatsby amb React i TypeScript, sovint des d'un repositori buit",
+                        "Contingut modelat a DatoCMS i consultat per GraphQL",
+                        "Revisions de codi i tests amb Jest com a part de la rutina"
+                    ]
+                },
+                {
+                    "title": "La lliçó",
+                    "name": "Publicar en equip",
+                    "description": "Quan dues o tres persones comparteixen un codi, queda poc lloc per a l'ego. Revisar la feina dels altres, posar-nos d'acord en les convencions i traspassar projectes de manera neta em va ensenyar més sobre treballar en equip que qualsevol projecte per si sol.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2–3",
+                    "subtitle": "Persones per equip"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Països, un equip"
+                },
+                {
+                    "title": "Anglès",
+                    "subtitle": "Cada dia"
+                }
+            ]
+        },
+        "flykube-eatkube": {
+            "title": "Flykube i Eatkube",
+            "headline": "On va començar tot.",
+            "role": "Desenvolupador Frontend",
+            "summary": "La meva primera feina: unes pràctiques que van acabar en contracte, construint les webs de Flykube i Eatkube i l'app d'Eatkube — quan l'equip tècnic érem el CTO i jo.",
+            "intro": "Aquí va començar tot per a mi — primer en pràctiques i després amb contracte. Quan vaig arribar, tot l'equip tècnic érem el CTO i jo, treballant colze a colze amb disseny i producte. L'equip va anar creixent, i jo amb ell.",
+            "stat": {
+                "title": "3",
+                "subtitle": "Projectes web i mòbil"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Webs en React, l'app en React Native"
+                },
+                {
+                    "name": "Amb",
+                    "description": "El CTO, disseny i producte"
+                },
+                {
+                    "name": "Ritme",
+                    "description": "El d'una startup — tot alhora"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React, React Native i una mica de Django"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "React",
+                    "description": "Les webs de Flykube i Eatkube"
+                },
+                {
+                    "name": "React Native",
+                    "description": "L'app d'Eatkube"
+                },
+                {
+                    "name": "Django",
+                    "description": "Tasques petites, un primer contacte amb backend"
+                },
+                {
+                    "name": "Figma",
+                    "description": "Interfícies treballades amb disseny"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El context",
+                    "name": "Un equip de dos",
+                    "description": "Durant un temps, tot l'equip tècnic érem el CTO i jo. Això volia dir treballar directament amb disseny i producte, aprendre de pressa i acostumar-me aviat a fer-me càrrec de les coses. A mesura que entrava més gent, vaig poder veure com una empresa petita trobava la seva forma.",
+                    "quotes": []
+                },
+                {
+                    "title": "La feina",
+                    "name": "Dues webs i una app",
+                    "description": "Vaig construir la web de Flykube i la d'Eatkube en React, i l'app d'Eatkube en React Native. Eatkube era una app de menjar a domicili basada en la sorpresa. Crec que ja no existeix, però la idea m'agrada igualment.",
+                    "quotes": []
+                },
+                {
+                    "title": "La lliçó",
+                    "name": "Una primera ullada al backend",
+                    "description": "No era desenvolupador backend, però pel camí vaig fer algunes tasques petites en Django. Res de gran — just el necessari per veure com funciona un backend real en producció, i des d'aleshores ha marcat com penso el frontend.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Webs en React"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "App en React Native"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Persones a tech, al principi"
+                }
+            ]
+        },
+        "griselhub": {
+            "title": "GriselHub",
+            "headline": "L'estudi sota el qual es publiquen les apps.",
+            "role": "Dissenyador i enginyer, en solitari",
+            "summary": "L'estudi iOS independent darrere de Crescia, Yantar i Fulcrum. Un lloc que sosté la identitat comuna, els enllaços a la botiga i les pàgines legals a què tota app ha d'apuntar.",
+            "intro": "Tres apps a l'App Store necessiten un lloc on apuntar. Apple exigeix una política de privacitat i una URL de suport per app, i publicar-les com tres noms sense relació no deixa res al darrere. GriselHub és l'estudi sota el qual es publiquen, i el lloc que se n'encarrega de tot.",
+            "stat": {
+                "title": "7",
+                "subtitle": "Idiomes"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Marca, lloc i desplegament"
+                },
+                {
+                    "name": "Dona servei a",
+                    "description": "Tres apps iOS publicades"
+                },
+                {
+                    "name": "Idiomes",
+                    "description": "EN, ES, CA, DE, FR, IT, PT"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React i Vite sobre Cloudflare"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Front de l'estudi",
+                    "description": "Una identitat per a tres apps"
+                },
+                {
+                    "name": "Pàgines legals",
+                    "description": "Privacitat, condicions i suport per app"
+                },
+                {
+                    "name": "Set idiomes",
+                    "description": "Els mateixos on es venen les apps"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Tres apps, cap casa comuna",
+                    "description": "Crescia, Yantar i Fulcrum es van publicar per separat, i cadascuna necessitava una política de privacitat i una pàgina de suport abans que Apple l'acceptés. Tres jocs de pàgines legals en tres URL improvisades és feina duplicada que envelleix malament.\nTambé volia dir tres noms sense relació i sense res que els unís, així que res s'acumulava entre llançaments.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "Un estudi, un lloc",
+                    "description": "GriselHub és el nom sota el qual es publiquen totes tres, i el lloc fa la feina comuna: el front de l'estudi, els enllaços a la botiga, i les pàgines de privacitat, condicions i suport a què apunta cada app des de la seva fitxa a l'App Store.\nFunciona en set idiomes, els mateixos on les apps es venen de debò, en lloc de quedar-se en anglès per defecte.",
+                    "quotes": []
+                },
+                {
+                    "title": "El resultat",
+                    "name": "La següent app ho hereta",
+                    "description": "Publicar la quarta app ara és una fitxa i una secció, no un lloc nou. Les obligacions de privacitat i suport ja estan cobertes, i cada llançament suma a un mateix nom en comptes de començar-ne un altre.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "3",
+                    "subtitle": "Apps a què dona servei"
+                },
+                {
+                    "title": "7",
+                    "subtitle": "Idiomes"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "SDK d'analítica"
+                }
+            ]
+        },
+        "fulcrum": {
+            "title": "Fulcrum",
+            "headline": "Apunta la càmera al sopar.",
+            "role": "Dissenyador i enginyer, en solitari",
+            "summary": "Un registre d'entrenament i comptador de calories per a iOS i Apple Watch. Fotografia un àpat i un model de visió retorna els aliments, els grams i les calories.",
+            "intro": "Fulcrum és un registre d'entrenament per a qui es construeix les seves pròpies rutines, amb control de calories incorporat. Sense programes predefinits i sense entrenador. L'únic lloc on un model es guanya el sou és la part que ningú vol fer a mà: teclejar el que acabes de menjar.",
+            "stat": {
+                "title": "10",
+                "subtitle": "Idiomes publicats"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Disseny, iOS, watchOS i el servidor"
+                },
+                {
+                    "name": "Plataformes",
+                    "description": "iPhone i Apple Watch"
+                },
+                {
+                    "name": "Model",
+                    "description": "Claude, cridat a través d'un Worker"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "SwiftUI, SwiftData, TypeScript"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Escaneig d'àpats",
+                    "description": "Entra una foto, surten aliments i calories"
+                },
+                {
+                    "name": "Creador de rutines",
+                    "description": "Els teus exercicis, els teus dies"
+                },
+                {
+                    "name": "Sessions al rellotge",
+                    "description": "Registra cada sèrie des del canell"
+                },
+                {
+                    "name": "Dades al dispositiu",
+                    "description": "Sense compte, sense sincronització, sense anuncis"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Comptar calories és introduir dades",
+                    "description": "Tota app de calories és un cercador. Menges alguna cosa i passes dos minuts descrivint-la a una base de dades que no la té. La majoria ho deixa en una setmana, i el registre d'entrenament pel qual van venir mor amb això.\nEl costat de l'entrenament tenia el problema contrari: apps de sobres, totes convençudes que t'han de triar el programa.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "Un model només per a la part avorrida",
+                    "description": "Fulcrum construeix el costat de les rutines a la manera simple: els teus exercicis, els teus dies de la setmana, temporitzadors de descans, rècords personals en el moment que els superes, i la sessió sencera manejable des del rellotge.\nEl model apunta a l'única feina on és genuïnament millor. Fotografies el plat, la imatge va a Claude, i torna com a elements estructurats amb grams i calories que confirmes o corregeixes. Sense xat, sense entrenador, sense feed.",
+                    "quotes": []
+                },
+                {
+                    "title": "El servidor",
+                    "name": "La clau no viatja mai dins l'app",
+                    "description": "Una clau d'API dins d'un binari és una clau que ja has regalat, així que l'app no en guarda cap. Els escanejos passen per un petit Worker de Cloudflare que guarda la clau com a secret de servidor, limita la mida de la imatge i aplica un límit per IP perquè un token filtrat no acabi sent la factura d'un altre.\nSón unes cent línies de TypeScript i cap al pla gratuït.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "2",
+                    "subtitle": "Plataformes, iPhone i Watch"
+                },
+                {
+                    "title": "10",
+                    "subtitle": "Idiomes publicats"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Comptes necessaris"
+                },
+                {
+                    "title": "En solitari",
+                    "subtitle": "Disseny, app i servidor"
+                }
+            ]
+        },
+        "crescia": {
+            "title": "Crescia",
+            "headline": "Cada registre es queda amb tu.",
+            "role": "iOS",
+            "summary": "Una app de finances personals que manté cada registre al dispositiu. Disseny, desenvolupament i publicació de dalt a baix — decisions de producte incloses.",
+            "intro": "Una app de finances personals amb una regla: els registres viuen al dispositiu i a l'iCloud del seu propietari — cap servidor meu no els guarda. Dissenyada, construïda, publicada i promocionada per una sola persona.",
+            "stat": {
+                "title": "Publicada",
+                "subtitle": "A l'App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Tot — disseny, desenvolupament, publicació, màrqueting"
+                },
+                {
+                    "name": "La regla",
+                    "description": "Només iCloud, sense servidor"
+                },
+                {
+                    "name": "Estat",
+                    "description": "Publicada a l'App Store"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "SwiftUI i SwiftData"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Importar extractes",
+                    "description": "Extractes bancaris interpretats amb l'API de Claude"
+                },
+                {
+                    "name": "Subscripcions",
+                    "description": "StoreKit, provat en sandbox, aprovat a la botiga"
+                },
+                {
+                    "name": "Widget d'iOS",
+                    "description": "Un lloc a la pantalla d'inici"
+                },
+                {
+                    "name": "ASO",
+                    "description": "Fitxa afinada en espanyol i anglès"
+                },
+                {
+                    "name": "Campanyes",
+                    "description": "Anuncis a Instagram amb anàlisi d'embut"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Les apps de finances demanen massa",
+                    "description": "El tracte habitual en finances personals és comoditat a canvi de custòdia: connecta el teu banc, crea un compte, i una còpia de la teva vida financera viu al servidor d'algú. Crescia rebutja el tracte — els registres es queden al dispositiu i a l'iCloud del seu propietari, i enlloc més.",
+                    "quotes": []
+                },
+                {
+                    "title": "El desenvolupament",
+                    "name": "Una persona, tots els barrets",
+                    "description": "SwiftUI i SwiftData a sota, iCloud com a única sincronització. Les funcionalitats que normalment justifiquen un servidor calia resoldre-les sense.",
+                    "quotes": []
+                },
+                {
+                    "title": "La botiga",
+                    "name": "La part de la qual ningú t'avisa",
+                    "description": "App Store Connect té el seu propi temari: una subscripció mensual rebutjada en revisió, un identificador de producte reservat per sempre per un error que no es pot desfer, i els cicles de publicació entremig. La distància entre escriure una app i publicar-la viu aquí.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'abast",
+                    "name": "El màrqueting és part del producte",
+                    "description": "Una app publicada que ningú troba és un projecte personal. ASO a les fitxes en espanyol i anglès, campanyes a Instagram mesurades amb anàlisi d'embut, i una nominació a destacat enviada a Apple.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Publicada",
+                    "subtitle": "A l'App Store"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Servidors amb dades d'usuari"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Idiomes de fitxa, afinats"
+                },
+                {
+                    "title": "1",
+                    "subtitle": "Persona en tot"
+                }
+            ]
+        },
+        "yantar": {
+            "title": "Yantar",
+            "headline": "La primera a sortir per la porta.",
+            "role": "iOS",
+            "summary": "Un registre de dejuni amb la mateixa regla: res no surt del telèfon. Construïda i publicada de dalt a baix.",
+            "intro": "Un registre de dejuni per a iOS amb la regla que Crescia va mantenir després: tot es queda al telèfon. La primera app que vaig portar fins al final — idea, disseny, desenvolupament, revisió, publicació.",
+            "stat": {
+                "title": "Publicada",
+                "subtitle": "A l'App Store"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Tot, per primera vegada"
+                },
+                {
+                    "name": "La regla",
+                    "description": "Les dades es queden al dispositiu"
+                },
+                {
+                    "name": "Estat",
+                    "description": "Publicada a l'App Store"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "SwiftUI"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Privacitat",
+                    "description": "Sense compte, res sincronitzat fora"
+                },
+                {
+                    "name": "Disseny",
+                    "description": "La interfície era mig projecte"
+                },
+                {
+                    "name": "App Store",
+                    "description": "Primera passada per revisió i publicació"
+                }
+            ],
+            "points": [
+                {
+                    "title": "La dèria",
+                    "name": "Un temporitzador que va a la seva",
+                    "description": "Els registres de dejuni solen arribar amb comptes, ratxes i un servidor mirant. Yantar és la versió simple: registra el dejuni, guarda les dades al telèfon, no demana res.",
+                    "quotes": []
+                },
+                {
+                    "title": "El desenvolupament",
+                    "name": "El disseny com a mitja feina",
+                    "description": "Un registre tan petit viu o mor per la seva interfície — no hi ha llista de funcionalitats on amagar-se. SwiftUI, i més hores en el disseny que en el model de dades.",
+                    "quotes": []
+                },
+                {
+                    "title": "La lliçó",
+                    "name": "Què ensenya publicar",
+                    "description": "La primera passada completa per la revisió de l'App Store, la publicació i tot el que l'envolta. El que va ensenyar va passar directe a Crescia — que és per a això que serveix publicar una primera app.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "Publicada",
+                    "subtitle": "A l'App Store"
+                },
+                {
+                    "title": "1a",
+                    "subtitle": "App publicada de dalt a baix"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Comptes necessaris"
+                }
+            ]
+        },
+        "andreafrancin": {
+            "title": "Andrea Francín",
+            "headline": "Un portfolio que la seva propietària pot dur.",
+            "role": "Dissenyador i enginyer, en solitari",
+            "summary": "Un portfolio per a una il·lustradora, amb un panell propi perquè publiqui la seva feina sense tocar codi ni esperar-me.",
+            "intro": "L'Andrea és il·lustradora. L'encàrrec era un portfolio que s'assemblés a la seva feina i que ella pogués mantenir al dia pel seu compte, en dos idiomes, sense un desenvolupador pel mig.",
+            "stat": {
+                "title": "En línia",
+                "subtitle": "andreafrancin.com"
+            },
+            "smart_details": [
+                {
+                    "name": "La meva part",
+                    "description": "Frontend, backend i desplegament"
+                },
+                {
+                    "name": "Per a",
+                    "description": "Una il·lustradora, treballant directament"
+                },
+                {
+                    "name": "Idiomes",
+                    "description": "Espanyol i català"
+                },
+                {
+                    "name": "Construït amb",
+                    "description": "React i Django REST"
+                }
+            ],
+            "smart_tags": [
+                {
+                    "name": "Panell propi",
+                    "description": "Publica sense mi"
+                },
+                {
+                    "name": "Editor markdown",
+                    "description": "Escriure un cop, renderitzar a tot arreu"
+                },
+                {
+                    "name": "Dos idiomes",
+                    "description": "Contingut traduït per projecte"
+                }
+            ],
+            "points": [
+                {
+                    "title": "El problema",
+                    "name": "Gairebé tots els portfolios d'il·lustració es queden vells",
+                    "description": "La feina canvia constantment, el lloc no. O l'artista paga algú cada cop que acaba un projecte, o el lloc deixa a poc a poc de representar-la.\nL'Andrea necessitava el contrari: un lloc que pogués actualitzar la mateixa tarda que acabava alguna cosa.",
+                    "quotes": []
+                },
+                {
+                    "title": "L'enfocament",
+                    "name": "Un panell fet per a una sola persona",
+                    "description": "Un backend en Django REST amb autenticació i emmagatzematge en PostgreSQL, i un frontend en React que el consumeix. Projectes, imatges i textos són editables des d'un panell privat, amb un editor markdown per als textos llargs.\nCada projecte porta les dues versions d'idioma, així que traduir forma part d'escriure en comptes de ser una feina a part.",
+                    "quotes": []
+                },
+                {
+                    "title": "El resultat",
+                    "name": "No m'ha necessitat des d'aleshores",
+                    "description": "El lloc és en línia i el manté ella. La part que em deixa satisfet no és l'stack, és que el traspàs va aguantar de debò.",
+                    "quotes": []
+                }
+            ],
+            "stats": [
+                {
+                    "title": "En línia",
+                    "subtitle": "andreafrancin.com"
+                },
+                {
+                    "title": "2",
+                    "subtitle": "Idiomes, per projecte"
+                },
+                {
+                    "title": "0",
+                    "subtitle": "Temps de desenvolupador per publicar"
+                }
+            ]
+        }
+    }
+}

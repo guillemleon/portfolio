@@ -57,6 +57,25 @@ export interface WorkEntry {
     stats: WorkStat[];
 }
 
+export interface WorkPage {
+    title: string;
+    intro: string;
+}
+
+/** The translatable half of an entry. Lives in work.<locale>.json. */
+export interface WorkProse {
+    title: string;
+    headline: string;
+    role: string;
+    summary: string;
+    intro: string;
+    stat: WorkStat;
+    smart_details: WorkDetail[];
+    smart_tags: WorkDetail[];
+    points: WorkPoint[];
+    stats: WorkStat[];
+}
+
 export interface WorkData {
     page: { title: string; intro: string };
     data: WorkEntry[];

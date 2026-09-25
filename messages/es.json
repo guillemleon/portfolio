@@ -8,15 +8,15 @@
         "menu": "Menú"
     },
     "home": {
-        "subtitle": "Ingeniero de Software · Ingeniero de Smart TV en Filmin",
-        "description": "Seis años en todo el stack. Me encargo de la aplicación de televisión de Filmin, llevando cada funcionalidad desde la primera conversación con producto y diseño hasta su lanzamiento en todos los dispositivos donde funciona — y he construido backends y apps iOS a ambos lados.",
+        "subtitle": "Software Engineer · Smart TV en Filmin",
+        "description": "Seis años construyendo para la web. En Filmin ayudo a liderar el equipo de smart TV, llevando cada funcionalidad desde la primera conversación con producto y diseño hasta todas las teles que soportamos — y en mi tiempo libre diseño y publico apps para iOS.",
         "selectedWork": "Trabajo destacado",
         "downloadCV": "Descargar CV",
         "profile": {
             "title": "Perfil",
             "now": {
                 "label": "Ahora",
-                "text": "Ingeniero de Smart TV, Filmin"
+                "text": "Smart TV, Filmin"
             },
             "focus": {
                 "label": "Foco",
@@ -24,7 +24,7 @@
             },
             "sideWork": {
                 "label": "Proyectos propios",
-                "text": "Dos apps iOS publicadas"
+                "text": "Tres apps iOS publicadas"
             },
             "reachMe": {
                 "label": "Contacto",
@@ -34,12 +34,13 @@
                 "label": "Stack",
                 "text": "React · TS · Node · Python · Swift"
             }
-        }
+        },
+        "available": "Disponible para nuevos proyectos"
     },
     "about": {
         "title": "Sobre mí.",
-        "lede": "Ingeniero de software en Barcelona, seis años en todo el stack.",
-        "body": "Me encargo de la app de televisión en Filmin, llevando las funcionalidades desde la primera conversación con producto y diseño hasta el lanzamiento en todos los dispositivos. Antes construí componentes sobre los que publican equipos de banca, sitios para un operador internacional de transporte y el stack completo de dos productos de consumo. En mi tiempo libre diseño y publico apps para iOS.",
+        "lede": "Ingeniero de software construyendo para la web desde hace seis años, en remoto con equipos de cualquier lugar.",
+        "body": "En Filmin trabajo en la app de televisión y ayudo a liderar el equipo de smart TV, llevando las funcionalidades desde la primera conversación con producto y diseño hasta todas las teles que soportamos. Antes hice el chat con el que los clientes de CaixaBank hablan con su gestor desde la app, webs para Keolis en equipos pequeños entre España y Francia y las webs y la app de Flykube y Eatkube. En mi tiempo libre diseño y publico apps para iOS.",
         "timeline": "Experiencia",
         "stack": "Stack",
         "stackGroups": {
@@ -50,7 +51,7 @@
     },
     "work": {
         "title": "Trabajo.",
-        "intro": "Dónde he trabajado y qué he construido.",
+        "intro": "Dónde he trabajado y lo que he construido por el camino.",
         "jobs": "Experiencia",
         "backToWork": "Todo el trabajo",
         "visit": "Visitar",
@@ -66,30 +67,31 @@
     },
     "contact": {
         "title": "Contacto.",
-        "intro": "Disponible para posiciones, trabajo freelance y desarrollo de producto. La vía más rápida es el correo.",
-        "availability": "Disponible",
+        "intro": "Disponible para posiciones en remoto, trabajo freelance y desarrollo de producto, esté donde esté el equipo. La forma más rápida de contactarme es por email.",
+        "availability": "Disponible para nuevos proyectos",
         "channels": {
             "email": "Correo",
             "linkedin": "LinkedIn",
             "phone": "Teléfono"
-        }
+        },
+        "location": "En remoto, con equipos de cualquier lugar"
     },
     "seo": {
         "home": {
-            "title": "Guillem León Font - Ingeniero de Software en Barcelona",
-            "description": "Ingeniero de software en Barcelona. Seis años creando aplicaciones web en producción con React y TypeScript, backends en Node y Python, y apps iOS. Ingeniero de smart TV en Filmin."
+            "title": "Guillem León Font - Ingeniero de Software",
+            "description": "Ingeniero de software en remoto. Seis años creando aplicaciones web en producción con React y TypeScript, apps de smart TV en Filmin y mis propias apps iOS. Disponible para nuevos proyectos."
         },
         "work": {
             "title": "Trabajo",
-            "description": "Dónde he trabajado y qué he construido: smart TV en Filmin, componentes bancarios en CaixaBank Tech, sitios de transporte en Extia y tres apps iOS propias."
+            "description": "Dónde he trabajado y qué he construido: smart TV en Filmin, el chat con el gestor en CaixaBank Tech, webs para Keolis en Extia y tres apps iOS propias."
         },
         "about": {
             "title": "Sobre mí",
-            "description": "Ingeniero de software en Barcelona, seis años en todo el stack. React, TypeScript, Node, Python y SwiftUI."
+            "description": "Ingeniero de software en remoto, seis años construyendo para la web. React, TypeScript, Node, Python y SwiftUI."
         },
         "contact": {
             "title": "Contacto",
-            "description": "Disponible para posiciones, trabajo freelance y desarrollo de producto. Contacta con Guillem León Font, ingeniero de software en Barcelona."
+            "description": "Disponible para posiciones en remoto, trabajo freelance y desarrollo de producto. Contacta con Guillem León Font, ingeniero de software."
         }
     }
 }

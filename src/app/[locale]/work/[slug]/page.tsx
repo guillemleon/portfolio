@@ -23,7 +23,7 @@ export async function generateMetadata({
     params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
     const { locale, slug } = await params;
-    const entry = workBySlug(slug);
+    const entry = workBySlug(locale, slug);
 
     if (!entry) return {};
 
@@ -52,13 +52,13 @@ export default async function WorkDetailPage({
     const { locale, slug } = await params;
     setRequestLocale(locale);
 
-    const entry = workBySlug(slug);
+    const entry = workBySlug(locale, slug);
 
     if (!entry) notFound();
 
     const t = await getTranslations('work');
-    const children = childrenOf(entry.slug);
-    const parentTitle = entry.parent ? (workBySlug(entry.parent)?.company ?? '') : '';
+    const children = childrenOf(locale, entry.slug);
+    const parentTitle = entry.parent ? (workBySlug(locale, entry.parent)?.company ?? '') : '';
 
     return (
         <PageTransition>

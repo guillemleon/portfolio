@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { pageMetadata } from '@/utils/metadata';
 import { PageTransition } from '@/components/page-transition/index';
 import Reveal from '@/components/reveal';
@@ -12,9 +12,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return pageMetadata({ locale, key: 'about', path: '/about' });
 }
 
-export default function AboutPage() {
-    const t = useTranslations('about');
-    const experience = jobs();
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const t = await getTranslations('about');
+    const experience = jobs(locale);
 
     return (
         <PageTransition>

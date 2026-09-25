@@ -63,7 +63,12 @@
         "highlights": "Highlights",
         "back": "Back",
         "appStoreCaption": "Download on the",
-        "appStoreLabel": "App Store"
+        "appStoreLabel": "App Store",
+        "studioLabel": "View on GriselHub",
+        "screenshots": "Screenshots",
+        "screenshotAlt": "{app}, screenshot {n}",
+        "previous": "Previous",
+        "next": "Next"
     },
     "contact": {
         "title": "Contact.",

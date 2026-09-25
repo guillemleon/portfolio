@@ -63,7 +63,12 @@
         "highlights": "Destacats",
         "back": "Tornar",
         "appStoreCaption": "Aconsegueix-lo a l'",
-        "appStoreLabel": "App Store"
+        "appStoreLabel": "App Store",
+        "studioLabel": "Veure a GriselHub",
+        "screenshots": "Captures",
+        "screenshotAlt": "{app}, captura {n}",
+        "previous": "Anterior",
+        "next": "Següent"
     },
     "contact": {
         "title": "Contacte.",

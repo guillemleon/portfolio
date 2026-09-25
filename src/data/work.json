@@ -17,6 +17,7 @@
             "ai": false,
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "filmin.es",
@@ -39,7 +40,8 @@
                     "alt": "Filmin on a television",
                     "link": ""
                 }
-            ]
+            ],
+            "screens": []
         },
         {
             "slug": "angular-to-react",
@@ -57,8 +59,10 @@
             "ai": false,
             "parent": "filmin-smart-tv",
             "appStore": "",
+            "studio": "",
             "links": [],
-            "images": []
+            "images": [],
+            "screens": []
         },
         {
             "slug": "vega-os-launch",
@@ -76,8 +80,10 @@
             "ai": false,
             "parent": "filmin-smart-tv",
             "appStore": "",
+            "studio": "",
             "links": [],
-            "images": []
+            "images": [],
+            "screens": []
         },
         {
             "slug": "banking-widgets",
@@ -95,6 +101,7 @@
             "ai": false,
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "caixabank.es",
@@ -107,7 +114,8 @@
                     "alt": "CaixaBank public site",
                     "link": "https://www.caixabank.es/particular/home/particulares_es.html"
                 }
-            ]
+            ],
+            "screens": []
         },
         {
             "slug": "keolis-sites",
@@ -126,6 +134,7 @@
             "ai": false,
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "Open by Keolis",
@@ -161,7 +170,8 @@
                     "alt": "Keolis Voyages tourism portal",
                     "link": "https://voyages.keolis.com/"
                 }
-            ]
+            ],
+            "screens": []
         },
         {
             "slug": "flykube-eatkube",
@@ -179,6 +189,7 @@
             "ai": false,
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "flykube.com",
@@ -191,7 +202,8 @@
                     "alt": "FlyKube surprise travel booking",
                     "link": "https://flykube.com/es"
                 }
-            ]
+            ],
+            "screens": []
         },
         {
             "slug": "andreafrancin",
@@ -210,6 +222,7 @@
             ],
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "andreafrancin.com",
@@ -227,7 +240,8 @@
                     "alt": "Andrea Francin portfolio",
                     "link": "https://andreafrancin.com/"
                 }
-            ]
+            ],
+            "screens": []
         },
         {
             "slug": "fulcrum",
@@ -246,12 +260,95 @@
             ],
             "parent": "",
             "appStore": "https://apps.apple.com/es/app/fulcrum-gym-y-calistenia/id6804208652",
+            "studio": "https://griselhub.com/fulcrum",
             "links": [],
             "images": [
                 {
                     "src": "/work/fulcrum/fulcrum-card.webp",
                     "alt": "Fulcrum, training log and calorie tracker for iOS",
                     "link": "https://apps.apple.com/es/app/fulcrum-gym-y-calistenia/id6804208652"
+                }
+            ],
+            "screens": [
+                {
+                    "src": "/work/fulcrum/fulcrum-en-01.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-02.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-03.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-04.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-05.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-06.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-07.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-08.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-09.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-en-10.webp",
+                    "locale": "en"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-01.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-02.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-03.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-04.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-05.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-06.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-07.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-08.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-09.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/fulcrum/fulcrum-es-10.webp",
+                    "locale": "es"
                 }
             ]
         },
@@ -271,12 +368,43 @@
             "ai": false,
             "parent": "",
             "appStore": "https://apps.apple.com/es/app/crescia-gastos-y-presupuesto/id6760351477",
+            "studio": "https://griselhub.com/crescia",
             "links": [],
             "images": [
                 {
                     "src": "/work/crescia/crescia-card.webp",
                     "alt": "Crescia, personal finance for iOS",
                     "link": "https://apps.apple.com/es/app/crescia-gastos-y-presupuesto/id6760351477"
+                }
+            ],
+            "screens": [
+                {
+                    "src": "/work/crescia/crescia-es-01.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-02.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-03.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-04.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-05.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-06.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/crescia/crescia-es-07.webp",
+                    "locale": "es"
                 }
             ]
         },
@@ -296,12 +424,35 @@
             "ai": true,
             "parent": "",
             "appStore": "https://apps.apple.com/es/app/yantar/id6760302054",
+            "studio": "https://griselhub.com/yantar",
             "links": [],
             "images": [
                 {
                     "src": "/work/yantar/yantar-card.webp",
                     "alt": "Yantar, fasting tracker for iOS",
                     "link": "https://apps.apple.com/es/app/yantar/id6760302054"
+                }
+            ],
+            "screens": [
+                {
+                    "src": "/work/yantar/yantar-es-01.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/yantar/yantar-es-02.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/yantar/yantar-es-03.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/yantar/yantar-es-04.webp",
+                    "locale": "es"
+                },
+                {
+                    "src": "/work/yantar/yantar-es-05.webp",
+                    "locale": "es"
                 }
             ]
         },
@@ -322,6 +473,7 @@
             ],
             "parent": "",
             "appStore": "",
+            "studio": "",
             "links": [
                 {
                     "label": "griselhub.com",
@@ -334,7 +486,8 @@
                     "alt": "GriselHub, independent iOS studio",
                     "link": "https://griselhub.com/"
                 }
-            ]
+            ],
+            "screens": []
         }
     ]
 }

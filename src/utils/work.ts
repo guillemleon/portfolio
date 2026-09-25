@@ -2,7 +2,7 @@ import structure from '@/data/work.json';
 import en from '@/data/work.en.json';
 import es from '@/data/work.es.json';
 import ca from '@/data/work.ca.json';
-import type { WorkEntry, WorkCategory, WorkPage, WorkProse } from '@/types/work';
+import type { WorkEntry, WorkCategory, WorkPage, WorkProse, WorkScreen } from '@/types/work';
 
 interface Structure {
     data: Omit<WorkEntry, keyof WorkProse>[];
@@ -26,6 +26,20 @@ const present: Record<string, string> = { en: 'Present', es: 'Actualidad', ca: '
 
 const localeFor = (locale: string): Locale => locales[locale] ?? locales[fallback]!;
 
+/**
+ * Screenshots are captioned in one language. Show the reader's own; Catalan
+ * readers get Spanish before English, and anything beats nothing.
+ */
+const screenOrder: Record<string, string[]> = { en: ['en', 'es'], es: ['es', 'en'], ca: ['ca', 'es', 'en'] };
+
+const screensFor = (locale: string, screens: WorkScreen[]): WorkScreen[] => {
+    for (const lang of screenOrder[locale] ?? [fallback]) {
+        const match = screens.filter((screen) => screen.locale === lang);
+        if (match.length) return match;
+    }
+    return screens;
+};
+
 /** Structure and prose are stored apart so a translation cannot drift from the data. */
 const merge = (locale: string): WorkEntry[] => {
     const pack = localeFor(locale);
@@ -33,7 +47,8 @@ const merge = (locale: string): WorkEntry[] => {
     return (structure as Structure).data.map((entry) => {
         const prose = pack.entries[entry.slug] ?? locales[fallback]!.entries[entry.slug];
         const to = entry.to === 'Present' ? (present[locale] ?? present[fallback]!) : entry.to;
-        return { ...entry, ...prose, to } as WorkEntry;
+        const screens = screensFor(locale, (entry as { screens?: WorkScreen[] }).screens ?? []);
+        return { ...entry, ...prose, to, screens } as WorkEntry;
     });
 };
 

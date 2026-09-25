@@ -8,6 +8,7 @@ import { Link } from '@/i18n/navigation';
 import { PageTransition } from '@/components/page-transition/index';
 import Reveal from '@/components/reveal';
 import AppStoreButton from '@/components/app-store-button';
+import ScreenCarousel from '@/components/screen-carousel';
 import { childrenOf, workBySlug, workSlugs } from '@/utils/work';
 import styles from './work-detail.module.css';
 
@@ -103,6 +104,17 @@ export default async function WorkDetailPage({
                             />
                         ) : null}
 
+                        {entry.studio ? (
+                            <a
+                                className={styles.studioButton}
+                                href={entry.studio}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                {t('studioLabel')}
+                            </a>
+                        ) : null}
+
                         {entry.links.map((link) => (
                             <a
                                 key={link.url}
@@ -117,7 +129,19 @@ export default async function WorkDetailPage({
                     </div>
                 </header>
 
-                {entry.images.length ? (
+                {entry.screens.length ? (
+                    <Reveal as="section" className={styles.screens}>
+                        <ScreenCarousel
+                            screens={entry.screens.map((screen, index) => ({
+                                src: screen.src,
+                                alt: t('screenshotAlt', { app: entry.title, n: index + 1 }),
+                            }))}
+                            label={t('screenshots')}
+                            previousLabel={t('previous')}
+                            nextLabel={t('next')}
+                        />
+                    </Reveal>
+                ) : entry.images.length ? (
                     <section className={styles.gallery}>
                         {entry.images.map((image, index) => (
                             <Reveal key={image.src} delay={index * 60} className={styles.shotWrap}>

@@ -24,6 +24,12 @@ export interface WorkImage {
     link: string;
 }
 
+/** An App Store screenshot. Tagged with the language its captions are in. */
+export interface WorkScreen {
+    src: string;
+    locale: string;
+}
+
 export interface WorkPoint {
     title: string;
     name: string;
@@ -45,11 +51,14 @@ export interface WorkEntry {
     from: string;
     to: string;
     appStore: string;
+    /** The app's page on griselhub.com. Empty hides the button. */
+    studio: string;
     summary: string;
     intro: string;
     tags: string[];
     links: WorkLink[];
     images: WorkImage[];
+    screens: WorkScreen[];
     stat: WorkStat;
     smart_details: WorkDetail[];
     smart_tags: WorkDetail[];

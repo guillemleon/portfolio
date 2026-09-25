@@ -1,0 +1,94 @@
+.carousel {
+    /* A fraction over a whole number, so the next phone always peeks in. */
+    --visible: 4.35;
+    --gap: 14px;
+
+    @media screen and (max-width: 860px) {
+        --visible: 3.3;
+    }
+
+    @media screen and (max-width: 560px) {
+        --visible: 1.12;
+        --gap: 12px;
+        /* The page gutter: on phones the track runs to the screen edge. */
+        --bleed: 20px;
+    }
+}
+
+/* As wide as the column; the last visible phone is cut on purpose as a hint. */
+.track {
+    display: flex;
+    gap: var(--gap);
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    margin: 0 calc(-1 * var(--bleed, 0px));
+    padding: 0 var(--bleed, 0px);
+    scroll-padding: 0 var(--bleed, 0px);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &:focus-visible {
+        outline: 1px solid var(--color-accent);
+        outline-offset: 6px;
+        border-radius: 14px;
+    }
+}
+
+.slide {
+    flex: 0 0 calc((100% - (var(--visible) - 1) * var(--gap)) / var(--visible));
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600 / 1300;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--color-neutral-800);
+    background: var(--color-neutral-900);
+}
+
+.controls {
+    display: flex;
+
+    /* On phones a swipe is the obvious gesture; the peek says there is more. */
+    @media screen and (max-width: 560px) {
+        display: none;
+    }
+
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.arrow {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-neutral-700);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--color-neutral-100);
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+
+    &:hover:not(:disabled) {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+    }
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+}

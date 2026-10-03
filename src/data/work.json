@@ -231,14 +231,35 @@
             ],
             "images": [
                 {
-                    "src": "/work/andreafrancin/andreafrancin-1.webp",
-                    "alt": "Andrea Francin portfolio, project grid",
+                    "src": "/work/andreafrancin/andreafrancin-demo.webp",
+                    "alt": "Andrea Francín portfolio, browsing the project grid",
+                    "link": "https://andreafrancin.com/",
+                    "animated": true
+                },
+                {
+                    "src": "/work/andreafrancin/andreafrancin-home.webp",
+                    "alt": "Andrea Francín portfolio, project grid with category filters",
                     "link": "https://andreafrancin.com/"
                 },
                 {
-                    "src": "/work/andreafrancin/andreafrancin-2.webp",
-                    "alt": "Andrea Francin portfolio",
-                    "link": "https://andreafrancin.com/"
+                    "src": "/work/andreafrancin/andreafrancin-project.webp",
+                    "alt": "Andrea Francín portfolio, a project page",
+                    "link": ""
+                },
+                {
+                    "src": "/work/andreafrancin/andreafrancin-admin-projects.webp",
+                    "alt": "Back office, project list with drag-to-reorder",
+                    "link": ""
+                },
+                {
+                    "src": "/work/andreafrancin/andreafrancin-admin-edit.webp",
+                    "alt": "Back office, editing a project in three languages",
+                    "link": ""
+                },
+                {
+                    "src": "/work/andreafrancin/andreafrancin-admin-images.webp",
+                    "alt": "Back office, image upload and cover selection",
+                    "link": ""
                 }
             ],
             "screens": []

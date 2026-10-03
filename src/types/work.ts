@@ -22,6 +22,8 @@ export interface WorkImage {
     alt: string;
     /** Optional site the shot belongs to, for entries covering several sites. */
     link: string;
+    /** Animated (GIF-like). Served as-is, and never used as a list thumbnail. */
+    animated?: boolean;
 }
 
 /** An App Store screenshot. Tagged with the language its captions are in. */

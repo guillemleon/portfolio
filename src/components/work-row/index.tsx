@@ -10,6 +10,7 @@ interface WorkRowProps {
 
 const WorkRow = ({ entry }: WorkRowProps) => {
     const Apple = ICONS.apple;
+    const thumb = entry.images.find((image) => !image.animated);
 
     return (
     <Link
@@ -17,10 +18,10 @@ const WorkRow = ({ entry }: WorkRowProps) => {
         className={styles.row}
         transitionTypes={['nav-forward']}
     >
-        {entry.images[0] ? (
+        {thumb ? (
             <span className={styles.thumb}>
                 <Image
-                    src={entry.images[0].src}
+                    src={thumb.src}
                     alt=""
                     width={480}
                     height={270}

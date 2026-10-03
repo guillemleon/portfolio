@@ -68,7 +68,8 @@
         "screenshots": "Screenshots",
         "screenshotAlt": "{app}, screenshot {n}",
         "previous": "Previous",
-        "next": "Next"
+        "next": "Next",
+        "gallery": "Images"
     },
     "contact": {
         "title": "Contact.",

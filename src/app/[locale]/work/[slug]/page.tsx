@@ -9,7 +9,9 @@ import { PageTransition } from '@/components/page-transition/index';
 import Reveal from '@/components/reveal';
 import AppStoreButton from '@/components/app-store-button';
 import ScreenCarousel from '@/components/screen-carousel';
+import GalleryCarousel from '@/components/gallery-carousel';
 import { childrenOf, workBySlug, workSlugs } from '@/utils/work';
+import type { WorkImage } from '@/types/work';
 import styles from './work-detail.module.css';
 
 export function generateStaticParams() {
@@ -58,6 +60,28 @@ export default async function WorkDetailPage({
     if (!entry) notFound();
 
     const t = await getTranslations('work');
+
+    const shot = (image: WorkImage) => (
+        <figure className={styles.shot}>
+            <Image
+                src={image.src}
+                alt={image.alt}
+                width={1600}
+                height={800}
+                sizes="(max-width: 860px) 100vw, 860px"
+                className={styles.shotImage}
+                priority
+                unoptimized={image.animated}
+            />
+            {image.link ? (
+                <figcaption className={styles.shotCaption}>
+                    <a href={image.link} target="_blank" rel="noreferrer noopener">
+                        {image.alt}
+                    </a>
+                </figcaption>
+            ) : null}
+        </figure>
+    );
     const children = childrenOf(locale, entry.slug);
     const parentTitle = entry.parent ? (workBySlug(locale, entry.parent)?.company ?? '') : '';
 
@@ -141,30 +165,18 @@ export default async function WorkDetailPage({
                             nextLabel={t('next')}
                         />
                     </Reveal>
-                ) : entry.images.length ? (
+                ) : entry.images.length > 1 ? (
+                    <Reveal as="section" className={styles.gallery}>
+                        <GalleryCarousel
+                            images={entry.images}
+                            label={t('gallery')}
+                            previousLabel={t('previous')}
+                            nextLabel={t('next')}
+                        />
+                    </Reveal>
+                ) : entry.images[0] ? (
                     <section className={styles.gallery}>
-                        {entry.images.map((image, index) => (
-                            <Reveal key={image.src} delay={index * 60} className={styles.shotWrap}>
-                                <figure className={styles.shot}>
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        width={1600}
-                                        height={800}
-                                        sizes="(max-width: 860px) 100vw, 860px"
-                                        className={styles.shotImage}
-                                        priority={index === 0}
-                                    />
-                                    {image.link ? (
-                                        <figcaption className={styles.shotCaption}>
-                                            <a href={image.link} target="_blank" rel="noreferrer noopener">
-                                                {image.alt}
-                                            </a>
-                                        </figcaption>
-                                    ) : null}
-                                </figure>
-                            </Reveal>
-                        ))}
+                        <Reveal className={styles.shotWrap}>{shot(entry.images[0])}</Reveal>
                     </section>
                 ) : null}
 
